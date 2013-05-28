@@ -1,9 +1,33 @@
 name = Contour
-description = A Multi-Purpose Drupal Theme. 
+description = 3 in 1 Multipurpose Creative Drupal Theme. 
 core = 7.x
 engine = phptemplate
 version = 1.x ALPHA
 
-stylesheets[all][] = bootstrap/css/bootstrap.min.css
 
-scripts[] = bootstrap/js/bootstrap.min.js
+; Call style sheets.
+stylesheets[all][] = css/imports.css
+
+; Call JavaScript libraries.
+scripts[] = js/libs/gumby.min.js
+scripts[] = js/plugins.js
+scripts[] = js/main.js
+
+; Define Header block regions.
+regions[header_branding] = Header Branding
+regions[header_social] = Header Social
+regions[header_menu_left] = Header Menu Left
+regions[header_menu_right] = Header Menu Right
+
+; Define content block regions.
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+
+; Define Footer block regions.
+regions[footer_col_1] = Footer Column 1
+regions[footer_col_2] = Footer Column 2
+regions[footer_col_3] = Footer Column 3
+regions[footer_col_4] = Footer Column 4
+regions[footer_bottom_left] = Footer Bottom Left
+regions[footer_bottom_right] = Footer Bottom Right
