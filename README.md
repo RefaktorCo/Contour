@@ -1,4 +1,0 @@
-Contour
-=======
-
-Contour Drupal Theme

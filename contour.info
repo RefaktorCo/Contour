@@ -1,0 +1,9 @@
+name = Contour
+description = A Multi-Purpose Drupal Theme. 
+core = 7.x
+engine = phptemplate
+version = 1.x ALPHA
+
+stylesheets[all][] = bootstrap/css/bootstrap.min.css
+
+scripts[] = bootstrap/js/bootstrap.min.js
