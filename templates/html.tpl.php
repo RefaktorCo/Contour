@@ -21,7 +21,7 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
   
-<?php expressa_user_css(); ?>  
+<?php //contour_user_css(); ?>  
 
 <!-- Style switcher  
 <link rel="stylesheet" type="text/css" href="<?php global $root; echo $root;?>/css/switch.css">
