@@ -10,12 +10,13 @@ stylesheets[all][] = css/imports.css
 
 ; Call JavaScript libraries.
 scripts[] = js/libs/gumby.min.js
+scripts[] = js/libs/modernizr-2.0.6.min.js
 scripts[] = js/plugins.js
 scripts[] = js/main.js
 
 ; Define Header block regions.
-regions[header_branding] = Header Branding
-regions[header_social] = Header Social
+regions[header_branding_left] = Header Branding Left
+regions[header_branding_right] = Header Branding Right
 regions[header_menu_left] = Header Menu Left
 regions[header_menu_right] = Header Menu Right
 

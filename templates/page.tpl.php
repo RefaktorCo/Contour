@@ -5,87 +5,48 @@
  */
 ?>
 
-<div id="content-wrap">
-  <div id="page-wrap" class="container <?php if (drupal_is_front_page()) { echo "front-page"; } ?>">
-
-	<header>
-	
-	  <div class="row">
-	    <div class="span4">
-	    
-	      <!-- Begin "branding" wrapper that contains logo/site name/site slogan -->
-	      <div id="branding">   
-	        
-	        <?php if (isset($page['branding'])) : ?>
-			      <?php print render($page['branding']); ?>
-			    <?php endif; ?>
-	      
-		      <?php if ($logo): ?>
-		        <div id="site-logo">
-				      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-				        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-				      </a>
-		        </div>
-			    <?php endif; ?>
-			    
-			    <?php if ($site_name || $site_slogan): ?>
-			      <div id="name-and-slogan"<?php if ($disable_site_name && $disable_site_slogan) { print ' class="hidden"'; } ?>>
-			
-			        <?php if ($site_name): ?>
-			          <h1 id="site-name"<?php if ($disable_site_name) { print ' class="hidden"'; } ?>>
-			            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-			          </h1>
-			        <?php endif; ?>
-			
-			        <?php if ($site_slogan): ?>
-			          <div id="site-slogan"<?php if ($disable_site_slogan) { print ' class="hidden"'; } ?>>
-			            <?php print $site_slogan; ?>
-			          </div>
-			        <?php endif; ?>
-			
-			      </div> <!-- /#name-and-slogan -->
-			    <?php endif; ?>
-
+<header>
+  <div class="container top">
+	  <section class="row">
+	    <!--BRANDING LEFT BLOCK REGION -->
+      <?php if (isset($page['header_branding_left'])) { print render($page['header_branding_left']); } ?>
+		  <!-- END BRANDING LEFT --> 
+	    <!--LOGO -->  
+      <?php if ($logo): ?>
+        <div class="four columns smalltoppadding">
+		      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+		        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+		      </a>
+        </div>
+	    <?php endif; ?>
+			<!--END LOGO -->   
+			<!-- NAME AND SLOGAN --> 
+	    <?php if ($site_name || $site_slogan): ?>
+	      <div class="four columns smalltoppadding">
+		      <div id="name-and-slogan"<?php if ($disable_site_name && $disable_site_slogan) { print ' class="hidden"'; } ?>>
+		
+		        <?php if ($site_name): ?>
+		          <h1 id="site-name"<?php if ($disable_site_name) { print ' class="hidden"'; } ?>>
+		            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+		          </h1>
+		        <?php endif; ?>
+		
+		        <?php if ($site_slogan): ?>
+		          <div id="site-slogan"<?php if ($disable_site_slogan) { print ' class="hidden"'; } ?>>
+		            <?php print $site_slogan; ?>
+		          </div>
+		        <?php endif; ?>
+		
+		      </div>
 	      </div>  
-	      <!-- /branding --> 
-	       
+	    <?php endif; ?>
+      <!-- END NAME AND SLOGAN --> 
+	    <!-- BRANDING RIGHT BLOCK REGION -->   
+	    <div class="seven columns push_one">
+	      <?php if (isset($page['header_branding_right'])) { print render($page['header_branding_right']); } ?>
 	    </div>
-	    <div class="span8 header-right">
-	    
-	      <div class="row">
-	        <div class="span8">
-	        
-	          <div class="header-right-content-wrap">
-	    
-			      <?php if (isset($page['header_right_top_left'])) : ?>
-					    <?php print render($page['header_right_top_left']); ?>
-					  <?php endif; ?>
-					  
-	          </div>
-	          <div class="header-right-content-wrap">
-	    
-			      <?php if (isset($page['header_right_top_right'])) : ?>
-					    <?php print render($page['header_right_top_right']); ?>
-					  <?php endif; ?>
-					  
-	          </div>
-					  
-	        </div>  
-	      </div>
-	      
-	      <div class="row">
-	        <div class="span8">
-	      
-            <?php if (isset($page['header_right_bottom'])) : ?>
-			        <?php print render($page['header_right_bottom']); ?>
-			      <?php endif; ?>
-			      
-	        </div>
-	      </div>    
-			 
-	    </div>
-	  </div>
-	  
+	     <!-- END BRANDING RIGHT BLOCK REGION -->   
+	  </section>
 	  
 	  <div class="row">
 	    <div class="span12">
