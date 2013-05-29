@@ -81,22 +81,7 @@
 <div class="row">
   <div class="<?php if ($page['sidebar_first']) { echo "eight columns";} else { echo "twelve columns"; } ?>">
   
-    <?php print render($title_prefix); ?>
-    <?php print $title; ?>
-    <?php print render($title_suffix); ?>
-   	 
-   	<?php if ($tabs = render($tabs)): ?>
-	    <div id="drupal_tabs" class="tabs bigpadding">
-	      <?php print render($tabs); ?>
-	    </div>
-	  <?php endif; ?>
-	  
-    <?php print render($page['help']); ?>
-    <?php if ($action_links): ?>
-      <ul class="action-links">
-        <?php print render($action_links); ?>
-      </ul>
-    <?php endif; ?>
+
 
 	  <?php if (isset($page['content'])) : ?>
 	    <?php print render($page['content']); ?>
