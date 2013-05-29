@@ -1,3 +1,4 @@
+jQuery(document).ready(function ($) {
 //price range slider
 $(".price-slider").noUiSlider({
     range: [10, 100]
@@ -206,4 +207,5 @@ $(document).ready(function()
 
 $(window).load(function() {
   $('.home .flex-control-nav').addClass('show');
+});
 });

@@ -239,7 +239,7 @@ border-radius:2px;
 #navbar{
 width:100%;
 background:#000;
-padding:12px 20px 3px;
+padding:12px 20px 13px;
 z-index:50000;
 box-sizing:border-box;
 -webkit-box-sizing:border-box;
@@ -1524,7 +1524,7 @@ margin-bottom:20px;
 }
 
 #navigationmain ul { margin: 0; padding: 0; float:left;padding:4px 0;}
-#navigationmain li { margin: 0; padding: 0; display: inline-block;}
+#navigationmain li { margin: 0; padding: 0;}
 #navigationmain li.active a{ color:#ccc}
 
 #navigationmain li.active > ul > li > a{color:#fff;background:#000;font-weight:700;font-size:12px;
