@@ -43,6 +43,38 @@ function contour_process_page(&$variables) {
   }
 }	
 
+/* Assign top level menu list items an ascending class of menu_$number  */
+function contour_menu_link(array $variables) {
+  unset($variables['element']['#attributes']['class']);
+  $element = $variables['element'];
+  static $item_id = 0;
+  $menu_name = $element['#original_link']['menu_name'];
+
+  if ($element['#below']) {
+    $element['#attributes']['class'][] = 'dropdown';
+  }
+  
+  if ($element['#href'] == '<front>' && drupal_is_front_page()) {
+    $element['#attributes']['class'][] = 'active-trail';
+  }
+  
+  $sub_menu = $element['#below'] ? drupal_render($element['#below']) : '';
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . '</li>';
+}
+
+/* Allow sub-menu items to be displayed */
+function contour_links($variables) {
+  if (array_key_exists('id', $variables['attributes']) && $variables['attributes']['id'] == 'main-menu-links') {
+  	$pid = variable_get('menu_main_links_source', 'main-menu');
+	$tree = menu_tree($pid);
+	return drupal_render($tree);
+  }
+  return theme_links($variables);
+}
+
+
 /**
  * Preprocess variables for the username.
  */

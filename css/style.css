@@ -1524,7 +1524,7 @@ margin-bottom:20px;
 }
 
 #navigationmain ul { margin: 0; padding: 0; float:left;padding:4px 0;}
-#navigationmain li { margin: 0; padding: 0;}
+#navigationmain li { margin: 0; padding: 0; display: inline-block;}
 #navigationmain li.active a{ color:#ccc}
 
 #navigationmain li.active > ul > li > a{color:#fff;background:#000;font-weight:700;font-size:12px;
@@ -1541,7 +1541,7 @@ font-size:1.2rem;
 transition: background-color .2s;
 }
 
-#navigationmain a { margin: 0; padding: 0; }
+#navigationmain a { margin: 0; padding: 0; text-transform: uppercase;}
 #navigationmain ul {list-style: none;}
 #navigationmain a {text-decoration: none;}
 #navigationmain {}

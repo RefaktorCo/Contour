@@ -22,7 +22,7 @@
 			<!--END LOGO -->   
 			<!-- NAME AND SLOGAN --> 
 	    <?php if ($site_name || $site_slogan): ?>
-	      <div class="four columns smalltoppadding">
+	 
 		      <div id="name-and-slogan"<?php if ($disable_site_name && $disable_site_slogan) { print ' class="hidden"'; } ?>>
 		
 		        <?php if ($site_name): ?>
@@ -37,7 +37,7 @@
 		          </div>
 		        <?php endif; ?>
 		
-		      </div>
+		  
 	      </div>  
 	    <?php endif; ?>
       <!-- END NAME AND SLOGAN --> 
@@ -47,22 +47,33 @@
 	    </div>
 	     <!-- END BRANDING RIGHT BLOCK REGION -->   
 	  </section>
-	  
-	  <div class="container" id="navbar">
-	    <section class="row">
-	      <!-- NAVIGATION -->
-	      <div class="eight columns">
-		      <nav id="navigationmain">
-            <?php if (isset($page['header_memu_left'])) { print render($page['header_menu_left']); } ?>
-					</nav>
-				</div>
-				    
-		    <div class="four columns">
-		      <?php if (isset($page['header_menu_right'])) { print render($page['header_menu_right']); } ?>
-		    </div>
-	    </section>  
-	  </div>
   </div>  
+  <div class="container" id="navbar">
+    <section class="row">
+      <!-- NAVIGATION -->
+      <div class="eight columns">
+	      <nav id="navigationmain">
+          <?php print theme('links__system_main_menu', array(
+		            'attributes' => array(
+		              'id' => 'main-menu-links',
+		              'class' => array('links', 'clearfix'),
+		            ),
+		            'heading' => array(
+		              'text' => t('Main menu'),
+		              'level' => 'h2',
+		              'class' => array('element-invisible'),
+		            ),
+		          )); 
+		          ?>
+
+				</nav>
+			</div>
+			    
+	    <div class="four columns">
+	      <?php if (isset($page['header_menu_right'])) { print render($page['header_menu_right']); } ?>
+	    </div>
+    </section>  
+  </div>
 </header>
 <div class="row">
   <div class="<?php if ($page['sidebar_first']) { echo "eight columns";} else { echo "twelve columns"; } ?>">
