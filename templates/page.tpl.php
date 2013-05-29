@@ -75,6 +75,9 @@
     </section>  
   </div>
 </header>
+<?php if (isset($page['before_content'])) : ?>
+  <?php print render($page['before_content']); ?>
+<?php endif; ?>  
 <div class="row">
   <div class="<?php if ($page['sidebar_first']) { echo "eight columns";} else { echo "twelve columns"; } ?>">
   
