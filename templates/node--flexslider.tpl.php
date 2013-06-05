@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Expressa's node template for the Image Slider content type.
+ * Contour's node template for the Image Slider content type.
  */
  
 $pos = render($content['field_caption_position']); 
