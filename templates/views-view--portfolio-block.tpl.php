@@ -27,11 +27,26 @@
  * @ingroup views_templates
  */
 ?>
+
+	<!-- portfolio section -->
+	<section class="row">
+	<div class="eight columns">
+		<h5 class="blacktext bold">OUR RECENT PROJECTS</h5>
+		<p class="greytext midbottompadding">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+		</p>
+	</div>
+	<!-- view all portfolio button -->
+	<div class="two columns push_two midtoppadding smalltopmargin">
+		<div class="small primary btn">
+			<a href="portfolio">VIEW PORTFOLIO</a>
+		</div>
+	</div>
+	</section>
+	
 <section class="row">
 		  <?php print render($title_prefix); ?>
-		  <?php if ($title): ?>
-		    <?php print $title; ?>
-		  <?php endif; ?>
+		 
 		  <?php print render($title_suffix); ?>
 		  <?php if ($header): ?>
 		    <div class="view-header">
@@ -89,3 +104,9 @@
 		
 		
 </section>	
+
+	<!-- divider -->
+	<section class="row smalltoppadding">
+	<div class="grey-dotted">
+	</div>
+	</section>

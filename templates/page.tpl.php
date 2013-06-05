@@ -78,6 +78,7 @@
 <?php if (isset($page['before_content'])) : ?>
   <?php print render($page['before_content']); ?>
 <?php endif; ?>  
+<div class="container white top-grey bigpadding">
 <div class="row">
   <div class="<?php if ($page['sidebar_first']) { echo "eight columns";} else { echo "twelve columns"; } ?>">
   
@@ -95,6 +96,7 @@
   </div>
   <?php endif; ?>
 <?php print $messages; ?>
+</div>
 </div>
 <footer>
 <script>
