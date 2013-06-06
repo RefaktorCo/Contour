@@ -10,6 +10,16 @@
 	margin-left: 63px;
 }
 
+.view-categories ul li {
+	margin-left: 0px;
+	border-bottom: 1px dotted #ddd;
+  padding-bottom: 5px;
+}
+
+.view-categories ul {
+	margin-top: 20px;
+}
+
 #sidebar-left h2 {
 	background: #eee;
   padding: 2px 10px;
@@ -19,6 +29,10 @@
   text-transform: uppercase;
   font-weight: 700;
   color: #111;
+}
+
+#sidebar-left .content p {
+	margin-bottom: 50px;
 }
 
 .article-node-content p {
