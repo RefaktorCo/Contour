@@ -75,28 +75,36 @@
     </section>  
   </div>
 </header>
+
+
 <?php if (isset($page['before_content'])) : ?>
+  <!-- BEFORE CONTENT BLOCK REGION -->
   <?php print render($page['before_content']); ?>
+  <!-- END BEFORE CONTENT BLOCK REGION -->
 <?php endif; ?>  
+
+
 <div class="container white top-grey bigpadding">
-<div class="row">
-  <div class="<?php if ($page['sidebar_first']) { echo "eight columns";} else { echo "twelve columns"; } ?>">
+  <div class="row">
   
+	  <?php if ( ($page['sidebar_left']) ) : ?>
+	  <div class="<?php if ($page['sidebar_right']) { echo "three columns";} else { echo "four columns"; } ?>">
+	    <?php print render($page['sidebar_left']); ?>
+	  </div>
+	  <?php endif; ?>
 
-
-	  <?php if (isset($page['content'])) : ?>
-	    <?php print render($page['content']); ?>
-	  <?php endif; ?>  
-
-  </div>
+		<div class="<?php if ( ($page['sidebar_right']) AND ($page['sidebar_left']) ) { echo "six columns";} elseif ( ($page['sidebar_right']) OR ($page['sidebar_left']) ) {  echo "eight columns"; }  else { echo "twelve columns"; } ?>">
+		  <?php if (isset($page['content'])) { print render($page['content']); } ?>
+		</div>
   
-  <?php if (isset($page['sidebar_first'])) : ?>
-  <div class="four columns">
-    <?php print render($page['sidebar_first']); ?>
+	  <?php if ( ($page['sidebar_right']) ) : ?>
+	  <div class="<?php if ($page['sidebar_left']) { echo "three columns";} else { echo "four columns"; } ?>">
+	    <?php print render($page['sidebar_right']); ?>
+	  </div>
+	  <?php endif; ?>
+  
+    <?php print $messages; ?>
   </div>
-  <?php endif; ?>
-<?php print $messages; ?>
-</div>
 </div>
 <footer>
 <script>
