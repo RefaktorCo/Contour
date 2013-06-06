@@ -25,6 +25,16 @@
 	font-size: 1.6rem !important;
 }
 
+#sticky-sidebar .content {
+	width: 264px;
+}
+
+@media screen and (max-width: 768px) {
+	#sticky-sidebar .content {
+	  width: auto;
+  }
+}
+
 /*=======================================================================
 ??? Gumby by Digital Surgeons. ???
 
