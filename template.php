@@ -82,12 +82,12 @@ function contour_pagination($node, $mode = 'n') {
   switch($mode) {
     case 'p':
       $n_nid = prev_next_nid($node->nid, 'prev');
-      $link_text = "Previous post";
+      $link_text = "PREVIOUS POST";
     break;
 		
     case 'n':
       $n_nid = prev_next_nid($node->nid, 'next');
-      $link_text = "Next post";
+      $link_text = "NEXT POST";
     break;
 		
     default:
