@@ -44,10 +44,12 @@
   <?php endif;?>
   
   <?php if(!drupal_is_front_page() && $page && module_exists('prev_next')): ?>
-  <ul class="node-pagination">
-    <?php if (contour_pagination($node, 'n') != NULL): ?><li class="next-node"><?php print contour_pagination($node, 'n'); ?> &rarr;</li><?php endif; ?>
-    <?php if (contour_pagination($node, 'p') != NULL): ?><li class="previous-node">&larr; <?php print contour_pagination($node, 'p'); ?></li><?php endif; ?>
-  </ul>
+  <p class="meta blacktext bold bigtoppadding blog-meta">
+ 
+    <?php if (contour_pagination($node, 'n') != NULL): ?><?php print contour_pagination($node, 'n'); ?> <i class="icon-chevron-right meta bluetext"></i> <?php endif; ?>
+    <?php if (contour_pagination($node, 'p') != NULL): ?><i class="icon-chevron-left meta bluetext"></i> <?php print contour_pagination($node, 'p'); ?> <?php endif; ?>
+
+  </p>
   <?php endif; ?>
   
   <div class="comments-meta"></div>

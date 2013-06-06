@@ -74,6 +74,43 @@ function contour_links($variables) {
   return theme_links($variables);
 }
 
+function contour_pagination($node, $mode = 'n') {
+  if (!function_exists('prev_next_nid')) {
+    return NULL;
+  }
+ 
+  switch($mode) {
+    case 'p':
+      $n_nid = prev_next_nid($node->nid, 'prev');
+      $link_text = "Previous post";
+    break;
+		
+    case 'n':
+      $n_nid = prev_next_nid($node->nid, 'next');
+      $link_text = "Next post";
+    break;
+		
+    default:
+    return NULL;
+  }
+ 
+  if ($n_nid) {
+    $n_node = '';
+    $n_node = node_load($n_nid);
+		
+    switch($n_node->type) {	
+      case 'portfolio': 
+        $id =  $n_node->nid; 
+      return $id; 
+      
+      case 'article': 
+        $html = l($link_text, 'node/'.$n_node->nid); 
+      return $html;
+    }
+  }
+}
+
+
 
 /**
  * Preprocess variables for the username.
