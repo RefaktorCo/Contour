@@ -21,6 +21,10 @@
   color: #111;
 }
 
+.article-node-content p {
+	font-size: 1.6rem !important;
+}
+
 /*=======================================================================
 ??? Gumby by Digital Surgeons. ???
 

@@ -19,14 +19,14 @@
   <?php print render($title_prefix); ?>
     <h3 class="blacktext dosis bold"<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
   <?php print render($title_suffix); ?>
-
+  <div class="grey-dotted midmargin"></div>
   <?php if (render($content['field_image'])) : ?> 
     <div class="node-image">
 	    <?php print render($content['field_image']); ?>
 	  </div>  
 	<?php endif; ?>
     
-  <div class="node-content"<?php print $content_attributes; ?>>
+  <div class="article-node-content"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
@@ -38,8 +38,8 @@
   </div>
   
   <?php if($teaser): ?>
-  <div class="read-more"> 
-  	<a class="btn" href="<?php print $node_url;?>"><?php echo t('Read More'); ?></a>
+  <div class="medium primary btn">
+  	<a href="<?php print $node_url;?>"><?php echo t('Read More'); ?></a>
   </div>	
   <?php endif;?>
   
