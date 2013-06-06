@@ -84,8 +84,9 @@
 <?php endif; ?>  
 
 
-<div class="container white top-grey bigpadding">
-  <div class="row">
+<div class="container grey">
+	<!-- all blog pages go under section id blog -->
+	<section id="blog" class="row white">
   
 	  <?php if ( ($page['sidebar_left']) ) : ?>
 	  <aside id="sidebar-left">
@@ -108,7 +109,7 @@
 	  <?php endif; ?>
   
     <?php print $messages; ?>
-  </div>
+	</section>
 </div>
 <footer>
 <script>
