@@ -34,6 +34,10 @@ a:hover {
   padding-bottom: 5px;
 }
 
+#block-views-portfolio-two-block div.four.columns.basic:nth-child(3n+1) {  
+  margin-left: 0;
+}
+
 .caps {
 	text-transform: uppercase;
 }
