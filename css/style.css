@@ -38,6 +38,14 @@ a:hover {
   margin-left: 0;
 }
 
+#block-views-portfolio-three-block div.three.columns:nth-child(4n+1) {  
+  margin-left: 0;
+}
+
+#block-views-portfolio-three-block div.three.columns {
+	margin-bottom: 25px;
+}
+
 .caps {
 	text-transform: uppercase;
 }
