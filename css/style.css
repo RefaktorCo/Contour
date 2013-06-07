@@ -2,8 +2,26 @@
 ' DRUPAL
 */
 
+a {
+	color: #4dbce9;
+	-webkit-transition-duration: 0.3s;
+-moz-transition-duration: 0.3s;
+-ms-transition-duration: 0.3s;
+-o-transition-duration: 0.3s;
+}
+
+a:hover {
+	color: #ddd;
+}
+
 .hidden {
 	display: none;
+}
+
+[class^="icon-"] {
+	display: inline-block;
+  width: 1.25em !important;
+  text-align: center;
 }
 
 .recent-posts-block-teaser {
@@ -18,6 +36,7 @@
 
 .view-categories ul {
 	margin-top: 20px;
+	margin-bottom: 50px;
 }
 
 #sidebar-left h2 {
@@ -35,8 +54,25 @@
 	margin-bottom: 50px;
 }
 
+.view-our-notes, .view-note-list {
+	border-left: 1px solid #ddd;
+}
+
+.view-note-list .grey-dotted, .view-note-list .article-node-content, .view-note-list  .node-image {
+	display: none;
+}
+
+.view-note-list .blog-post {
+	padding: 20px 30px 10px;
+}
+
 .article-node-content p {
 	font-size: 1.6rem !important;
+}
+
+.item-list .pager {
+	margin: 0;
+	padding: 15px 0px;
 }
 
 #sticky-sidebar .content {
@@ -1254,7 +1290,7 @@ font-size:1.3rem;
 color:#000;
 }
 
-.blacktext{
+.blacktext, .blacktext a{
 color:#000 !important;
 -webkit-transition-duration:0.3s;
 -moz-transition-duration:0.3s;
@@ -1262,7 +1298,7 @@ color:#000 !important;
 -o-transition-duration:0.3s;
 }
 
-a.blacktext:hover{
+a.blacktext:hover, .blacktext a:hover{
 color:#4dbce9 !important;
 -webkit-transition-duration:0.3s;
 -moz-transition-duration:0.3s;

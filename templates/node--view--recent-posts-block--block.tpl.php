@@ -21,7 +21,7 @@
     ?>
     
     <?php if($teaser): ?>
-  	<a class="small button" href="<?php print $node_url;?>">read more</a>
+  	<a class="recent-posts-block-teaser-link" href="<?php print $node_url;?>">read more</a>
 <?php endif;?>
 
 </div>

@@ -35,21 +35,19 @@
       hide($content['field_tags']);
       print render($content);
     ?>
-  </div>
+  
   
   <?php if($teaser): ?>
   <div class="medium primary btn">
   	<a href="<?php print $node_url;?>"><?php echo t('Read More'); ?></a>
   </div>	
   <?php endif;?>
-  
+  </div>
   <?php if(!drupal_is_front_page() && $page && module_exists('prev_next')): ?>
   <p class="meta blacktext bold bigtoppadding blog-meta">
     <?php if (contour_pagination($node, 'p') != NULL): ?><i class="icon-chevron-left meta bluetext"></i> <?php print contour_pagination($node, 'p'); ?> <?php endif; ?>
     <?php if ( (contour_pagination($node, 'p') != NULL) AND (contour_pagination($node, 'n') != NULL ) ) : ?> &nbsp; - &nbsp; <?php endif; ?>
     <?php if (contour_pagination($node, 'n') != NULL): ?><?php print contour_pagination($node, 'n'); ?> <i class="icon-chevron-right meta bluetext"></i> <?php endif; ?>
-    
-
   </p>
   <?php endif; ?>
   
