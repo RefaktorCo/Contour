@@ -98,6 +98,22 @@
 	  <?php endif; ?>
 
 		<div class="<?php if ( ($page['sidebar_right']) AND ($page['sidebar_left']) ) { echo "six columns";} elseif ( ($page['sidebar_right']) OR ($page['sidebar_left']) ) {  echo "nine columns"; }  else { echo "twelve columns"; } ?>">
+		    <?php print $messages; ?>
+		  <?php print render($title_prefix); ?>
+      <?php print render($title_suffix); ?>
+     	 
+     	<?php if ($tabs = render($tabs)): ?>
+		    <div id="drupal_tabs" class="tabs ">
+		      <?php print render($tabs); ?>
+		    </div>
+		  <?php endif; ?>
+      <?php print render($page['help']); ?>
+      <?php if ($action_links): ?>
+        <ul class="action-links">
+          <?php print render($action_links); ?>
+        </ul>
+      <?php endif; ?>
+
 		  <?php if (isset($page['content'])) { print render($page['content']); } ?>
 		</div>
   
@@ -107,9 +123,10 @@
 	  </div>
 	  <?php endif; ?>
   
-    <?php print $messages; ?>
+    
   </div>
 </div>
+
 <footer>
 <script>
 //<![CDATA[
