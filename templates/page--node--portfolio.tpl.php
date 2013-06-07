@@ -83,9 +83,19 @@
   <!-- END BEFORE CONTENT BLOCK REGION -->
 <?php endif; ?>  
 
-<div class="container grey">
+<!-- Content container - top-grey class gives bottom border for containers -->
+<div class="container white bigtoppadding midbottompadding top-grey">
+	<section class="row">
+	<h6 class="bluetext largefont bold">OUR PORTFOLIO</h6>
+	</section>
+	<section class="row">
+	<h1 class="blacktext caps"><?php print $title; ?></h1>
+	</section>
+</div>
+
+<div class="container folio white top-grey bigtoppadding midbottompadding">
 	<!-- all blog pages go under section id blog -->
-	<section id="blog" class="row white">
+	<section class="row">
   
 	  <?php if ( ($page['sidebar_left']) ) : ?>
 	  <aside id="sidebar-left">
@@ -98,6 +108,22 @@
 	  <?php endif; ?>
 
 		<div class="<?php if ( ($page['sidebar_right']) AND ($page['sidebar_left']) ) { echo "six columns";} elseif ( ($page['sidebar_right']) OR ($page['sidebar_left']) ) {  echo "nine columns"; }  else { echo "twelve columns"; } ?>">
+		  <?php print $messages; ?>
+		  <?php print render($title_prefix); ?>
+      <?php print render($title_suffix); ?>
+     	 
+     	<?php if ($tabs = render($tabs)): ?>
+		    <div id="drupal_tabs" class="tabs ">
+		      <?php print render($tabs); ?>
+		    </div>
+		  <?php endif; ?>
+      <?php print render($page['help']); ?>
+      <?php if ($action_links): ?>
+        <ul class="action-links">
+          <?php print render($action_links); ?>
+        </ul>
+      <?php endif; ?>
+
 		  <?php if (isset($page['content'])) { print render($page['content']); } ?>
 		</div>
   
@@ -107,7 +133,6 @@
 	  </div>
 	  <?php endif; ?>
   
-    <?php print $messages; ?>
 	</section>
 </div>
 <footer>
@@ -115,20 +140,13 @@
 //<![CDATA[
  // Can also be used with $(document).ready()
 jQuery(document).ready(function ($) {
-  $('.flexslider').flexslider({
-direction: "horizontal",
+ $('.flexslider').flexslider({
     animation: "slide",
-directionNav: false,
+directionNav: true,
     controlNav: true,
-    animationLoop: true,
-    pauseOnAction: true,
     pauseOnHover: true,
-    nextText: "Next",
-    prevText: "Previous",
-manualControls: ".flex-control-nav li.nav-button",
-smoothHeight: true
-  });
- });
+	smoothHeight: true
+  }); });
  //]]>
 </script>
   <div class="black container top largetoppadding midbottompadding">

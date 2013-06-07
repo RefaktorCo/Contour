@@ -34,6 +34,14 @@ a:hover {
   padding-bottom: 5px;
 }
 
+.caps {
+	text-transform: uppercase;
+}
+
+#drupal_tabs {
+	margin-bottom: 15px;
+}
+
 .view-categories ul {
 	margin-top: 20px;
 	margin-bottom: 50px;
