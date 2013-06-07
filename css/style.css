@@ -38,6 +38,10 @@ a:hover {
 	text-transform: uppercase;
 }
 
+.region .content {
+	overflow: hidden;
+}
+
 #drupal_tabs {
 	margin-bottom: 15px;
 }

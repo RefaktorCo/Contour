@@ -76,7 +76,6 @@
   </div>
 </header>
 
-
 <?php if (isset($page['before_content'])) : ?>
   <!-- BEFORE CONTENT BLOCK REGION -->
   <?php print render($page['before_content']); ?>
@@ -135,6 +134,15 @@
   
 	</section>
 </div>
+
+<section class="row">
+<?php if (isset($page['after_content'])) : ?>
+  <!-- AFTER CONTENT BLOCK REGION -->
+  <?php print render($page['after_content']); ?>
+  <!-- AFTER BEFORE CONTENT BLOCK REGION -->
+<?php endif; ?>  
+</section>
+
 <footer>
 <script>
 //<![CDATA[

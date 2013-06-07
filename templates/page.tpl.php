@@ -127,6 +127,14 @@
   </div>
 </div>
 
+<section="row">
+<?php if (isset($page['after_content'])) : ?>
+  <!-- AFTER CONTENT BLOCK REGION -->
+  <?php print render($page['after_content']); ?>
+  <!-- AFTER BEFORE CONTENT BLOCK REGION -->
+<?php endif; ?>  
+</section="row">
+
 <footer>
 <script>
 //<![CDATA[
