@@ -9,7 +9,7 @@
 	</div>
 	</a>
 	<!-- view project link with project title and project categories -->
-	<a href="itembasic.html" title="click to view project">
+	<a href="<?php print $node_url;?>" title="click to view project">
 	<div class="item-info">
 		<h6 class="blacktext"><?php print $title; ?></h6>
 		<h6 class="greytext smallfont"><?php print render($content['field_portfolio_category']); ?></h6>
