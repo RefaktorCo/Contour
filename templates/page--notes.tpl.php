@@ -83,19 +83,6 @@
   <!-- END BEFORE CONTENT BLOCK REGION -->
 <?php endif; ?>  
 
-<!-- Container - top-grey class gives bottom border for containers -->
-<div class="container white bigpadding top-grey">
-	<section class="row">
-	<h6 class="bluetext largefont bold"><?php echo t('OUR NOTES'); ?></h6>
-	</section>
-	<section class="row">
-	<h2 class="bold blacktext"><?php echo t('WELCOME TO OUR BLOG.'); ?></h2>
-	</section>
-	<section class="row">
-	<h6 class="blacktext smallfont bold"><?php echo t('THIS IS WHERE WE DO OUR DAILY RAMBLINGS. WE WRITE ABOUT DESIGN, DEVELOPMENT AND DAY TO DAY STUFF.'); ?></h6>
-	</section>
-</div>
-
 <div class="container grey">
 	<!-- all blog pages go under section id blog -->
 	<section id="blog" class="row white">
