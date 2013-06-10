@@ -504,6 +504,10 @@ margin:20px 0px;
 ' Filter
 */
 
+ul#filters {
+	margin-left: 0px;
+}
+
 ul#filters li {
 float: left;
 margin-right: 15px;

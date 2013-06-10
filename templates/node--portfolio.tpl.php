@@ -19,6 +19,7 @@
   hide($content['field_portfolio_slider']);
   hide($content['field_image']);
   hide($content['field_portfolio_category']);
+  hide($content['field_portfolio_type']);
   print render($content);
 ?>
 
