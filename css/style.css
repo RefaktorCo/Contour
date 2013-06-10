@@ -3606,7 +3606,7 @@ text-transform: uppercase;
 font-family: 'Ubuntu', sans-serif;
 }
 
-.field .text, .field .search, .field .textarea {
+input, .form-textarea-wrapper textarea, .field .text, .field .search, .field .textarea {
 position: relative;
 font-size: 14px;
 padding: 8px 10px;
