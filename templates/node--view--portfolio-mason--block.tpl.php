@@ -1,4 +1,6 @@
-<li class="box Illustration">
+<?php $cat = render($content['field_portfolio_category']); ?>
+
+<li class="box <?php print strip_tags($cat);  ?>">
 <!-- image -->
 <img src="<?php echo file_create_url($node->field_image['und'][0]['uri']); ?>" alt="box item">
 <!-- project info -->
