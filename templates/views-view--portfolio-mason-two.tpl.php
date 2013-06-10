@@ -33,7 +33,7 @@
 	
 	<section class="row">
 	<!-- portfolio mason one uses ul id masonic -->
-	<ul id="masonic">
+	<ul id="masonic-two">
 		  <?php print render($title_prefix); ?>
 		 
 		  <?php print render($title_suffix); ?>
@@ -90,6 +90,7 @@
 </section>
 <script>
 //<![CDATA[
+jQuery(document).ready(function ($) {
 $(window).load(function(){
     var container = $("#masonic-two");
     container.masonry({
@@ -119,6 +120,7 @@ var $optionSets = $('#options .option-set'),
         $optionSet.find('.selected').removeClass('selected');
         $this.addClass('selected');
  });
+});
 });
 //]]>
 </script>

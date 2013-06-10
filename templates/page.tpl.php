@@ -156,41 +156,6 @@ smoothHeight: true
  });
  //]]>
 </script>
-<script>
-//<![CDATA[
-jQuery(document).ready(function ($) {
-$(window).load(function(){
-    var container = $("#masonic");
-    container.masonry({
-        itemSelector : 'ul#masonic > li',
-    });
-    // cache container
-var $container = $('#masonic');
-// initialize isotope
-$container.isotope({
-  itemSelector : 'li.box'
-});
-// filter items when filter link is clicked
-$('#filters a').click(function(){
-  var selector = $(this).attr('data-filter');
-  $container.isotope({ filter: selector });
-  return false;
-});
-var $optionSets = $('#options .option-set'),
-          $optionLinks = $optionSets.find('a');
-      $optionLinks.click(function(){
-        var $this = $(this);
-        // don't proceed if already selected
-        if ( $this.hasClass('selected') ) {
-          return false;
-        }
-        var $optionSet = $this.parents('.option-set');
-        $optionSet.find('.selected').removeClass('selected');
-        $this.addClass('selected');
- });
-});});
-//]]>
-</script>
   <div class="black container top largetoppadding midbottompadding">
 		<div class="row bigbottompadding">
 	    <div class="four columns">
