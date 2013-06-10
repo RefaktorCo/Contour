@@ -9,7 +9,7 @@ version = 1.x ALPHA
 stylesheets[all][] = css/imports.css
 
 ; Call JavaScript libraries.
-
+scripts[] = js/libs/gumby.min.js
 scripts[] = js/libs/modernizr-2.0.6.min.js
 scripts[] = js/masonry.js
 scripts[] = js/plugins.js
