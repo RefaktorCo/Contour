@@ -11,6 +11,7 @@ stylesheets[all][] = css/imports.css
 ; Call JavaScript libraries.
 scripts[] = js/libs/gumby.min.js
 scripts[] = js/libs/modernizr-2.0.6.min.js
+scripts[] = js/libs/masonry.min.js
 scripts[] = js/plugins.js
 scripts[] = js/main.js
 
