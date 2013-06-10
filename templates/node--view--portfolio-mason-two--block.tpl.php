@@ -17,6 +17,6 @@ $cat = str_replace(' ', ' - ', $cat);
 <!-- project info -->
 <div class="info">
 	<h6 class="blacktext bold caps"><?php print $title; ?></h6>
-	<a href="itembasic.html" class="greytext smallfont caps"><?php print $cat; ?></a>
+	<a href="<?php print $node_url;?>" class="greytext smallfont caps"><?php print $cat; ?></a>
 </div>
 </li>
