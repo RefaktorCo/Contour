@@ -1,4 +1,4 @@
-<li class="box illustration">
+<li class="box Illustration">
 <!-- image -->
 <img src="<?php echo file_create_url($node->field_image['und'][0]['uri']); ?>" alt="box item">
 <!-- project info -->
