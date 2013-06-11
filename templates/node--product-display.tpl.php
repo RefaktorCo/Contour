@@ -29,6 +29,8 @@
 			  <div class="product-display-cart-line">
 			  
 			  <?php print render($content['field_reference']); ?>		 
+			  
+			  <?php print flag_create_link('shop', $node->nid); ?>
 	    </div>
 			
 				     
