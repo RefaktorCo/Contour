@@ -90,35 +90,37 @@
 </section>
 <script>
 //<![CDATA[
-$(window).load(function(){
-    var container = $("#masonic-two");
-    container.masonry({
-        itemSelector : 'ul#masonic-two > li',
-    });
-    // cache container
-var $container = $('#masonic-two');
-// initialize isotope
-$container.isotope({
-  itemSelector : 'li.box-two'
-});
-// filter items when filter link is clicked
-$('#filters a').click(function(){
-  var selector = $(this).attr('data-filter');
-  $container.isotope({ filter: selector });
-  return false;
-});
-var $optionSets = $('#options .option-set'),
-          $optionLinks = $optionSets.find('a');
-      $optionLinks.click(function(){
-        var $this = $(this);
-        // don't proceed if already selected
-        if ( $this.hasClass('selected') ) {
-          return false;
-        }
-        var $optionSet = $this.parents('.option-set');
-        $optionSet.find('.selected').removeClass('selected');
-        $this.addClass('selected');
- });
-});
+jQuery(document).ready(function ($) {
+	$(window).load(function(){
+	    var container = $("#masonic");
+	    container.masonry({
+	        itemSelector : 'ul#masonic > li',
+	    });
+	    // cache container
+	var $container = $('#masonic');
+	// initialize isotope
+	$container.isotope({
+	  itemSelector : 'li.box'
+	});
+	// filter items when filter link is clicked
+	$('#filters a').click(function(){
+	  var selector = $(this).attr('data-filter');
+	  $container.isotope({ filter: selector });
+	  return false;
+	});
+	var $optionSets = $('#options .option-set'),
+	          $optionLinks = $optionSets.find('a');
+	      $optionLinks.click(function(){
+	        var $this = $(this);
+	        // don't proceed if already selected
+	        if ( $this.hasClass('selected') ) {
+	          return false;
+	        }
+	        var $optionSet = $this.parents('.option-set');
+	        $optionSet.find('.selected').removeClass('selected');
+	        $this.addClass('selected');
+	 });
+	});
+});	
 //]]>
 </script>
