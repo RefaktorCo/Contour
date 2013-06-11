@@ -128,6 +128,15 @@ function contour_preprocess_username(&$vars) {
   }
 }
 
+function contour_field__field_product_slider__product($vars) {
+	
+	foreach ($vars['items'] as $delta => $item) {
+	  $output .= '<li>' . drupal_render($item) . '</li>';
+	}
+	
+	return $output;
+}
+
 /**
  * Add a comma delimiter between several field types.
  */
@@ -171,6 +180,7 @@ function contour_field($variables) {
     }
     $output .= implode(' ',$rendered_tags);
   }
+  
   
   elseif ($variables['element']['#field_name'] == 'field_testimonial_content') {
     // For tags, concatenate into a single, comma-delimitated string.

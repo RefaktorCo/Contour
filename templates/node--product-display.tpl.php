@@ -10,33 +10,30 @@
   <div class="product-display-node">
     <div class="row">
   
-	    <div class="span5">
-	      <div class="product-display-image">
+	   <div class="four columns">
+	    
 	        <?php print render($content['product:field_image']); ?>
-	      </div>
+			 
 	    </div>
 	    
-	    <div class="span4">
+	    <div class="four columns">
 	    
 			  <h3><?php echo $title; ?></h3>  
 			    
 			  <?php print render($content['body']); ?>  
 			  
-			  <?php print render($content['product:commerce_price']); ?>  <?php print render($content['field_rating']); ?>
-			  
+			  <?php print render($content['product:commerce_price']); ?> 
+			  			  
 			  <div class="product-display-cart-line">
 			  
 			  <?php print render($content['field_reference']); ?>		 
 	    </div>
 			
-			<div class="product-display-content">  
-			  <?php hide($content['comments']); print render($content); ?>
-			</div> 
-	     
+				     
 			</div>
 	  </div>
   </div>
 	
-	<?php  print render($content['comments']); ?>  
+	
 
 </article>
