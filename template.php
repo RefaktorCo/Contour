@@ -22,8 +22,8 @@ function contour_preprocess_page(&$vars, $hook) {
 }
 
 function contour_preprocess_node(&$vars) {
-  if (request_path() == 'store') {
-    $vars['theme_hook_suggestions'][] = 'node__store';
+  if (request_path() == 'shop') {
+    $vars['theme_hook_suggestions'][] = 'node__shop';
   }
 }
 
