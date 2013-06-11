@@ -34,6 +34,14 @@ a:hover {
   padding-bottom: 5px;
 }
 
+.planner-webform input {
+	width: 94%;
+}
+
+.planner-webform input[type="submit"] {
+	width: 40%;
+}
+
 #block-views-portfolio-two-block div.four.columns.basic:nth-child(3n+1) {  
   margin-left: 0;
 }

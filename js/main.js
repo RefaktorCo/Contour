@@ -109,6 +109,12 @@ jQuery(document).ready(function ($) {
 
 jQuery(document).ready(function ($) {
   $('.carousel').carousel();
+  
+  $('.planner-webform .webform-component-textfield').addClass('six columns project_planner_item');
+  $('.project_planner_item:even').addClass('alpha');
+  
+  $('.planner-webform input[type="submit"]').addClass('medium primary btn whitetext');
+ 
 });
 
 $(window).load(function() {
