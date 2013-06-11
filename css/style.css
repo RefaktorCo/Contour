@@ -827,7 +827,7 @@ padding:20px 0px;
 height:80px;
 }
 
-.price {
+.price-table {
 width: 130px;
 height: 130px;
 -moz-border-radius:50%;
@@ -843,18 +843,18 @@ border:10px solid #fff;
 box-sizing:border-box;
 }
 
-.price p{
+.price-table p{
 font-size:34px;
 font-weight:700;
 color:#4dbce9;
 line-height: 1.2;
 }
 
-.pro-table .price p{
+.pro-table .price-table p{
 color:#000;
 }
 
-.price p span{
+.price-table p span{
 color: rgb(143, 143, 143);
 font-size: 30%;
 display: block;
@@ -908,7 +908,7 @@ color:rgb(196, 196, 196);
 background:rgb(27, 27, 27);
 }
 
-.pro-table .price{
+.pro-table .price-table{
 border:10px solid #333;
 background:#fff;
 }
@@ -3393,8 +3393,8 @@ position: relative;
 }
 
 /* price range slider */
-.price-slider,
-.price-slider * {
+.price-table-slider,
+.price-table-slider * {
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
 box-sizing: border-box;
@@ -3404,33 +3404,33 @@ box-sizing: border-box;
 display: block;
 cursor: default;
 }
-.price-slider {
+.price-table-slider {
 position: relative;
 }
-.price-slider a {
+.price-table-slider a {
 position: absolute;
 z-index: 1;
 }
-.price-slider a:nth-child(2) {
+.price-table-slider a:nth-child(2) {
 background: inherit !important;
 }
-.price-slider.vertical a {
+.price-table-slider.vertical a {
 width: 100%;
 bottom: 0;
 }
-.price-slider.horizontal a {
+.price-table-slider.horizontal a {
 height: 100%;
 right: 0;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-.price-slider:before,
+.price-table-slider:before,
 body.TOUCH,
-.price-slider div {
+.price-table-slider div {
 /* http://blogs.msdn.com/b/ie/archive/2011/09/20/touch-input-for-ie10-and-metro-style-apps.aspx */
 -ms-touch-action: none;
 }
-.price-slider:before {
+.price-table-slider:before {
 display: block;
 position: absolute;
 width: 150%;
@@ -3440,7 +3440,7 @@ top: -150%;
 content: "";
 z-index: -1;
 }
-.price-slider.vertical:before {
+.price-table-slider.vertical:before {
 width: 400%;
 left: -150%;
 height: 150%;
@@ -3448,27 +3448,27 @@ top: -25%;
 }
 }
 
-.price-slider {
+.price-table-slider {
 border: 1px solid #908d84;
 -moz-border-radius:3px;
 -webkit-border-radius:3px;
 border-radius:3px;
 }
-.price-slider.connect a,
-.price-slider.connect.lower {
+.price-table-slider.connect a,
+.price-table-slider.connect.lower {
 background: #b2a98f;
 }
-.price-slider,
-.price-slider.connect.lower a {
+.price-table-slider,
+.price-table-slider.connect.lower a {
 background: #d9d7cb;
 box-shadow: inset 0px 1px 7px #b6b4a8
 }
-.price-slider.disabled,
-.price-slider.disabled.connect.lower a {
+.price-table-slider.disabled,
+.price-table-slider.disabled.connect.lower a {
 background: #ccc;
 box-shadow: none;
 }
-.price-slider div {
+.price-table-slider div {
 height: 18px;
 width: 18px;
 border: 1px solid #99968f;
@@ -3477,26 +3477,26 @@ border: 1px solid #99968f;
 border-radius:3px;
 background: #efefe7;
 }
-.price-slider.disabled div {
+.price-table-slider.disabled div {
 background: transparent;
 }
-.price-slider.horizontal {
+.price-table-slider.horizontal {
 width: 80%;
 height: 10px;
 margin-bottom:20px;
 }
-.price-slider.horizontal div {
+.price-table-slider.horizontal div {
 margin: -5px 0 0 -9px;
 }
-.price-slider.vertical {
+.price-table-slider.vertical {
 width: 10px;
 height: 300px;
 }
-.price-slider.vertical div {
+.price-table-slider.vertical div {
 margin: -9px 0 0 -5px;
 }
 
-.prices{
+.price-tables{
 font-size: 16px;
 font-weight: 400;
 border: 1px solid #ddd;

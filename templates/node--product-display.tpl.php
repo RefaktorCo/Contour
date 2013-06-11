@@ -10,13 +10,15 @@
   <div class="product-display-node">
     <div class="row">
   
-	   <div class="four columns">
-	    
-	        <?php print render($content['product:field_image']); ?>
-			 
+	   <div class="six columns">
+	      	<div class="flexslider">
+			      <ul class="slides">
+	            <?php print render($content['field_product_slider']); ?>
+			      </ul>
+	      	</div>  
 	    </div>
 	    
-	    <div class="four columns">
+	    <div class="six columns">
 	    
 			  <h3><?php echo $title; ?></h3>  
 			    

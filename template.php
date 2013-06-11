@@ -128,15 +128,6 @@ function contour_preprocess_username(&$vars) {
   }
 }
 
-function contour_field__field_product_slider__product($vars) {
-	
-	foreach ($vars['items'] as $delta => $item) {
-	  $output .= '<li>' . drupal_render($item) . '</li>';
-	}
-	
-	return $output;
-}
-
 /**
  * Add a comma delimiter between several field types.
  */
