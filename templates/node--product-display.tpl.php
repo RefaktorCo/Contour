@@ -21,6 +21,29 @@
 	    <div class="six columns">
 	    
 			  <h3><?php echo $title; ?></h3>  
+			  
+			  <!-- tabs -->
+				<div class="tabs bigtoppadding">
+					<ul>
+						<!-- tab headings -->
+						<li class="active"><a href="#tab1">ITEM INFO</a></li>
+						<li class=""><a href="#tab2">PRODUCT CARE</a></li>
+						
+					</ul>
+					<!-- tab content -->
+					<div class="active" data-tab="tab1">
+						<p>
+							 <?php print render($content['field_item_info']); ?>
+						</p>
+					</div>
+					<div data-tab="tab2">
+						<p>
+							<?php print render($content['field_product_care']); ?>
+						</p>
+					</div>
+					
+				</div>
+				<!-- end tabs -->
 			    
 			  <?php print render($content['body']); ?>  
 			  

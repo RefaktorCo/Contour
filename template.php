@@ -164,6 +164,22 @@ function contour_field($variables) {
     $output .= implode(' ',$rendered_tags);
   }
   
+  elseif ($variables['element']['#field_name'] == 'field_item_info') {
+    // For tags, concatenate into a single, comma-delimitated string.
+    foreach ($variables['items'] as $delta => $item) {
+      $rendered_tags[] = drupal_render($item);
+    }
+    $output .= implode(' ',$rendered_tags);
+  }
+  
+  elseif ($variables['element']['#field_name'] == 'field_product_care') {
+    // For tags, concatenate into a single, comma-delimitated string.
+    foreach ($variables['items'] as $delta => $item) {
+      $rendered_tags[] = drupal_render($item);
+    }
+    $output .= implode(' ',$rendered_tags);
+  }
+  
   elseif ($variables['element']['#field_name'] == 'field_caption_position') {
     // For tags, concatenate into a single, comma-delimitated string.
     foreach ($variables['items'] as $delta => $item) {
