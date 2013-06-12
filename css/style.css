@@ -62,6 +62,10 @@ a:hover {
 	margin-bottom: 25px;
 }
 
+div.three.columns.product:nth-child(4n+1) {
+	margin-left: 0;
+}
+
 .caps {
 	text-transform: uppercase;
 }
