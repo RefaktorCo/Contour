@@ -2,6 +2,41 @@
 ' DRUPAL
 */
 
+/* 
+' STORE
+*/
+.yui3-u.range-slider-box {
+
+	margin-left: 8px;
+}
+
+.search-api-ranges-widget .form-item-range-to .form-text {
+	text-align: right;
+}
+
+.range-slider {
+	width: 93%;
+	margin: 10px 0px 10px 5px;
+}
+
+.yui3-u.range-box.range-box-left {
+	float: left;
+}
+
+.yui3-u.range-box.range-box-right {
+	float: right;
+	text-align: right;
+}
+
+.yui3-g .form-item {
+	margin: 0px;
+}
+
+.facetapi-facetapi-checkbox-links li {
+	list-style: none !important;
+	margin-left: 0px !important;
+}
+
 a {
 	color: #4dbce9;
 	-webkit-transition-duration: 0.3s;
