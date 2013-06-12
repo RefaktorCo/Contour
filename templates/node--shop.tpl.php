@@ -3,64 +3,35 @@
  * @file
  * Expressa's node template for the Product Display content type.
  */
-
+$image_url = file_create_url($content['product:field_image']['#items'][0]['uri']); 
 ?>
 
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-  <div class="product-display-node">
-    <div class="row">
-  
-	   <div class="six columns">
-	      	<div class="flexslider">
-			      <ul class="slides">
-	            <?php print render($content['field_product_slider']); ?>
-			      </ul>
-	      	</div>  
-	    </div>
-	    
-	    <div class="six columns">
-	    
-			  <h3><?php echo $title; ?></h3>  
-			  
-			  <!-- tabs -->
-				<div class="tabs bigtoppadding">
-					<ul>
-						<!-- tab headings -->
-						<li class="active"><a href="#tab1">ITEM INFO</a></li>
-						<li class=""><a href="#tab2">PRODUCT CARE</a></li>
-						
-					</ul>
-					<!-- tab content -->
-					<div class="active" data-tab="tab1">
-						<p>
-							 <?php print render($content['field_item_info']); ?>
-						</p>
+	<!-- Product class product-->
+			<div class="three columns product">
+				<div class="product-holder">
+				<!-- image -->
+					<img src="<?php print $image_url; ?>" alt="product">
+					<!-- save for later button -->
+					<a href="#" title="Save product for later">
+					<div class="product-icon">
+						<?php print flag_create_link('shop', $node->nid); ?>
 					</div>
-					<div data-tab="tab2">
-						<p>
-							<?php print render($content['field_product_care']); ?>
-						</p>
-					</div>
+					</a>
 					
+					<!-- add to cart button -->
+					<a href="#" title="Add to cart">
+					<div class="add-product">
+						<h6 class="blacktext meta extrabold">ADD TO CART</h6>
+					</div>
+					</a>
 				</div>
-				<!-- end tabs -->
-			    
-			  <?php print render($content['body']); ?>  
-			  
-			  <?php print render($content['product:commerce_price']); ?> 
-			  			  
-			  <div class="product-display-cart-line">
-			  
-			  <?php print render($content['field_reference']); ?>		 
-			  
-			  <?php print flag_create_link('shop', $node->nid); ?>
-	    </div>
-			
-				     
+				<!-- end product holder -->
+				<!-- link to product info -->
+				<a href="<?php print $node_url;?>" title="View product details">
+				<div class="product-info">
+					<h6 class="greytext "><?php echo $title; ?></h6>
+					<h6 class="blacktext meta extrabold ubuntu"><?php print render($content['product:commerce_price']); ?> </h6>
+				</div>
+				</a>
 			</div>
-	  </div>
-  </div>
-	
-	
 
-</article>
