@@ -35,20 +35,10 @@
  * advanced theming you may have to remove all the whitespace.
  */
 ?>
-<span class="<?php print $flag_wrapper_classes; ?>">
-  <?php if ($link_href): ?>
-    <a href="<?php print $link_href; ?>" title="<?php print $link_title; ?>" class="<?php print $flag_classes ?>" rel="nofollow">
-    
-    <div class="wishlist-wrapper <?php print $flag_classes ?>">
-    <i class="icon-heart"></i>
-    </div>
-    </a><span class="flag-throbber">&nbsp;</span>
-  <?php else: ?>
-    <span class="<?php print $flag_classes ?>"><?php print $link_text; ?></span>
-  <?php endif; ?>
-  <?php if ($after_flagging): ?>
-    <span class="flag-message flag-<?php print $status; ?>-message">
-      <?php print $message_text; ?>
-    </span>
-  <?php endif; ?>
-</span>
+
+
+<a href="<?php print $link_href; ?>" title="Save product for later">
+  <div class="product-icon <?php print $flag_classes ?>">
+	  <i class="icon-heart"></i>
+  </div>
+</a>

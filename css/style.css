@@ -14,8 +14,8 @@ a:hover {
 	color: #ddd;
 }
 
-.flag {
-	background: blue;
+.flag i {
+	background: blue ;
 }
 
 .flagged {

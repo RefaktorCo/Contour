@@ -3,7 +3,11 @@
  * @file
  * Expressa's node template for the Product Display content type.
  */
+global $base_url;
 $image_url = file_create_url($content['product:field_image']['#items'][0]['uri']); 
+$sku = $content['product:commerce_price']['#object']->sku;
+$product = commerce_product_load_by_sku($sku);
+$id = $product->product_id;
 ?>
 
 	<!-- Product class product-->
@@ -12,14 +16,12 @@ $image_url = file_create_url($content['product:field_image']['#items'][0]['uri']
 				<!-- image -->
 					<img src="<?php print $image_url; ?>" alt="product">
 					<!-- save for later button -->
-					<a href="#" title="Save product for later">
-					<div class="product-icon">
-						<?php print flag_create_link('shop', $node->nid); ?>
-					</div>
-					</a>
 					
+					
+					
+					<?php print flag_create_link('shop', $node->nid); ?>
 					<!-- add to cart button -->
-					<a href="#" title="Add to cart">
+					<a href="<?php print $base_url.'/product/add/'.$id; ?>" title="Add to cart">
 					<div class="add-product">
 						<h6 class="blacktext meta extrabold">ADD TO CART</h6>
 					</div>
