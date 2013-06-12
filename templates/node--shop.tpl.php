@@ -31,7 +31,7 @@ $id = $product->product_id;
 				<!-- link to product info -->
 				<a href="<?php print $node_url;?>" title="View product details">
 				<div class="product-info">
-					<h6 class="greytext "><?php echo $title; ?></h6>
+					<h6 class="greytext caps"><?php echo $title; ?></h6>
 					<h6 class="blacktext meta extrabold ubuntu"><?php print render($content['product:commerce_price']); ?> </h6>
 				</div>
 				</a>
