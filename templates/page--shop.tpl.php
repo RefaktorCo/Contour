@@ -88,7 +88,7 @@
   <div class="row">
   
 	  <?php if ( ($page['sidebar_left']) ) : ?>
-	  <aside id="sidebar-left">
+	  <aside id="sidebar-left" class="store-sidebar">
 		  <div class="<?php if ($page['sidebar_right']) { echo "three columns";} else { echo "three columns"; } ?>">
 		    <?php print render($page['sidebar_left']); ?>
 		  </div>

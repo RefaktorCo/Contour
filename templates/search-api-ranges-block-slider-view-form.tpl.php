@@ -4,7 +4,7 @@
  */
 ?>
 
-
+<?php print drupal_render($form['text-range']); ?>
 <div class="yui3-g">
   <div class="yui3-u range-box range-box-left">
     <?php print drupal_render($form['range-from']); ?>

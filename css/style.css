@@ -28,8 +28,21 @@
 	text-align: right;
 }
 
-.yui3-g .form-item {
-	margin: 0px;
+
+.search-api-ranges-widget .text-range {
+	display: none;
+}
+
+.search-api-ranges-widget form label {
+	display: none;
+}
+
+.search-api-ranges-widget input {
+	width: 30px;
+}
+
+.search-api-ranges-widget input[type="submit"] {
+	display: none !important;
 }
 
 .facetapi-facetapi-checkbox-links li {
@@ -156,6 +169,12 @@ div.three.columns.product:nth-child(4n+1) {
 
 #sticky-sidebar .content {
 	width: 264px;
+}
+
+.store-sidebar h2 {
+	background: transparent !important;
+	font-size: 1.2rem !important;
+	padding: 0px !important;
 }
 
 @media screen and (max-width: 768px) {
