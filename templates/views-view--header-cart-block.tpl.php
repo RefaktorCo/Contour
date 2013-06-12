@@ -67,9 +67,9 @@
   <?php endif; ?>
   
    <?php if ($footer): ?>
-    <div class="view-footer">
+    
       <?php print $footer; ?>
-    </div>
+    
   <?php endif; ?>
 
   <?php if ($feed_icon): ?>
