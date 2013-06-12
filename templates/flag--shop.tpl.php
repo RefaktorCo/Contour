@@ -36,7 +36,6 @@
  */
 ?>
 
-
 <a href="<?php print $link_href; ?>" title="Save product for later">
   <div class="product-icon <?php print $flag_classes ?>">
 	  <i class="icon-heart"></i>
