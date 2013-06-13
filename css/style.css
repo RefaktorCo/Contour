@@ -58,6 +58,10 @@ a {
 -o-transition-duration: 0.3s;
 }
 
+header .cart-total-wrap {
+	display: none;
+}
+
 a:hover {
 	color: #ddd;
 }
@@ -3276,7 +3280,7 @@ display:block;
 /*
 shop */
 
-.cart-head{
+header .cart-head{
 font-family: 'Ubuntu', sans-serif;
 text-align: right;
 float: right;

@@ -43,18 +43,7 @@
       <!-- END NAME AND SLOGAN --> 
 	    <!-- BRANDING RIGHT BLOCK REGION -->   
 	    <div class="seven columns push_one">
-	      <?php global $user; ?>
-<ul id="header-links">
-	<li><?php $block = module_invoke('views', 'block_view', 'header_cart_block-block_1'); print render($block['content']); ?> </li>
-	<li><a href="cart"><i class="icon-shopping-cart right"></i></a></li>
-	<?php if (!$user->uid): ?>
-	<li class="text"><a href="user/register" title="Sign-up">Sign-up</a></li>
-	<li class="text"><a href="user" title="Login">Login</a></li>
-	<?php endif; ?>
-	<?php if ($user->uid): ?>
-	<li class="text"><a href="user" title="Login">My Account</a></li>
-	<?php endif; ?>
-</ul>
+	      <?php if (isset($page['header_branding_right'])) { print render($page['header_branding_right']); } ?>
 	    </div>
 	     <!-- END BRANDING RIGHT BLOCK REGION -->   
 	  </section>

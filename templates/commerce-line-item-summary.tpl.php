@@ -22,13 +22,15 @@
  */
 ?>
 <div class="line-item-summary">
+  <a href="cart" class="greytext">
   <span class="cart-head">
   <?php if ($quantity_raw): ?>
   <?php print $quantity_raw; ?> <?php print $quantity_label; ?>:
    <?php endif; ?>
   <?php if ($total): ?>
-<?php print $total; ?>
+  <span class="cart-total-wrap"><?php print $total_label; ?></span> <?php print $total; ?>
   </span>
+  </a>
   <?php endif; ?>
   <?php print $links; ?>
 </div>

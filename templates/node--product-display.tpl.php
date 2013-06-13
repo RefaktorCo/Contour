@@ -21,7 +21,7 @@
 	    <div class="six columns">
 	    
 			  <h3><?php echo $title; ?></h3>  
-			  
+			  <?php print flag_create_link('shop', $node->nid); ?>
 			  <!-- tabs -->
 				<div class="tabs bigtoppadding">
 					<ul>
