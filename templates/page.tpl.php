@@ -82,7 +82,10 @@
   <!-- END BEFORE CONTENT BLOCK REGION -->
 <?php endif; ?>  
 
-<?php if (isset($page['before_content'])) : ?>
+
+<div class="container white top-grey midpadding">
+
+  <?php if (isset($page['before_content'])) : ?>
   <!-- BEFORE CONTENT BLOCK REGION -->
   <div class="row">
     <?php print render($page['before_content']); ?>
@@ -90,7 +93,7 @@
   <!-- END BEFORE CONTENT BLOCK REGION -->
 <?php endif; ?>  
 
-<div class="container white top-grey bigpadding">
+  
   <div class="row">
   
 	  <?php if ( ($page['sidebar_left']) ) : ?>
