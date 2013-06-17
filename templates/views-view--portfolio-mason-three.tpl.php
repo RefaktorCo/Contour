@@ -31,7 +31,7 @@
     <?php print $header; ?>
 	<?php endif; ?>
 	
-<div class="container nopadding bigbottompadding">
+<div class="container nopadding midtoppadding">
 	<!-- portfolio mason one uses ul id masonic -->
 	<ul id="masonic-three">
 		  <?php print render($title_prefix); ?>
