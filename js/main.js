@@ -1,23 +1,7 @@
 jQuery(document).ready(function ($) {
-	//price range slider
-	$(".price-slider").noUiSlider({
-	  range: [10, 100]
-	 ,start: [20, 80]
-	 ,step: 10
-	 ,slide: function(){
-	    var values = $(this).val();
-	    $(".prices").text(
-	       values[0] +
-	       " - " +
-	       values[1]
-	    );
-	 }
-});
 
-var prices = [];
-
-prices.push({range:[10,100],start:[20,80],handles:2,step:10,slide:function(){var values=$(this).val();$('.prices').text(values[0] + ' - ' + values[1]);}});
-
+  $('.search-api-sorts li a').addClass('medium default btn');
+  
 // twitter 
 jQuery(document).ready(function ($) {
   $(".tweet").tweet({
