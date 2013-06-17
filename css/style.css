@@ -14,6 +14,20 @@
 position: static;
 }
 
+.flag-wrapper i {
+
+	-webkit-transition-duration: 0.3s;
+-moz-transition-duration: 0.3s;
+-ms-transition-duration: 0.3s;
+-o-transition-duration: 0.3s;
+}
+
+
+.flagged i, .unflag-action i {
+	background: rgb(223, 56, 90) !important;
+}
+
+
 .search-api-ranges-widget .form-item-range-to .form-text {
 	text-align: right;
 }
@@ -68,14 +82,6 @@ header .cart-total-wrap {
 
 a:hover {
 	color: #ddd;
-}
-
-.flag i {
-	background: blue ;
-}
-
-.flagged {
-	background: green;
 }
 
 .hidden {
