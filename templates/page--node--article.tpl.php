@@ -76,10 +76,17 @@
   </div>
 </header>
 
+<?php if (isset($page['before_content_no_wrapper'])) : ?>
+  <!-- BEFORE CONTENT BLOCK REGION -->
+  <?php print render($page['before_content_no_wrapper']); ?>
+  <!-- END BEFORE CONTENT BLOCK REGION -->
+<?php endif; ?>  
 
 <?php if (isset($page['before_content'])) : ?>
   <!-- BEFORE CONTENT BLOCK REGION -->
-  <?php print render($page['before_content']); ?>
+  <div class="row">
+    <?php print render($page['before_content']); ?>
+  </div>
   <!-- END BEFORE CONTENT BLOCK REGION -->
 <?php endif; ?>  
 
@@ -110,6 +117,21 @@
     <?php print $messages; ?>
 	</section>
 </div>
+
+<?php if (isset($page['after_content'])) : ?>
+  <!-- BEFORE CONTENT BLOCK REGION -->
+  <div class="row">
+    <?php print render($page['after_content']); ?>
+  </div>
+  <!-- END BEFORE CONTENT BLOCK REGION -->
+<?php endif; ?>  
+
+<?php if (isset($page['after_content_no_wrapper'])) : ?>
+  <!-- BEFORE CONTENT BLOCK REGION -->
+  <?php print render($page['after_content_no_wrapper']); ?>
+  <!-- END BEFORE CONTENT BLOCK REGION -->
+<?php endif; ?>  
+
 <footer>
 <script>
 //<![CDATA[

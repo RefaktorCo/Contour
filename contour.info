@@ -23,12 +23,13 @@ regions[header_menu_right] = Header Menu Right
 
 ; Define content block regions.
 
-regions[no_wrapper] = No Wrapper
+regions[before_content_no_wrapper] = Before Content No Wrapper
 regions[before_content] = Before Content
 regions[content] = Content
 regions[sidebar_left] = Left Sidebar
 regions[sidebar_right] = Right Sidebar
 regions[after_content] = After Content
+regions[after_content_no_wrapper] = After Content No Wrapper
 
 ; Define Footer block regions.
 regions[footer_col_1] = Footer Column 1
