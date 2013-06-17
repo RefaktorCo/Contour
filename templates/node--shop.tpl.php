@@ -19,7 +19,7 @@ $id = $product->product_id;
 					
 					
 					
-					<?php print flag_create_link('shop', $node->nid); ?>
+					<h5 class="blacktext ubuntu bold smalltoppadding"><?php print flag_create_link('shop', $node->nid); ?></h5>
 					<!-- add to cart button -->
 					<a href="<?php print $base_url.'/product/add/'.$id; ?>" title="Add to cart">
 					<div class="add-product">

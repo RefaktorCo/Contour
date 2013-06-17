@@ -22,6 +22,8 @@
 	    
 			  <h3><?php echo $title; ?></h3>  
 			  
+			  <?php print render($content['product:commerce_price']); ?> 
+			  
 			  <!-- tabs -->
 				<div class="tabs bigtoppadding">
 					<ul>
@@ -47,7 +49,7 @@
 			    
 			  <?php print render($content['body']); ?>  
 			  
-			  <?php print render($content['product:commerce_price']); ?> 
+			  
 			  			  
 			  <div class="product-display-cart-line">
 			  
