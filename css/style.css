@@ -11,6 +11,10 @@
 	font-weight: 700;
 }
 
+#block-views-more-projects-block h2 {
+	font-size: 2.8rem;
+}
+
 .yui3-u.range-slider-box {
 
 	margin-left: 8px;

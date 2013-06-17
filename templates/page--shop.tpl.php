@@ -91,7 +91,7 @@
 <?php endif; ?>  
 
 <div class="container white top-grey">
-  <div class="row">
+  <div class="row midpadding">
   
 	  <?php if ( ($page['sidebar_left']) ) : ?>
 	  <aside id="sidebar-left" class="store-sidebar">

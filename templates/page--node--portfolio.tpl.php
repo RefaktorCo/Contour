@@ -145,7 +145,7 @@
 
 <?php if (isset($page['after_content'])) : ?>
   <!-- BEFORE CONTENT BLOCK REGION -->
-  <div class="row">
+  <div class="row bigpadding">
     <?php print render($page['after_content']); ?>
   </div>
   <!-- END BEFORE CONTENT BLOCK REGION -->
