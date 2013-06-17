@@ -6,7 +6,10 @@
 ' STORE
 */
 
-
+#block-views-featured-products-block h2 {
+	font-size: 1.8rem;
+	font-weight: 700;
+}
 
 .yui3-u.range-slider-box {
 
