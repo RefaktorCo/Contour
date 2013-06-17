@@ -10,6 +10,10 @@
 	margin-left: 8px;
 }
 
+.flag-wrapper {
+position: static;
+}
+
 .search-api-ranges-widget .form-item-range-to .form-text {
 	text-align: right;
 }
