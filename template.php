@@ -244,7 +244,7 @@ function contour_user_css() {
  * Add various META tags to HTML head..
  */
 function contour_preprocess_html(&$vars){
-  global $root;
+  global $parent_root;
   
   $viewport = array(
     '#type' => 'html_tag',
@@ -256,15 +256,25 @@ function contour_preprocess_html(&$vars){
   );
   
   $white_black = array(
-    '#type' => 'markup',
-    '#markup' => "<style type='text/css'>.container-color {background: #fff;}</style> ",
+    '#tag' => 'link', 
+    '#attributes' => array( 
+      'href' => ''.$parent_root.'/css/white-black.css', 
+      'rel' => 'stylesheet',
+      'type' => 'text/css',
+      'media' => 'screen',
+    ),
   );
-
+  
   $black = array(
-    '#type' => 'markup',
-    '#markup' => "<style type='text/css'>.container-color {background: #000;}</style> ",
+    '#tag' => 'link', 
+    '#attributes' => array( 
+      'href' => ''.$parent_root.'/css/black.css', 
+      'rel' => 'stylesheet',
+      'type' => 'text/css',
+      'media' => 'screen',
+    ),
   );
-
+  
   drupal_add_html_head( $viewport, 'viewport');
   
   if (theme_get_setting('color_scheme') == "black_white") {
