@@ -28,3 +28,15 @@ footer { border-top: 10px solid #ececec !important; }
 .top-grey{ border-bottom:1px solid #ddd; }
 
 .top { border-bottom: 1px solid rgb(97,97,97); }
+
+.basictitle { background: #fff; }
+.basicicon i {background: #000;}
+
+
+li.box {border: 10px solid #fff;}
+
+ul#filters li a { color:#000; background: #eee; }
+
+ul#filters li a:hover { color:#4dbce9; background:#fff; }
+
+ul#filters li a.selected { color:#4dbce9; background: #fff; border:1px solid #eee; }

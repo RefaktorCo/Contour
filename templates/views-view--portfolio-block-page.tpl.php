@@ -29,7 +29,7 @@
 ?>
 
 <!-- portfolio container -->
-<div class="container white nopadding">
+<div class="container container-color nopadding">
 	<!-- for portfolio 1 we use ul class gridder with max width 100% -->
 	<ul class="gridder">
 		  <?php print render($title_prefix); ?>

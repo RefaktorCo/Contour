@@ -2,6 +2,7 @@
 .container-color p { color: #828383; }
 #services-two i { color: #fff300; background: #111; border: 5px solid #333; }
 .text-color { color: #fff !important; }
+.text-color-inverse {color: #000;}
 
 .greytext {color: rgb(180, 180, 180) !important; }
 
@@ -30,3 +31,12 @@ footer { border-top: 1px solid #222; }
 .top-grey { border-bottom: 1px solid #222; }
 
 .top { border-bottom: 1px solid #333; }
+
+.basictitle { background: #000; }
+.basicicon i {background: #fff;}
+
+li.box {border: 10px solid #000;}
+
+ul#filters li a { color:#fff; background: #333; }
+ul#filters li a:hover{ color:#fff300; background:#000; }
+ul#filters li a.selected { color:#fff300; background: #000; border:1px solid #222; }

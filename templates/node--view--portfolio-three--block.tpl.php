@@ -12,7 +12,7 @@
 		<!-- item info -->
 		<a href="itembasic.html" title="click to view project">
 		<div class="item-info">
-			<h6 class="blacktext bold caps"><?php print $title; ?></h6>
+			<h6 class="text-color bold caps"><?php print $title; ?></h6>
 			<h6 class="greytext smallfont caps"><?php print render($content['field_portfolio_category']); ?></h6>
 		</div>
 		</a>

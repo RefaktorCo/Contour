@@ -12,7 +12,7 @@
 
 <section id="options" class="row bigtoppadding">
   <ul id="filters" class="option-set">
-    <li><h6 class="bold blacktext meta"><?php echo t('Filters:'); ?></h6></li>
+    <li><h6 class="bold text-color meta"><?php echo t('Filters:'); ?></h6></li>
 	  <li><a href="#" data-filter="*"><?php echo t('show all'); ?></a></li>
     <?php foreach ($rows as $id => $row): ?>
       <?php print $row; ?>
