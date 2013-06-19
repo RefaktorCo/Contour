@@ -342,9 +342,7 @@ footer.folio{
 background:#000;
 }
 
-footer{
-border-top:10px solid #ececec;
-}
+
 
 footer li{
 margin-bottom:5px;
@@ -410,13 +408,8 @@ padding: 38px 30px 38px;
 
 
 /* Aesthetics */
-.top{
-border-bottom:1px solid rgb(97,97,97);
-}
 
-.top-grey{
-border-bottom:1px solid #ddd;
-}
+
 
 #chart{
 width:100%;

@@ -48,7 +48,7 @@
 	     <!-- END BRANDING RIGHT BLOCK REGION -->   
 	  </section>
   </div>  
-  <div class="container" id="navbar">
+  <div class="container top" id="navbar">
     <section class="row">
       <!-- NAVIGATION -->
       <div class="eight columns">

@@ -24,3 +24,9 @@
 
 .carousel-nav i{ background:#333; color:#828383; }
 .carousel-nav i:hover{ color:#000; background:#fff300; }
+
+footer { border-top: 1px solid #222; }
+
+.top-grey { border-bottom: 1px solid #222; }
+
+.top { border-bottom: 1px solid #333; }
