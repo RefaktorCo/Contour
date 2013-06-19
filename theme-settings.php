@@ -13,13 +13,24 @@ function contour_form_system_theme_settings_alter(&$form, &$form_state) {
   );
 
 	  // Design
-	  $form['options']['css'] = array(
+	  $form['options']['design'] = array(
 	    '#type' => 'fieldset',
 	    '#title' => 'Design',
 	  );
-	        
+	    
+	    // Color Scheme
+      $form['options']['design']['color_scheme'] = array(
+        '#type' => 'select',
+        '#title' => 'Color Scheme',
+        '#default_value' => theme_get_setting('color_scheme'),
+        '#options' => array(
+          'white_black' => 'White/Black (default)',
+          'black' => 'Black',
+        ),
+      );
+    
 	    // User CSS
-	    $form['options']['css']['user_css'] = array(
+	    $form['options']['design']['user_css'] = array(
 	      '#type' => 'textarea',
 	      '#title' => 'Add your own CSS',
 	      '#default_value' => theme_get_setting('user_css'),
