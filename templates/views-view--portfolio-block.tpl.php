@@ -31,7 +31,7 @@
 	<!-- portfolio section -->
 	<section class="row">
 	<div class="eight columns">
-		<h5 class="blacktext bold">OUR RECENT PROJECTS</h5>
+		<h5 class="text-color bold">OUR RECENT PROJECTS</h5>
 		<p class="greytext midbottompadding">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
 		</p>

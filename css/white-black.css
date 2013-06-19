@@ -4,6 +4,12 @@
 
 .grey-dotted { border-bottom: 1px dotted rgb(221,221,221); }
 
+.home li.nav-button { background:rgba(255, 255, 255, 1); border-right: 1px solid #ddd; color: #000; }
+.home .flex-active { background: #000 !important; }
+.home .flex-active h6 { color: #fff !important; }
+
+.home-post-meta { background: #ddd; color: #828383; }
+
 .accordion-header { border: 1px solid #e2e2e2; color: #000; }
 .active-header { background: url('./img/active-header.gif') rgb(255,255,255) !important; }
 .inactive-header { background:url('./img/inactive-header.gif') rgb(248, 248, 248) !important; color: #828383; }

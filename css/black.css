@@ -5,6 +5,12 @@
 
 .grey-dotted { border-bottom: 1px dotted #222; }
 
+.home li.nav-button { background:rgba(0, 0, 0, 1); border-right: 1px solid #333; color: #fff; }
+.home .flex-active { background: #fff !important; }
+.home .flex-active h6 { color: #000 !important; }
+
+.home-post-meta { background: #333; color: #828383; }
+
 .accordion-header { border: 1px solid #222; color: #fff; }
 .active-header { background: url('../img/active-header.gif') #333 !important; }
 .inactive-header { background:url('../img/inactive-header.gif') #222 !important; color: #828383;}
