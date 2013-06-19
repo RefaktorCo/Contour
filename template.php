@@ -277,7 +277,7 @@ function contour_preprocess_html(&$vars){
   
   drupal_add_html_head( $viewport, 'viewport');
   
-  if (theme_get_setting('color_scheme') == "black_white") {
+  if (theme_get_setting('color_scheme') == "white_black") {
     drupal_add_html_head( $white_black, 'color_scheme');
   }  
   

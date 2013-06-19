@@ -52,7 +52,7 @@
   <?php endif; ?>
   
   <div class="six columns">
-  <h5 class="blacktext bold midbottommargin">LATEST FROM OUR BLOG</h5>
+  <h5 class="text-color bold midbottommargin">LATEST FROM OUR BLOG</h5>
   <?php if ($rows): ?>
       <?php print $rows; ?>
   <?php elseif ($empty): ?>

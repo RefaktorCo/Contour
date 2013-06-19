@@ -1,3 +1,10 @@
 .container-color { background: #fff; } 
 .container-color p { color: #828383; }
-#services-two i { color: #4dbce9; }
+#services-two i { color: #4dbce9; background: #f3f3f3; border: 5px solid rgb(248, 248, 248); }
+
+.grey-dotted { border-bottom: 1px dotted rgb(221,221,221); }
+
+.accordion-header { border: 1px solid #e2e2e2; color: #000; }
+.active-header { background: url('./img/active-header.gif') rgb(255,255,255) !important; }
+.inactive-header { background:url('./img/inactive-header.gif') rgb(248, 248, 248) !important; color: #828383; }
+.accordion-content { border-left:1px solid #e2e2e2; border-right:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2; }
