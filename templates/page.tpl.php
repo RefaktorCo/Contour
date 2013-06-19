@@ -94,7 +94,7 @@
 <?php endif; ?>  
 
   
-  <div class="row">
+  <div class="row midpadding">
   
 	  <?php if ( ($page['sidebar_left']) ) : ?>
 	  <aside id="sidebar-left">
@@ -134,15 +134,18 @@
   
     
   </div>
-</div>
-
+  
 <?php if (isset($page['after_content'])) : ?>
-  <!-- BEFORE CONTENT BLOCK REGION -->
-  <div class="row bigpadding">
+  <!-- AFTER CONTENT BLOCK REGION -->
+  <div class="row midpadding">
     <?php print render($page['after_content']); ?>
   </div>
-  <!-- END BEFORE CONTENT BLOCK REGION -->
-<?php endif; ?>  
+  <!-- END AFTER CONTENT BLOCK REGION -->
+<?php endif; ?>    
+  
+</div>
+
+
 
 <?php if (isset($page['after_content_no_wrapper'])) : ?>
   <!-- BEFORE CONTENT BLOCK REGION -->

@@ -20,7 +20,7 @@
 	    
 	    <div class="six columns">
 	    
-			  <h3><?php echo $title; ?></h3>  
+			  <h3 style="caps"><?php echo $title; ?></h3>  
 			  
 			  <?php print render($content['product:commerce_price']); ?> 
 			  

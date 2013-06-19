@@ -11,8 +11,15 @@
 	font-weight: 700;
 }
 
-#block-views-more-projects-block h2 {
-	font-size: 2.8rem;
+#block-views-more-projects-block h2{
+	font-size: 1.8rem;
+}
+
+#block-views-more-products-block h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #000;
+  margin-bottom: 20px;
 }
 
 .yui3-u.range-slider-box {
@@ -22,6 +29,10 @@
 
 .flag-wrapper {
 position: static;
+}
+
+#newsletter {
+	padding-top: 1px;
 }
 
 .flag-wrapper i {
