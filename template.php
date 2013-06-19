@@ -254,8 +254,26 @@ function contour_preprocess_html(&$vars){
       'content' =>  'width=device-width, initial-scale=1, maximum-scale=1',
     )
   );
+  
+  $white_black = array(
+    '#type' => 'markup',
+    '#markup' => "<style type='text/css'>.container-color {background: #fff;}</style> ",
+  );
+
+  $black = array(
+    '#type' => 'markup',
+    '#markup' => "<style type='text/css'>.container-color {background: #000;}</style> ",
+  );
 
   drupal_add_html_head( $viewport, 'viewport');
+  
+  if (theme_get_setting('color_scheme') == "black_white") {
+    drupal_add_html_head( $white_black, 'color_scheme');
+  }  
+  
+  if (theme_get_setting('color_scheme') == "black") {
+    drupal_add_html_head( $black, 'color_scheme');
+  }  
  
 }
 

@@ -83,7 +83,7 @@
 <?php endif; ?>  
 
 
-<div class="container white top-grey midpadding">
+<div class="container container-color top-grey midpadding">
 
   <?php if (isset($page['before_content'])) : ?>
   <!-- BEFORE CONTENT BLOCK REGION -->
