@@ -14,6 +14,6 @@
 	<!-- person image -->
 	<div class="credit">
 		<img src="<?php echo file_create_url($node->field_image['und'][0]['uri']); ?>" class="person"/>
-		<h6 class="blacktext smallfont"><?php print render($content['field_testimonial_name']); ?></h6>
+		<h6 class="text-color smallfont"><?php print render($content['field_testimonial_name']); ?></h6>
 	</div>
 </div>

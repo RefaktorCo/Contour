@@ -29,7 +29,7 @@
 ?>
 <section class="row center">
 	<div class="six columns centered">
-	<h5 class="blacktext bold midbottommargin">OUR TESTIMONIALS</h5>
+	<h5 class="text-color bold midbottommargin">OUR TESTIMONIALS</h5>
 		<div class="carousel" data-transition="flip">
 		  <?php print render($title_prefix); ?>
 		  <?php if ($title): ?>

@@ -4,6 +4,8 @@
 
 .grey-dotted { border-bottom: 1px dotted rgb(221,221,221); }
 
+.greytext{ color:#828283 !important; }
+
 .home li.nav-button { background:rgba(255, 255, 255, 1); border-right: 1px solid #ddd; color: #000; }
 .home .flex-active { background: #000 !important; }
 .home .flex-active h6 { color: #fff !important; }
@@ -14,3 +16,10 @@
 .active-header { background: url('./img/active-header.gif') rgb(255,255,255) !important; }
 .inactive-header { background:url('./img/inactive-header.gif') rgb(248, 248, 248) !important; color: #828383; }
 .accordion-content { border-left:1px solid #e2e2e2; border-right:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2; }
+
+.quote .icon-quote-left, .quote .icon-quote-right { color: #ddd; }
+
+.credit img.person { border:5px solid rgb(230,230,230); }
+
+.carousel-nav i{ background:#ddd; color:#828383; }
+.carousel-nav i:hover{ color:#fff; background:#4dbce9; }

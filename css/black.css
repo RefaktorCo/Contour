@@ -3,6 +3,8 @@
 #services-two i { color: #fff300; background: #111; border: 5px solid #333; }
 .text-color { color: #fff !important; }
 
+.greytext {color: rgb(180, 180, 180) !important; }
+
 .grey-dotted { border-bottom: 1px dotted #222; }
 
 .home li.nav-button { background:rgba(0, 0, 0, 1); border-right: 1px solid #333; color: #fff; }
@@ -15,3 +17,10 @@
 .active-header { background: url('../img/active-header.gif') #333 !important; }
 .inactive-header { background:url('../img/inactive-header.gif') #222 !important; color: #828383;}
 .accordion-content { border-left: 1px solid #222; border-right: 1px solid #222; border-bottom: 1px solid #222; }
+
+.quote .icon-quote-left, .quote .icon-quote-right { color: #444; }
+
+.credit img.person { border: 5px solid #333; }
+
+.carousel-nav i{ background:#333; color:#828383; }
+.carousel-nav i:hover{ color:#000; background:#fff300; }
