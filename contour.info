@@ -12,6 +12,7 @@ stylesheets[all][] = css/imports.css
 scripts[] = js/libs/gumby.min.js
 scripts[] = js/libs/modernizr-2.0.6.min.js
 scripts[] = js/masonry.js
+scripts[] = includes/twitter/jquery.tweet.js
 scripts[] = js/plugins.js
 scripts[] = js/main.js
 

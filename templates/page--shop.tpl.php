@@ -84,7 +84,7 @@
 
 <?php if (isset($page['before_content'])) : ?>
   <!-- BEFORE CONTENT BLOCK REGION -->
-  <div class="row">
+  <div class="row midtoppadding">
     <?php print render($page['before_content']); ?>
   </div>
   <!-- END BEFORE CONTENT BLOCK REGION -->
