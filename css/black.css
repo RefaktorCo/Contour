@@ -40,3 +40,20 @@ li.box {border: 10px solid #000;}
 ul#filters li a { color:#fff; background: #333; }
 ul#filters li a:hover{ color:#fff300; background:#000; }
 ul#filters li a.selected { color:#fff300; background: #000; border:1px solid #222; }
+
+.folio h5.grey { background: #333; }
+
+.folio .flex-control-paging li a { background: rgba(255,255,255,1); }
+.flex-control-paging li a.flex-active{ background: #fff300; }
+
+.grey { background: #333; }
+.grey p { color: #828383; }
+
+.blog-meta i { color: #828383 !important; background: #333; }
+
+#blog { border-left: 1px solid #333; border-right: 1px solid #333; }
+.blog { border-left: 1px solid #333; }
+.view-our-notes, .view-note-list { border-left: 1px solid #333; }
+.blog-post { border-bottom: 1px solid #333; }
+
+#sidebar-left h2 { background: #333;  color: #fff;  font-weight: 200 !important;}

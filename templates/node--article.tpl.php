@@ -9,7 +9,7 @@
 
   <?php if ($display_submitted): ?>
     <!-- post meta -->
-			<p class=" blog-meta blacktext smallfont bold">
+			<p class=" blog-meta text-color smallfont bold">
 				<i class="icon-calendar"></i> <?php echo t('Published:'); ?> <span class="light"><?php print format_date($node->created, 'custom', 'M d'); ?></span>
 				<i class="icon-bookmark"></i> <?php echo t('Posted Under:'); ?> <span class="light"><?php print render($content['field_tags']); ?></span>
 			</p>
@@ -17,7 +17,7 @@
   <?php endif; ?>
 
   <?php print render($title_prefix); ?>
-    <h3 class="blacktext dosis bold"<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
+    <h3 class="text-color dosis bold"<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
   <?php print render($title_suffix); ?>
   <div class="grey-dotted midmargin"></div>
   <?php if (render($content['field_image'])) : ?> 

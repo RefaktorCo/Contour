@@ -36,7 +36,24 @@ footer { border-top: 10px solid #ececec !important; }
 li.box {border: 10px solid #fff;}
 
 ul#filters li a { color:#000; background: #eee; }
-
 ul#filters li a:hover { color:#4dbce9; background:#fff; }
-
 ul#filters li a.selected { color:#4dbce9; background: #fff; border:1px solid #eee; }
+
+.folio h5.grey { background: #eee; }
+
+.folio .flex-control-paging li a { background: rgba(0,0,0,0.5); }
+
+.grey { background:rgb(236,236,236); }
+.grey p { color: #000; }
+
+.blog-meta i { color:#828383 !important; background:#ddd; }
+
+#blog  { border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
+
+.blog { border-left: 1px solid #ddd; }
+
+.blog-post { border-bottom: 1px solid #ddd; }
+
+.view-our-notes, .view-note-list { border-left: 1px solid #ddd; }
+
+#sidebar-left h2 { background: #eee; color: #111; }

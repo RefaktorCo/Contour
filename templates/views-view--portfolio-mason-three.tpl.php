@@ -27,11 +27,14 @@
  * @ingroup views_templates
  */
 ?>
+
 	<?php if ($header): ?>
+	<div class="container-color">
     <?php print $header; ?>
+	</div>
 	<?php endif; ?>
 	
-<div class="container nopadding midtoppadding">
+<div class="container container-color nopadding midtoppadding">
 	<!-- portfolio mason one uses ul id masonic -->
 	<ul id="masonic-three">
 		  <?php print render($title_prefix); ?>

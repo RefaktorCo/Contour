@@ -92,7 +92,7 @@
 
 <div class="container grey">
 	<!-- all blog pages go under section id blog -->
-	<section id="blog" class="row white">
+	<section id="blog" class="row container-color">
   
 	  <?php if ( ($page['sidebar_left']) ) : ?>
 	  <aside id="sidebar-left">

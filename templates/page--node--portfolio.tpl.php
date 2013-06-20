@@ -48,7 +48,7 @@
 	     <!-- END BRANDING RIGHT BLOCK REGION -->   
 	  </section>
   </div>  
-  <div class="container" id="navbar">
+  <div class="container top" id="navbar">
     <section class="row">
       <!-- NAVIGATION -->
       <div class="eight columns">
@@ -91,16 +91,16 @@
 <?php endif; ?>  
 
 <!-- Content container - top-grey class gives bottom border for containers -->
-<div class="container white bigtoppadding midbottompadding top-grey">
+<div class="container container-color bigtoppadding midbottompadding top-grey">
 	<section class="row">
 	<h6 class="bluetext largefont bold">OUR PORTFOLIO</h6>
 	</section>
 	<section class="row">
-	<h1 class="blacktext caps"><?php print $title; ?></h1>
+	<h1 class="text-color caps"><?php print $title; ?></h1>
 	</section>
 </div>
 
-<div class="container folio white top-grey bigtoppadding midbottompadding">
+<div class="container container-color folio top-grey bigtoppadding midbottompadding">
 	<!-- all blog pages go under section id blog -->
 	<section class="row">
   
@@ -141,15 +141,17 @@
 	  <?php endif; ?>
   
 	</section>
-</div>
-
+	
 <?php if (isset($page['after_content'])) : ?>
   <!-- BEFORE CONTENT BLOCK REGION -->
   <div class="row bigpadding">
+  <div class="grey-dotted"></div>
     <?php print render($page['after_content']); ?>
   </div>
   <!-- END BEFORE CONTENT BLOCK REGION -->
 <?php endif; ?>  
+	
+</div>
 
 <?php if (isset($page['after_content_no_wrapper'])) : ?>
   <!-- BEFORE CONTENT BLOCK REGION -->
