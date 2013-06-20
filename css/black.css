@@ -67,3 +67,19 @@ padding: 30px 20px !important;
 color: #fff !important;
 margin: 40px 0px;
 }
+
+.basic-table .header { background: #222; }
+
+.basic-table, .pro-table { border: 1px solid #333; }
+
+.basic-table ul { color: rgb(190, 190, 190); }
+
+.price-table { background: rgb(85, 85, 85);  border:10px solid #000; }
+
+.price-table p { color: #fff !important; }
+
+.pro-table .price-table p { color: #000 !important; }
+
+.pro-table .header { background: #fff; color: #000; }
+
+.pro-table .price-table { border: 10px solid #000; background: #fff; }

@@ -888,13 +888,11 @@ opacity: 1;
 /* PRICING TABLES */
 
 .basic-table {
-border:1px solid #ddd;
 text-align:center;
 padding-bottom:10px;
 }
 
 .basic-table .header{
-background: rgb(158, 158, 158);
 font-size:20px;
 font-weight:700;
 color:#fff;
@@ -909,10 +907,7 @@ height: 130px;
 -webkit-border-radius:50%;
 border-radius:50%;
 margin: -50px auto;
-background: rgb(196, 196, 196);
 padding: 28px 0px;
-background:#eee;
-border:10px solid #fff;
 -webkit-box-sizing:border-box;
 -moz-box-sizing:border-box;
 box-sizing:border-box;
@@ -921,13 +916,10 @@ box-sizing:border-box;
 .price-table p{
 font-size:34px;
 font-weight:700;
-color:#4dbce9;
 line-height: 1.2;
 }
 
-.pro-table .price-table p{
-color:#000;
-}
+
 
 .price-table p span{
 color: rgb(143, 143, 143);
@@ -946,6 +938,7 @@ font-size:50%;
 
 .basic-table ul{
 font-family: 'Ubuntu', sans-serif;
+margin-top: 60px;
 }
 
 .basic-table ul li{
@@ -954,23 +947,21 @@ padding:10px 0px;
 }
 
 .pro-table {
-border:1px solid #ddd;
 text-align:center;
 background:#000;
 padding-bottom:10px;
 }
 
 .pro-table .header{
-background:#000;
 font-size:20px;
 font-weight:700;
-color:#fff;
 padding:20px 0px;
 height:80px;
 }
 
 .pro-table ul{
 font-family: 'Ubuntu', sans-serif;
+margin-top: 60px;
 }
 
 .pro-table ul li{
@@ -983,10 +974,7 @@ color:rgb(196, 196, 196);
 background:rgb(27, 27, 27);
 }
 
-.pro-table .price-table{
-border:10px solid #333;
-background:#fff;
-}
+
 
 .sign-box h5{
 font-family: 'Ubuntu', sans-serif;

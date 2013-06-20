@@ -59,3 +59,16 @@ ul#filters li a.selected { color:#4dbce9; background: #fff; border:1px solid #ee
 #sidebar-left h2 { background: #eee; color: #111; }
 
 .white blockquote { border-left: 10px solid #4dbce9; background:#ececec; }
+
+.basic-table .header { background: rgb(158, 158, 158); }
+
+.basic-table, .pro-table { border: 1px solid #ddd; }
+
+.price-table { background: rgb(196, 196, 196); background:#eee; border:10px solid #fff; }
+.basic-table { border: 1px solid #ddd; }
+.price-table p { color:#4dbce9 ; }
+.pro-table .price-table p{ color: #000; }
+
+.pro-table .header{ background:#000; color:#fff; }
+
+.pro-table .price-table{ border:10px solid #333; background:#fff; }
