@@ -58,6 +58,9 @@ ul#filters li a.selected { color:#fff300; background: #000; border:1px solid #22
 
 #sidebar-left h2 { background: #333;  color: #fff;  font-weight: 200 !important;}
 
+
+input, .form-textarea-wrapper textarea, .field .text, .field .search, .field .textarea { background: #000; border: 1px solid #333; color: #828383; }
+
 blockquote { 
 border-left: 10px solid #fff300 !important; 
 background: #333; 
@@ -83,3 +86,5 @@ margin: 40px 0px;
 .pro-table .header { background: #fff; color: #000; }
 
 .pro-table .price-table { border: 10px solid #000; background: #fff; }
+
+#block-views-more-products-block h2 { color: #fff; }

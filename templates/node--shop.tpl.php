@@ -17,11 +17,11 @@ $id = $product->product_id;
 					<img src="<?php print $image_url; ?>" alt="product">
 					<!-- save for later button -->
 
-					<h5 class="blacktext ubuntu bold smalltoppadding"><?php print flag_create_link('shop', $node->nid); ?></h5>
+					<h5 class="text-color ubuntu bold smalltoppadding"><?php print flag_create_link('shop', $node->nid); ?></h5>
 					<!-- add to cart button -->
 					<a href="<?php print $base_url.'/product/add/'.$id; ?>" title="Add to cart">
 					<div class="add-product">
-						<h6 class="blacktext meta extrabold">ADD TO CART</h6>
+						<h6 class="text-color-inverse meta extrabold">ADD TO CART</h6>
 					</div>
 					</a>
 				</div>
@@ -30,7 +30,7 @@ $id = $product->product_id;
 				<a href="<?php print $node_url;?>" title="View product details">
 				<div class="product-info">
 					<h6 class="greytext caps"><?php echo $title; ?></h6>
-					<h6 class="blacktext meta extrabold ubuntu"><?php print render($content['product:commerce_price']); ?> </h6>
+					<h6 class="text-color meta extrabold ubuntu"><?php print render($content['product:commerce_price']); ?> </h6>
 				</div>
 				</a>
 			</div>

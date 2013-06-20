@@ -26,7 +26,6 @@ header .container {overflow: visible;}
 #block-views-more-products-block h2 {
   font-weight: 700;
   font-size: 1.8rem;
-  color: #000;
   margin-bottom: 20px;
 }
 
@@ -652,7 +651,6 @@ height:auto;
 
 .accordion-header {
 font-size: 14px;
-background: #fff;
 margin:0;
 padding: 10px 20px;
 cursor: pointer;
@@ -3662,11 +3660,9 @@ position: relative;
 font-size: 14px;
 padding: 8px 10px;
 outline: none !important;
-background: #fff;
 -webkit-box-shadow: 0px 0px;
 box-shadow: 0px 0px;
 -moz-box-shadow: 0px 0px;
-border: 1px solid #ddd;
 -moz-border-radius:0px;
 -webkit-border-radius:0px;
 border-radius:0px;

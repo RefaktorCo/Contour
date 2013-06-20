@@ -48,7 +48,7 @@
 	     <!-- END BRANDING RIGHT BLOCK REGION -->   
 	  </section>
   </div>  
-  <div class="container" id="navbar">
+  <div class="container top" id="navbar">
     <section class="row">
       <!-- NAVIGATION -->
       <div class="eight columns">
@@ -82,7 +82,11 @@
   <!-- END BEFORE CONTENT BLOCK REGION -->
 <?php endif; ?>  
 
-<?php if (isset($page['before_content'])) : ?>
+
+
+<div class="container container-color top-grey">
+
+  <?php if (isset($page['before_content'])) : ?>
   <!-- BEFORE CONTENT BLOCK REGION -->
   <div class="row midtoppadding">
     <?php print render($page['before_content']); ?>
@@ -90,7 +94,6 @@
   <!-- END BEFORE CONTENT BLOCK REGION -->
 <?php endif; ?>  
 
-<div class="container white top-grey">
   <div class="row midpadding">
   
 	  <?php if ( ($page['sidebar_left']) ) : ?>
