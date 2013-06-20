@@ -1,8 +1,8 @@
 .container-color { background: #fff; } 
 .container-color p { color: #828383; }
 #services-two i { color: #4dbce9; background: #f3f3f3; border: 5px solid rgb(248, 248, 248); }
-.text-color {color: #000 !important;}
-
+.text-color, .text-color a {color: #000 !important;}
+.text-color a:hover{ color:#4dbce9 !important; }
 .grey-dotted { border-bottom: 1px dotted rgb(221,221,221); }
 
 .greytext{ color:#828283 !important; }
@@ -77,3 +77,11 @@ ul#filters li a.selected { color:#4dbce9; background: #fff; border:1px solid #ee
 input, .form-textarea-wrapper textarea, .field .text, .field .search, .field .textarea { background: #fff; border: 1px solid #ddd; }
 
 #block-views-more-products-block h2 { color: #000; }
+
+#single-article-wrap { border-left: 1px solid #ddd; }
+
+div.comment { background: rgb(247, 247, 247); border: 1px solid rgb(222,222,222); }
+
+#comments { border-top: 1px solid rgb(221,221,221); }
+
+.indented { border-left: 1px solid rgb(222,222,222); }

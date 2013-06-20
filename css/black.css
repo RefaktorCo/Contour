@@ -1,7 +1,8 @@
 .container-color {background: #000;}
 .container-color p { color: #828383; }
 #services-two i { color: #fff300; background: #111; border: 5px solid #333; }
-.text-color { color: #fff !important; }
+.text-color, .text-color a { color: #fff !important; }
+.text-color a:hover{ color:#4dbce9 !important; }
 .text-color-inverse {color: #000;}
 
 .greytext {color: rgb(180, 180, 180) !important; }
@@ -88,3 +89,11 @@ margin: 40px 0px;
 .pro-table .price-table { border: 10px solid #000; background: #fff; }
 
 #block-views-more-products-block h2 { color: #fff; }
+
+#single-article-wrap { border-left: 1px solid #333; }
+
+div.comment { background: rgb(14, 14, 14); border: 1px solid #333; }
+
+#comments { border-top: 1px solid #333; }
+
+.indented { border-left: 1px solid #333; }
