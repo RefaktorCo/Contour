@@ -90,7 +90,7 @@
   <!-- END BEFORE CONTENT BLOCK REGION -->
 <?php endif; ?>  
 
-<div class="container grey">
+<div class="container grey top-grey">
 	<!-- all blog pages go under section id blog -->
 	<section id="blog" class="row container-color">
   

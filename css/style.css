@@ -1477,16 +1477,16 @@ color:#4dbce9 !important;
 }
 
 .white blockquote {
-border-left: 10px solid #4dbce9;
+
 font-weight: 700;
 font-style: italic;
 padding: 30px 20px;
-background:#ececec;
+
 margin:40px 0px;
 }
 
 .black blockquote{
-border-left:2px solid #fff;
+
 font-weight:400;
 font-style:italic;
 }

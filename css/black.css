@@ -57,3 +57,13 @@ ul#filters li a.selected { color:#fff300; background: #000; border:1px solid #22
 .blog-post { border-bottom: 1px solid #333; }
 
 #sidebar-left h2 { background: #333;  color: #fff;  font-weight: 200 !important;}
+
+blockquote { 
+border-left: 10px solid #fff300 !important; 
+background: #333; 
+font-weight: 700 !important;
+font-style: italic !important;
+padding: 30px 20px !important;
+color: #fff !important;
+margin: 40px 0px;
+}

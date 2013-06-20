@@ -57,3 +57,5 @@ ul#filters li a.selected { color:#4dbce9; background: #fff; border:1px solid #ee
 .view-our-notes, .view-note-list { border-left: 1px solid #ddd; }
 
 #sidebar-left h2 { background: #eee; color: #111; }
+
+.white blockquote { border-left: 10px solid #4dbce9; background:#ececec; }

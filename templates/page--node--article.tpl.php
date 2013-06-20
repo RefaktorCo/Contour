@@ -48,7 +48,7 @@
 	     <!-- END BRANDING RIGHT BLOCK REGION -->   
 	  </section>
   </div>  
-  <div class="container" id="navbar">
+  <div class="container top" id="navbar">
     <section class="row">
       <!-- NAVIGATION -->
       <div class="eight columns">
@@ -90,9 +90,9 @@
   <!-- END BEFORE CONTENT BLOCK REGION -->
 <?php endif; ?>  
 
-<div class="container grey">
+<div class="container grey top-grey">
 	<!-- all blog pages go under section id blog -->
-	<section id="blog" class="row white">
+	<section id="blog" class="row container-color">
   
 	  <?php if ( ($page['sidebar_left']) ) : ?>
 	  <aside id="sidebar-left">
