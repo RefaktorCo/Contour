@@ -1,6 +1,7 @@
 .container-color { background: #fff; } 
 .container-color p { color: #828383; }
 #services-two i { color: #4dbce9; background: #f3f3f3; border: 5px solid rgb(248, 248, 248); }
+.text-color {color: #000 !important;}
 
 .grey-dotted { border-bottom: 1px dotted rgb(221,221,221); }
 
