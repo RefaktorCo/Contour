@@ -1,6 +1,7 @@
 <?php
 /**
- * @file custom Search API ranges Min/Max UI slider widget
+ * @file search-api-ranges-block-slider-view-form.tpl.php
+ * Contour's custom template to render the search api ranges block.
  */
 ?>
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * @file
+ * @file block--search-api-sorts--search-sorts.tpl.php
  * Contour's custom Search Sorts API block template.
  */
 ?>

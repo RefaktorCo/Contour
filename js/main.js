@@ -2,6 +2,8 @@ jQuery(document).ready(function ($) {
 
   $('.search-api-sorts li a').addClass('medium default btn');
   
+  $('#navigationmain').mobileMenu();
+  
 // twitter 
 jQuery(document).ready(function ($) {
   $(".tweet").tweet({
@@ -43,15 +45,6 @@ jQuery(document).ready(function ($) {
 });
 
 
-// navivation 
-
-jQuery(document).ready(function ($) {
-	selectnav('menu', {
-	  label: '### Table of content ### ',
-	  nested: true,
-	  indent: '-'
-	});
-});
 /*!
  * Vallenato 1.0
  * A Simple JQuery Accordion

@@ -31,7 +31,9 @@ font-size: 12px;
 }
 
 
-
+.mobile-menu {
+	display: none;
+}
 
 
 #single-article-wrap .blog-post {
@@ -1720,17 +1722,17 @@ box-sizing:border-box;
 
 /* ' navigation */ /* default style */ 
 
-.selectnav {
+.mobile-menu {
 display:none;
 }
 
 /* small screen */ 
 
 @media screen and (max-width:768px) {
-.js #menu {
+#navigationmain {
 display:none;
 }
-.js .selectnav {
+.mobile-menu {
 display:block;
 padding:10px;
 background-color:#fff;

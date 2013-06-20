@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @file
- * Default theme implementation to display a flag link, and a message after the action
+ * @file flag--shop.tpl.php
+ * Contour's theme implementation to display a shop flag link, and a message after the action
  * is carried out.
  *
  * Available variables:
@@ -36,10 +36,9 @@
  */
 ?>
 <span class="<?php print $flag_wrapper_classes; ?>">
-<a href="<?php print $link_href; ?>" class="<?php print $flag_classes ?>" title="Save product for later">
+  <a href="<?php print $link_href; ?>" class="<?php print $flag_classes ?>" title="Save product for later">
   <div class="product-icon <?php print $flag_classes ?>">
 	  <i class="icon-heart"></i>
   </div>
-</a>
-
+  </a>
 </span>

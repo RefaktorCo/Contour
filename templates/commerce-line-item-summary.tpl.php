@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @file
- * Default implementation of a line item summary template.
+ * @file commerce-line-item-summary.tpl.php
+ * Contour's custom implementation of a line item summary template.
  *
  * Available variables:
  * - $quantity_raw: The number of items in the cart.

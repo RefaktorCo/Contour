@@ -1,7 +1,7 @@
 <?php
 /**
- * @file
- * Expressa's HTML template.
+ * @file html.tpl.php
+ * Contour's HTML template.
  */
 ?>
 

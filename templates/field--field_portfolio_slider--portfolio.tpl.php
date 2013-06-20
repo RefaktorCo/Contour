@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @file field.tpl.php
- * Default template implementation to display the value of a field.
+ * @file field--field_portfolio_slider--portfolio.tpl.php
+ * Contour's template implementation to display the value of a field.
  *
  * This file is not used and is here as a starting point for customization only.
  * @see theme_field()
