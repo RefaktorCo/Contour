@@ -1,9 +1,10 @@
-<?php global $root;?>
-<article class="<?php print $classes . ' ' . $zebra; ?>"<?php print $attributes; ?>>
-  <div class="comment_avatar">
+<?php global $parent_root;?>
+
+  <div class="comment">
+  <div class="comment-avatar">
     <?php 
       if (!$picture) {
-        echo '<img src="'.$root.'/images/anon.png">'; 
+        echo '<img src="'.$parent_root.'/images/anon.png">'; 
       }
       else { 
         print $picture;   
@@ -11,7 +12,7 @@
     ?>
   </div>
   <div class="comment_body">
-    <p class="post_meta"> 
+    <p class="comment-meta caps"> 
       <i class="greytext icon-user"></i><span class="smallfont greytext">  by <?php print $author; ?></span> &nbsp; &nbsp;
       <i class="greytext icon-calendar"></i> <span class="smallfont greytext"><?php print format_date($node->created, 'custom', 'M d, Y'); ?> </span> &nbsp; &nbsp;
       <i class="greytext icon-info-sign"></i> <?php print $permalink; ?>
@@ -32,5 +33,4 @@
     <?php if (!empty($content['links'])) { print render($content['links']); } ?>
    </div>
    <div class="clearfix"></div>
-
-</article> <!-- /.comment -->
+  </div>

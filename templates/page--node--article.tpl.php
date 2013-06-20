@@ -104,7 +104,7 @@
 	  </aside>
 	  <?php endif; ?>
 
-		<div class="<?php if ( ($page['sidebar_right']) AND ($page['sidebar_left']) ) { echo "six columns";} elseif ( ($page['sidebar_right']) OR ($page['sidebar_left']) ) {  echo "nine columns"; }  else { echo "twelve columns"; } ?>">
+		<div id="single-article-wrap" class="<?php if ( ($page['sidebar_right']) AND ($page['sidebar_left']) ) { echo "six columns";} elseif ( ($page['sidebar_right']) OR ($page['sidebar_left']) ) {  echo "nine columns"; }  else { echo "twelve columns"; } ?>">
 		  
 		  <?php print $messages; ?>
 		  <?php print render($title_prefix); ?>
