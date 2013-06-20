@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Expressa's custom Search Sorts API block template.
+ * Contour's custom Search Sorts API block template.
  */
 ?>
 
