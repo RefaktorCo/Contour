@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @file
- * Main view template.
+ * @file views-view--portfolio-block.tpl.php
+ * Contour's views template for the Portfolio Block view.
  *
  * Variables available:
  * - $classes_array: An array of classes determined in
@@ -28,85 +28,81 @@
  */
 ?>
 
-	<!-- portfolio section -->
-	<section class="row">
+<!-- portfolio section -->
+<section class="row">
 	<div class="eight columns">
-		<h5 class="text-color bold">OUR RECENT PROJECTS</h5>
+		<h5 class="text-color bold"><?php echo t('OUR RECENT PROJECTS'); ?></h5>
 		<p class="greytext midbottompadding">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
+			<?php echo t('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.');?>
 		</p>
 	</div>
 	<!-- view all portfolio button -->
 	<div class="two columns push_two midtoppadding smalltopmargin">
 		<div class="small primary btn">
-			<a href="portfolio">VIEW PORTFOLIO</a>
+			<a href="portfolio"><?php echo t('VIEW PORTFOLIO'); ?></a>
 		</div>
 	</div>
 	</section>
 	
 <section class="row">
-		  <?php print render($title_prefix); ?>
-		 
-		  <?php print render($title_suffix); ?>
-		  <?php if ($header): ?>
-		    <div class="view-header">
-		      <?php print $header; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($exposed): ?>
-		    <div class="view-filters">
-		      <?php print $exposed; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($attachment_before): ?>
-		    <div class="attachment attachment-before">
-		      <?php print $attachment_before; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($rows): ?>
-		   
-		      <?php print $rows; ?>
-		  
-		  <?php elseif ($empty): ?>
-		    <div class="view-empty">
-		      <?php print $empty; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($pager): ?>
-		    <?php print $pager; ?>
-		  <?php endif; ?>
-		
-		  <?php if ($attachment_after): ?>
-		    <div class="attachment attachment-after">
-		      <?php print $attachment_after; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($more): ?>
-		    <?php print $more; ?>
-		  <?php endif; ?>
-		
-		  <?php if ($footer): ?>
-		    <div class="view-footer">
-		      <?php print $footer; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($feed_icon): ?>
-		    <div class="feed-icon">
-		      <?php print $feed_icon; ?>
-		    </div>
-		  <?php endif; ?>
-		
+  <?php print render($title_prefix); ?>
+ 
+  <?php print render($title_suffix); ?>
+  <?php if ($header): ?>
+    <div class="view-header">
+      <?php print $header; ?>
+    </div>
+  <?php endif; ?>
+
+  <?php if ($exposed): ?>
+    <div class="view-filters">
+      <?php print $exposed; ?>
+    </div>
+  <?php endif; ?>
+
+  <?php if ($attachment_before): ?>
+    <div class="attachment attachment-before">
+      <?php print $attachment_before; ?>
+    </div>
+  <?php endif; ?>
+
+  <?php if ($rows): ?>
+    <?php print $rows; ?>
+  <?php elseif ($empty): ?>
+    <div class="view-empty">
+      <?php print $empty; ?>
+    </div>
+  <?php endif; ?>
+
+  <?php if ($pager): ?>
+    <?php print $pager; ?>
+  <?php endif; ?>
+
+  <?php if ($attachment_after): ?>
+    <div class="attachment attachment-after">
+      <?php print $attachment_after; ?>
+    </div>
+  <?php endif; ?>
+
+  <?php if ($more): ?>
+    <?php print $more; ?>
+  <?php endif; ?>
+
+  <?php if ($footer): ?>
+    <div class="view-footer">
+      <?php print $footer; ?>
+    </div>
+  <?php endif; ?>
+
+  <?php if ($feed_icon): ?>
+    <div class="feed-icon">
+      <?php print $feed_icon; ?>
+    </div>
+  <?php endif; ?>
 		
 </section>	
 
-	<!-- divider -->
-	<section class="row smalltoppadding">
-	<div class="grey-dotted">
-	</div>
-	</section>
+<!-- divider -->
+<section class="row smalltoppadding">
+  <div class="grey-dotted"></div>
+</section>

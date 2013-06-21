@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @file
- * Main view template.
+ * @file views-view--portfolio-mason-three.tpl.php
+ * Contour's views template for the Portfolio Mason (third style) view.
  *
  * Variables available:
  * - $classes_array: An array of classes determined in
@@ -28,67 +28,62 @@
  */
 ?>
 
-	<?php if ($header): ?>
-	<div class="container-color">
-    <?php print $header; ?>
-	</div>
-	<?php endif; ?>
+<?php if ($header): ?>
+<div class="container-color">
+  <?php print $header; ?>
+</div>
+<?php endif; ?>
 	
 <div class="container container-color nopadding midtoppadding">
 	<!-- portfolio mason one uses ul id masonic -->
 	<ul id="masonic-three">
-		  <?php print render($title_prefix); ?>
-		 
-		  <?php print render($title_suffix); ?>
-
-		
-		  <?php if ($exposed): ?>
-		    <div class="view-filters">
-		      <?php print $exposed; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($attachment_before): ?>
-		    <div class="attachment attachment-before">
-		      <?php print $attachment_before; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($rows): ?>
-		   
-		      <?php print $rows; ?>
-		  
-		  <?php elseif ($empty): ?>
-		    <div class="view-empty">
-		      <?php print $empty; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($pager): ?>
-		    <?php print $pager; ?>
-		  <?php endif; ?>
-		
-		  <?php if ($attachment_after): ?>
-		    <div class="attachment attachment-after">
-		      <?php print $attachment_after; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($more): ?>
-		    <?php print $more; ?>
-		  <?php endif; ?>
-		
-		  <?php if ($footer): ?>
-		    <div class="view-footer">
-		      <?php print $footer; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($feed_icon): ?>
-		    <div class="feed-icon">
-		      <?php print $feed_icon; ?>
-		    </div>
-		  <?php endif; ?>
+	  <?php print render($title_prefix); ?>
+	  <?php print render($title_suffix); ?>
+	  <?php if ($exposed): ?>
+	    <div class="view-filters">
+	      <?php print $exposed; ?>
+	    </div>
+	  <?php endif; ?>
+	
+	  <?php if ($attachment_before): ?>
+	    <div class="attachment attachment-before">
+	      <?php print $attachment_before; ?>
+	    </div>
+	  <?php endif; ?>
+	
+	  <?php if ($rows): ?>
+	    <?php print $rows; ?>
+	  <?php elseif ($empty): ?>
+	    <div class="view-empty">
+	      <?php print $empty; ?>
+	    </div>
+	  <?php endif; ?>
+	
+	  <?php if ($pager): ?>
+	    <?php print $pager; ?>
+	  <?php endif; ?>
+	
+	  <?php if ($attachment_after): ?>
+	    <div class="attachment attachment-after">
+	      <?php print $attachment_after; ?>
+	    </div>
+	  <?php endif; ?>
+	
+	  <?php if ($more): ?>
+	    <?php print $more; ?>
+	  <?php endif; ?>
+	
+	  <?php if ($footer): ?>
+	    <div class="view-footer">
+	      <?php print $footer; ?>
+	    </div>
+	  <?php endif; ?>
+	
+	  <?php if ($feed_icon): ?>
+	    <div class="feed-icon">
+	      <?php print $feed_icon; ?>
+	    </div>
+	  <?php endif; ?>
 	</ul>
 </div>
 <script>
@@ -97,33 +92,35 @@ jQuery(document).ready(function ($) {
 	$(window).load(function(){
     var container = $("#masonic-three");
     container.masonry({
-        itemSelector : 'ul#masonic-three > li',
+      itemSelector : 'ul#masonic-three > li',
     });
     // cache container
-var $container = $('#masonic-three');
-// initialize isotope
-$container.isotope({
-  itemSelector : 'li.box-three'
-});
-// filter items when filter link is clicked
-$('#filters a').click(function(){
-  var selector = $(this).attr('data-filter');
-  $container.isotope({ filter: selector });
-  return false;
-});
-var $optionSets = $('#options .option-set'),
-          $optionLinks = $optionSets.find('a');
-      $optionLinks.click(function(){
-        var $this = $(this);
-        // don't proceed if already selected
-        if ( $this.hasClass('selected') ) {
-          return false;
-        }
-        var $optionSet = $this.parents('.option-set');
-        $optionSet.find('.selected').removeClass('selected');
-        $this.addClass('selected');
-   });
-  });
+    var $container = $('#masonic-three');
+    // initialize isotope
+    $container.isotope({
+      itemSelector : 'li.box-three'
+    });
+  
+	  // filter items when filter link is clicked
+	  $('#filters a').click(function(){
+	    var selector = $(this).attr('data-filter');
+	    $container.isotope({ filter: selector });
+	    return false;
+	  });
+	  
+	  var $optionSets = $('#options .option-set'),
+	  $optionLinks = $optionSets.find('a');
+	  optionLinks.click(function(){
+	    var $this = $(this);
+	    // don't proceed if already selected
+	    if ( $this.hasClass('selected') ) {
+	      return false;
+	    }
+	    var $optionSet = $this.parents('.option-set');
+	    $optionSet.find('.selected').removeClass('selected');
+	    $this.addClass('selected');
+	  });
+	});
 });
 //]]>
 </script>
