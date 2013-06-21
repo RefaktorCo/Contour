@@ -19,6 +19,11 @@ function contour_preprocess_page(&$vars, $hook) {
   if($status == "404 Not Found") {      
     $vars['theme_hook_suggestions'][] = 'page__404';
   }
+  
+  if (arg(0) == 'taxonomy' && arg(1) == 'term' ){
+    $term = taxonomy_term_load(arg(2));
+    $vars['theme_hook_suggestions'][] = 'page--taxonomy--vocabulary--' . $term->vid;
+  }
 }
 
 function contour_preprocess_node(&$vars) {
@@ -26,12 +31,6 @@ function contour_preprocess_node(&$vars) {
     $vars['theme_hook_suggestions'][] = 'node__shop';
   }
   
-  if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))) {
-    $tid = arg(2);
-    $vid = db_query("SELECT vid FROM {taxonomy_term_data} WHERE tid = :tid", array(':tid' => $tid))->fetchField();
-    $variables['theme_hook_suggestions'][] = 'page__vocabulary__' . $vid;
-  }
-
 }
 
 /**
