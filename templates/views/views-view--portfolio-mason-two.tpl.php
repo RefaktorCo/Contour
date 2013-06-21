@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @file
- * Main view template.
+ * @file views-view--portfolio-mason-two.tpl.php
+ * Contour's views template for the Portfolio Mason (second style) view.
  *
  * Variables available:
  * - $classes_array: An array of classes determined in
@@ -27,100 +27,98 @@
  * @ingroup views_templates
  */
 ?>
-	<?php if ($header): ?>
-    <?php print $header; ?>
-	<?php endif; ?>
-	
-	<section class="row">
-	<!-- portfolio mason one uses ul id masonic -->
-	<ul id="masonic-two">
-		  <?php print render($title_prefix); ?>
-		 
-		  <?php print render($title_suffix); ?>
+<?php if ($header): ?>
+  <?php print $header; ?>
+<?php endif; ?>
 
-		
-		  <?php if ($exposed): ?>
-		    <div class="view-filters">
-		      <?php print $exposed; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($attachment_before): ?>
-		    <div class="attachment attachment-before">
-		      <?php print $attachment_before; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($rows): ?>
-		   
-		      <?php print $rows; ?>
-		  
-		  <?php elseif ($empty): ?>
-		    <div class="view-empty">
-		      <?php print $empty; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($pager): ?>
-		    <?php print $pager; ?>
-		  <?php endif; ?>
-		
-		  <?php if ($attachment_after): ?>
-		    <div class="attachment attachment-after">
-		      <?php print $attachment_after; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($more): ?>
-		    <?php print $more; ?>
-		  <?php endif; ?>
-		
-		  <?php if ($footer): ?>
-		    <div class="view-footer">
-		      <?php print $footer; ?>
-		    </div>
-		  <?php endif; ?>
-		
-		  <?php if ($feed_icon): ?>
-		    <div class="feed-icon">
-		      <?php print $feed_icon; ?>
-		    </div>
-		  <?php endif; ?>
+<section class="row">
+  <!-- portfolio mason one uses ul id masonic -->
+  <ul id="masonic-two">
+	  <?php print render($title_prefix); ?>
+	  <?php print render($title_suffix); ?>
+
+	  <?php if ($exposed): ?>
+	    <div class="view-filters">
+	      <?php print $exposed; ?>
+	    </div>
+	  <?php endif; ?>
+	
+	  <?php if ($attachment_before): ?>
+	    <div class="attachment attachment-before">
+	      <?php print $attachment_before; ?>
+	    </div>
+	  <?php endif; ?>
+	
+	  <?php if ($rows): ?>
+	    <?php print $rows; ?>
+	  <?php elseif ($empty): ?>
+	    <div class="view-empty">
+	      <?php print $empty; ?>
+	    </div>
+	  <?php endif; ?>
+	
+	  <?php if ($pager): ?>
+	    <?php print $pager; ?>
+	  <?php endif; ?>
+	
+	  <?php if ($attachment_after): ?>
+	    <div class="attachment attachment-after">
+	      <?php print $attachment_after; ?>
+	    </div>
+	  <?php endif; ?>
+	
+	  <?php if ($more): ?>
+	    <?php print $more; ?>
+	  <?php endif; ?>
+	
+	  <?php if ($footer): ?>
+	    <div class="view-footer">
+	      <?php print $footer; ?>
+	    </div>
+	  <?php endif; ?>
+	
+	  <?php if ($feed_icon): ?>
+	    <div class="feed-icon">
+	      <?php print $feed_icon; ?>
+	    </div>
+	  <?php endif; ?>
 	</ul>
 </section>
 <script>
 //<![CDATA[
 jQuery(document).ready(function ($) {
-$(window).load(function(){
+	$(window).load(function(){
     var container = $("#masonic-two");
     container.masonry({
-        itemSelector : 'ul#masonic-two > li',
+      itemSelector : 'ul#masonic-two > li',
     });
     // cache container
-var $container = $('#masonic-two');
-// initialize isotope
-$container.isotope({
-  itemSelector : 'li.box-two'
-});
-// filter items when filter link is clicked
-$('#filters a').click(function(){
-  var selector = $(this).attr('data-filter');
-  $container.isotope({ filter: selector });
-  return false;
-});
-var $optionSets = $('#options .option-set'),
-          $optionLinks = $optionSets.find('a');
-      $optionLinks.click(function(){
-        var $this = $(this);
-        // don't proceed if already selected
-        if ( $this.hasClass('selected') ) {
-          return false;
-        }
-        var $optionSet = $this.parents('.option-set');
-        $optionSet.find('.selected').removeClass('selected');
-        $this.addClass('selected');
- });
-});
+    var $container = $('#masonic-two');
+    // initialize isotope
+    $container.isotope({
+      itemSelector : 'li.box-two'
+    });
+  
+	  // filter items when filter link is clicked
+	  $('#filters a').click(function(){
+	    var selector = $(this).attr('data-filter');
+	    $container.isotope({ filter: selector });
+	    return false;
+	  });
+	  
+	  var $optionSets = $('#options .option-set'),
+	  $optionLinks = $optionSets.find('a');
+	  optionLinks.click(function(){
+	    var $this = $(this);
+	    // don't proceed if already selected
+	    if ( $this.hasClass('selected') ) {
+	      return false;
+	    }
+	    var $optionSet = $this.parents('.option-set');
+	    $optionSet.find('.selected').removeClass('selected');
+	    $this.addClass('selected');
+	  });
+	});
 });
 //]]>
 </script>
