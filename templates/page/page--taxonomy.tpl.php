@@ -80,6 +80,17 @@
   <!-- END BEFORE CONTENT BLOCK REGION -->
 <?php endif; ?>  
 
+<!-- Content container - top-grey class gives bottom border for containers -->
+<div class="container container-color midtoppadding midbottompadding top-grey">
+	<section class="row">
+	<h6 class="bluetext largefont bold"><?php echo t('CATEGORY'); ?></h6>
+	</section>
+	<section class="row">
+	<h1 class="text-color caps"><?php print $title; ?></h1>
+	</section>
+</div>
+
+
   <div class="row midpadding">
   
 	  <?php if ( ($page['sidebar_left']) ) : ?>
@@ -95,13 +106,15 @@
 		<div class="<?php if ( ($page['sidebar_right']) AND ($page['sidebar_left']) ) { echo "six columns";} elseif ( ($page['sidebar_right']) OR ($page['sidebar_left']) ) {  echo "nine columns"; }  else { echo "twelve columns"; } ?>">
 		  <?php print $messages; ?>
 		  <?php print render($title_prefix); ?>
-		  <h2 class="text-color dosis bold"><?php print $title; ?></h2>
+		  
       <?php print render($title_suffix); ?>
      	 
      	<?php if ($tabs = render($tabs)): ?>
-			  <div id="drupal_tabs" class="tabs ">
-			    <?php print render($tabs); ?>
-			  </div>
+     	  <section id="tabs-wrap" class="row">
+			    <div id="drupal_tabs" class="tabs ">
+			      <?php print render($tabs); ?>
+			    </div>
+     	  </section>
 		  <?php endif; ?>
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?>
