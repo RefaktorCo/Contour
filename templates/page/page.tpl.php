@@ -54,7 +54,6 @@
       <div class="eight columns">
 	      <nav id="navigationmain">
          <?php if (isset($page['header_menu_left'])) { print render($page['header_menu_left']); } ?>
-
 				</nav>
 			</div>
 			    

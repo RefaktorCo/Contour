@@ -1821,6 +1821,10 @@ border-bottom:5px solid #111;
 -ms-transition-duration: .2s;
 }
 
+#navigationmain a.active {
+	color: #fff200 !important;
+}
+
 #navigationmain > ul > li.active > a:hover, #navigationmain .content > ul > li.active > a:hover {
 color:#fff;
 -webkit-transition-duration: .2s;
