@@ -122,8 +122,10 @@
           <?php print render($action_links); ?>
         </ul>
       <?php endif; ?>
-
+       
+      <div class="row"> 
 		  <?php if (isset($page['content'])) { print render($page['content']); } ?>
+      </div>
 		</div>
   
 	  <?php if ( ($page['sidebar_right']) ) : ?>
