@@ -17,13 +17,13 @@
   <?php endif; ?>
 
   <?php print render($title_prefix); ?>
-    <h3 class="text-color dosis bold"<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
+  <h3 class="text-color dosis bold"<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
   <?php print render($title_suffix); ?>
   <div class="grey-dotted midmargin"></div>
   <?php if (render($content['field_image'])) : ?> 
-    <div class="node-image">
-	    <?php print render($content['field_image']); ?>
-	  </div>  
+  <div class="node-image">
+    <?php print render($content['field_image']); ?>
+  </div>  
 	<?php endif; ?>
     
   <div class="article-node-content"<?php print $content_attributes; ?>>
@@ -35,8 +35,7 @@
       hide($content['field_tags']);
       print render($content);
     ?>
-  
-  
+
   <?php if($teaser): ?>
   <div class="medium primary btn">
   	<a href="<?php print $node_url;?>"><?php echo t('Read More'); ?></a>

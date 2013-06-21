@@ -1,7 +1,7 @@
 <?php
 /**
- * @file
- * Expressa's node template for the Product Display content type.
+ * @file node--product-display.tpl.php
+ * Contour's node template for the Product Display content type.
  */
 
 ?>
@@ -11,11 +11,11 @@
     <div class="row">
   
 	   <div class="six columns">
-	      	<div class="flexslider">
-			      <ul class="slides">
-	            <?php print render($content['field_product_slider']); ?>
-			      </ul>
-	      	</div>  
+	  	 <div class="flexslider">
+	       <ul class="slides">
+	         <?php print render($content['field_product_slider']); ?>
+	       </ul>
+	  	 </div>  
 	    </div>
 	    
 	    <div class="six columns">
@@ -49,20 +49,10 @@
 			    
 			  <?php print render($content['body']); ?>  
 			  
-			  
-			  			  
-			  <div class="product-display-cart-line">
-			  
-			  <?php print render($content['field_reference']); ?>		 
-			  
-			 
-	    </div>
-			
-				     
+			  <div class="product-display-cart-line"><?php print render($content['field_reference']); ?></div> 
+	
 			</div>
 	  </div>
   </div>
-	
-	
 
 </article>

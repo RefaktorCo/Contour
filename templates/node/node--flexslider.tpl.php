@@ -1,6 +1,6 @@
 <?php
 /**
- * @file
+ * @file node--flexslider.tpl.php
  * Contour's node template for the Image Slider content type.
  */
  

@@ -1,6 +1,6 @@
 <?php
 /**
- * @file
+ * @file node--portfolio.tpl.php
  * Contour's theme implementation to display a single Portfolio node.
  */
  

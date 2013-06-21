@@ -1,9 +1,9 @@
 <?php
+
 /**
- * @file
+ * @file node--testimonials.tpl.php
  * Contour's node template for the Testimonials content type.
  */
- 
 ?>
 <div>
   <div class="quote">
