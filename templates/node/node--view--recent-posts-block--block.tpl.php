@@ -15,7 +15,7 @@
 	<!-- post title and blog category -->
 	<div class="post-title">
 		<h6 class="text-color bold"><?php print $title; ?></h6>
-		<h6 class="text-color caps meta">POSTED UNDER: <?php print render($content['field_tags']); ?></h6>
+		<h6 class="greytext caps meta">POSTED UNDER: <?php print render($content['field_tags']); ?></h6>
 	</div>
 </div>
 <!-- post excerpt -->
