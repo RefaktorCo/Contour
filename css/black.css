@@ -5,8 +5,9 @@
 .text-color a:hover{ color:#4dbce9 !important; }
 .text-color-inverse {color: #000;}
 
-.greytext {color: rgb(180, 180, 180) !important; }
-
+.greytext, .greytext a, .text-color a {color: rgb(180, 180, 180) !important; }
+.greytext a:hover, .text-color a:hover, .view-categories a, .pager a { color:#fff200 !important; }
+.view-categories a:hover { color: #fff !important; }
 .grey-dotted { border-bottom: 1px dotted #222; }
 
 .home li.nav-button { background:rgba(0, 0, 0, 1); border-right: 1px solid #333; color: #fff; }
