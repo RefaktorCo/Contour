@@ -139,24 +139,21 @@
 
 <footer>
 <script>
-//<![CDATA[
- // Can also be used with $(document).ready()
 jQuery(document).ready(function ($) {
   $('.flexslider').flexslider({
-direction: "horizontal",
+    direction: "horizontal",
     animation: "slide",
-directionNav: false,
+    directionNav: false,
     controlNav: true,
     animationLoop: true,
     pauseOnAction: true,
     pauseOnHover: true,
     nextText: "Next",
     prevText: "Previous",
-manualControls: ".flex-control-nav li.nav-button",
-smoothHeight: true
+    manualControls: ".flex-control-nav li.nav-button",
+    smoothHeight: true
   });
- });
- //]]>
+});
 </script>
   <div class="black container top largetoppadding midbottompadding">
 		<div class="row bigbottompadding">

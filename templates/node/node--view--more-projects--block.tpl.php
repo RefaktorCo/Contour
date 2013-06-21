@@ -13,8 +13,8 @@
 	<!-- project info -->
 	<div class="basictitle">
 	  <a href="<?php print $node_url;?>" title="click to view project">
-		<h6 class="text-color"><?php print $title; ?></h6>
-		<h6 class="greytext smallfont"><?php print render($content['field_portfolio_category']); ?></h6>
+		<h6 class="text-color caps"><?php print $title; ?></h6>
+		<h6 class="greytext smallfont caps"><?php print render($content['field_portfolio_category']); ?></h6>
     </a>
 	</div>  
 	

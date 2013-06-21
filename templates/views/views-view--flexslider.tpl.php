@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @file
- * Main view template.
+ * @file views-view--flexslider.tpl.php
+ * Contour's views template for the Flexslider view.
  *
  * Variables available:
  * - $classes_array: An array of classes determined in

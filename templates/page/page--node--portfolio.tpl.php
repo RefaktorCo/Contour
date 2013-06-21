@@ -151,13 +151,14 @@
 //<![CDATA[
  // Can also be used with $(document).ready()
 jQuery(document).ready(function ($) {
- $('.flexslider').flexslider({
+  $('.flexslider').flexslider({
     animation: "slide",
-directionNav: true,
+    directionNav: true,
     controlNav: true,
     pauseOnHover: true,
-	smoothHeight: true
-  }); });
+	  smoothHeight: true
+  }); 
+});
  //]]>
 </script>
   <div class="black container top largetoppadding midbottompadding">

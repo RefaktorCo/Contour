@@ -4,6 +4,7 @@
 .text-color, .text-color a {color: #000 !important;}
 .text-color a:hover{ color:#4dbce9 !important; }
 .grey-dotted { border-bottom: 1px dotted rgb(221,221,221); }
+.text-color-inverse {color: #fff;}
 
 .greytext{ color:#828283 !important; }
 
