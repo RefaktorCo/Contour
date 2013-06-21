@@ -490,17 +490,14 @@ text-align:right;
 }
 
 #chart dd{
-border-right:1px solid #ddd;
 float:left;
 margin-bottom:10px;
 display:inline;
-background:#eee;
+
 width:100%;
 }
 
 #chart dd span{
-color:#fff;
-background:#4dbce9 ;
 text-align:center;
 padding:2px 0px;
 display:block;

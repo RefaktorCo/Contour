@@ -6,6 +6,9 @@
 .text-color-inverse {color: #000;}
 .text-color-alt {color: #fff200 !important; }
 
+#chart dd { border-right:1px solid #333; background:#222; }
+#chart dd span { color:#000; background:#fff300; }
+
 .color-button { background: #fff200 !important; border: 1px solid #fff200 !important; color: #644405 !important; }
 .color-button:hover { background: rgb(255, 250, 153) !important; }
 .color-button a { color: #644405 !important; }

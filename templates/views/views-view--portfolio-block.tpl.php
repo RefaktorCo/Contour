@@ -38,7 +38,7 @@
 	</div>
 	<!-- view all portfolio button -->
 	<div class="two columns push_two midtoppadding smalltopmargin">
-		<div class="small primary btn">
+		<div class="small text-color-alt btn">
 			<a href="portfolio"><?php echo t('VIEW PORTFOLIO'); ?></a>
 		</div>
 	</div>
