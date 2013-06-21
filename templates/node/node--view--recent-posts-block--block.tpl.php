@@ -1,3 +1,10 @@
+<?php
+/**
+ * @file node--view--recent-posts-block--block.tpl.php
+ * Contour's node template for the Recent Posts block.
+ */
+?>
+
 <!-- post one -->
 <article class="home-blog-post">
 <div class="content-title">

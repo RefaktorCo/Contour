@@ -1,3 +1,10 @@
+<?php
+/**
+ * @file node--view--portfolio-two--block.tpl.php
+ * Contour's node template for the Portfolio block (second style).
+ */
+?>
+
 <!-- PORTFOLIO ITEM for portfolio two we use class basic-->
 <div class="four columns basic">
 	<!-- image -->

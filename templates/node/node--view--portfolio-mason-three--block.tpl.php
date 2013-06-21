@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file node--view--portfolio-mason-three--block.tpl.php
+ * Contour's node template for the Portfolio Mason block (third style).
+ */
 $cat = render($content['field_portfolio_category']);
 $cat = strip_tags($cat);
 $cat = str_replace(' ', ' - ', $cat);

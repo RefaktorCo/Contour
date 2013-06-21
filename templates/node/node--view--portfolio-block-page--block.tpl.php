@@ -1,3 +1,10 @@
+<?php
+/**
+ * @file node--view--portfolio-block-page--block.tpl.php
+ * Contour's node template for the Portfolio block (page).
+ */
+?>
+
 <li class="gridblock">
 	<a href="<?php print $node_url;?>" title="Click To View Project">
 	<!-- image -->
