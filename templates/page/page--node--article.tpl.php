@@ -1,7 +1,7 @@
 <?php
 /**
- * @file
- * Contour's theme implementation to display a single Drupal page.
+ * @file page--node--article.tpl.php
+ * Contour's theme implementation to display a Drupal article page.
  */
 ?>
 
