@@ -6,7 +6,9 @@
 .grey-dotted { border-bottom: 1px dotted rgb(221,221,221); }
 .text-color-inverse {color: #fff;}
 
-.greytext{ color:#828283 !important; }
+.greytext, .greytext a { color:#828283 !important; }
+
+.greytext a:hover { color:#4dbce9 !important; }
 
 .home li.nav-button { background:rgba(255, 255, 255, 1); border-right: 1px solid #ddd; color: #000; }
 .home .flex-active { background: #000 !important; }
