@@ -23,21 +23,20 @@
 			<!-- NAME AND SLOGAN --> 
 	    <?php if ($site_name || $site_slogan): ?>
 	 
-		      <div id="name-and-slogan"<?php if ($disable_site_name && $disable_site_slogan) { print ' class="hidden"'; } ?>>
-		
-		        <?php if ($site_name): ?>
-		          <h1 id="site-name"<?php if ($disable_site_name) { print ' class="hidden"'; } ?>>
-		            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-		          </h1>
-		        <?php endif; ?>
-		
-		        <?php if ($site_slogan): ?>
-		          <div id="site-slogan"<?php if ($disable_site_slogan) { print ' class="hidden"'; } ?>>
-		            <?php print $site_slogan; ?>
-		          </div>
-		        <?php endif; ?>
-		
-		  
+	      <div id="name-and-slogan"<?php if ($disable_site_name && $disable_site_slogan) { print ' class="hidden"'; } ?>>
+	
+	        <?php if ($site_name): ?>
+	          <h1 id="site-name"<?php if ($disable_site_name) { print ' class="hidden"'; } ?>>
+	            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+	          </h1>
+	        <?php endif; ?>
+	
+	        <?php if ($site_slogan): ?>
+	          <div id="site-slogan"<?php if ($disable_site_slogan) { print ' class="hidden"'; } ?>>
+	            <?php print $site_slogan; ?>
+	          </div>
+	        <?php endif; ?>
+
 	      </div>  
 	    <?php endif; ?>
       <!-- END NAME AND SLOGAN --> 
@@ -81,7 +80,6 @@
   <!-- END BEFORE CONTENT BLOCK REGION -->
 <?php endif; ?>  
 
-  
   <div class="row midpadding">
   
 	  <?php if ( ($page['sidebar_left']) ) : ?>
@@ -120,7 +118,6 @@
 	    <?php print render($page['sidebar_right']); ?>
 	  </div>
 	  <?php endif; ?>
-  
     
   </div>
   
@@ -133,8 +130,6 @@
 <?php endif; ?>    
   
 </div>
-
-
 
 <?php if (isset($page['after_content_no_wrapper'])) : ?>
   <!-- BEFORE CONTENT BLOCK REGION -->
