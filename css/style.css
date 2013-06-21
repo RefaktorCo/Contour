@@ -216,6 +216,8 @@ div.three.columns.product:nth-child(4n+1) {
 	overflow: hidden;
 }
 
+#navigationmain .content {overflow: visible;}
+
 #drupal_tabs {
 	margin-bottom: 15px;
 }
@@ -1753,10 +1755,10 @@ margin-bottom:20px;
 #navigationmain li { margin: 0; padding: 0;}
 #navigationmain li.active a{ color:#ccc}
 
-#navigationmain li.active > ul > li > a{color:#fff;background:#000;font-weight:700;font-size:12px;
+#navigationmain li.active > ul > li > a, #navigationmain .content li.active > ul > li > a{color:#fff;background:#000;font-weight:700;font-size:12px;
 font-size:1.2rem;}
 
-#navigationmain li.active > ul > li > a:hover{background-color: #fff;
+#navigationmain li.active > ul > li > a:hover, #navigationmain .content li.active > ul > li > a:hover{background-color: #fff;
 color: #111 !important;
 font-weight:700;
 font-size:12px;
@@ -1777,18 +1779,18 @@ transition: background-color .2s;
 #navigationmain > ul > li > ul > li:hover{opacity:1; -webkit-transition-duration:0.1s;} */
 
 
-#navigationmain > ul > li {
+#navigationmain > ul > li, #navigationmain .content > ul > li {
 float: left;
 position: relative;
 z-index:500;
 }
 
-#navigationmain > ul > li.active a{
+#navigationmain > ul > li.active a, #navigationmain .content > ul > li.active a{
 color:#fff200;
 font-weight:700;
 }
 
-#navigationmain > ul > li > a {
+#navigationmain > ul > li > a, #navigationmain .content > ul > li > a  {
 color: #fff;
 font-weight:700;
 font-size: 11px;
@@ -1802,15 +1804,15 @@ text-transform:uppercase;
 font-family: 'Ubuntu', sans-serif;
 }
 
-#navigationmain > ul > li:first-child > a {
+#navigationmain > ul > li:first-child > a, #navigationmain .content > ul > li:first-child > a {
 padding-left:0px;
 }
 
-#navigationmain ul > ul{
+#navigationmain ul > ul, #navigationmain .content ul > ul{
 padding:0px;
 }
 
-#navigationmain > ul > li > a:hover {
+#navigationmain > ul > li > a:hover, #navigationmain .content > ul > li > a:hover {
 color:#fff300;
 border-bottom:5px solid #111;
 -webkit-transition-duration: .2s;
@@ -1819,7 +1821,7 @@ border-bottom:5px solid #111;
 -ms-transition-duration: .2s;
 }
 
-#navigationmain > ul > li.active > a:hover{
+#navigationmain > ul > li.active > a:hover, #navigationmain .content > ul > li.active > a:hover {
 color:#fff;
 -webkit-transition-duration: .2s;
 -moz-transition-duration: .2s;
@@ -1827,7 +1829,7 @@ color:#fff;
 -ms-transition-duration: .2s;
 }
 
-#navigationmain > ul > li > ul {
+#navigationmain > ul > li > ul, #navigationmain .content > ul > li > ul {
 opacity: 0;
 visibility: hidden;
 background-color: #fff200;
@@ -1848,15 +1850,15 @@ padding-top:0px;
 font-family: 'Ubuntu', sans-serif;
 }
 
-#navigationmain > ul > li:hover > ul {
+#navigationmain > ul > li:hover > ul, #navigationmain .content > ul > li:hover > ul {
 opacity: 1;
 top: 64px;
 visibility: visible;
 }
 
-#navigationmain > ul ul > li { position: relative;}
+#navigationmain > ul ul > li, #navigationmain .content > ul ul > li { position: relative;}
 
-#navigationmain ul ul a{
+#navigationmain ul ul a, #navigationmain .content ul ul a{
 color: #fff;
 font-family:inherit;
 font-size: 12px;
@@ -1871,7 +1873,7 @@ transition: background-color .1s;
 font-weight:700;
 }
 
-#navigationmain ul ul a:hover {
+#navigationmain ul ul a:hover, #navigationmain .content ul ul a:hover {
 background-color:#fff;
 color:#111 !important;
 -webkit-transition: background-color .2s;
@@ -1880,7 +1882,7 @@ color:#111 !important;
 transition: background-color .2s;
 }
 
-#navigationmain ul ul ul {
+#navigationmain ul ul ul, #navigationmain .content ul ul ul  {
 visibility: hidden;
 opacity: 0;
 position: absolute;
@@ -1899,7 +1901,7 @@ transition: all .3s;
 box-shadow: 0px 1px 3px rgba(0,0,0,.4);
 }
 
-#navigationmain ul ul > li:hover > ul { opacity: 1; left: 196px; visibility: visible;}
+#navigationmain ul ul > li:hover > ul, #navigationmain .content ul ul > li:hover > ul { opacity: 1; left: 196px; visibility: visible;}
 
 /*
 ' Home
