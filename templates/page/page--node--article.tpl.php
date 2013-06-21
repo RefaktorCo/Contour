@@ -98,7 +98,7 @@
       <?php print render($title_suffix); ?>
      	 
      	<?php if ($tabs = render($tabs)): ?>
-     	  <section id="article-tabs" class="row">
+     	  <section id="tabs-wrap" class="row">
 			    <div id="drupal_tabs" class="tabs ">
 			      <?php print render($tabs); ?>
 			    </div>

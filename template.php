@@ -25,6 +25,13 @@ function contour_preprocess_node(&$vars) {
   if (request_path() == 'shop') {
     $vars['theme_hook_suggestions'][] = 'node__shop';
   }
+  
+  if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))) {
+    $tid = arg(2);
+    $vid = db_query("SELECT vid FROM {taxonomy_term_data} WHERE tid = :tid", array(':tid' => $tid))->fetchField();
+    $variables['theme_hook_suggestions'][] = 'page__vocabulary__' . $vid;
+  }
+
 }
 
 /**

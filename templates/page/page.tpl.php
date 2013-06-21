@@ -99,9 +99,12 @@
       <?php print render($title_suffix); ?>
      	 
      	<?php if ($tabs = render($tabs)): ?>
-		    <div id="drupal_tabs" class="tabs ">
-		      <?php print render($tabs); ?>
-		    </div>
+		    <section id="tabs-wrap" class="row">
+			    <div id="drupal_tabs" class="tabs ">
+			      <?php print render($tabs); ?>
+			    </div>
+     	  </section>
+
 		  <?php endif; ?>
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?>
