@@ -4,6 +4,11 @@
 .text-color, .text-color a { color: #fff !important; }
 .text-color a:hover{ color:#4dbce9 !important; }
 .text-color-inverse {color: #000;}
+.text-color-alt {color: #fff200 !important; }
+
+.color-button { background: #fff200 !important; border: 1px solid #fff200 !important; color: #644405 !important; }
+.color-button:hover { background: rgb(255, 250, 153) !important; }
+.color-button a { color: #644405 !important; }
 
 .greytext, .greytext a, .text-color a {color: rgb(180, 180, 180) !important; }
 .greytext a:hover, .text-color a:hover, .view-categories a, .pager a { color:#fff200 !important; }

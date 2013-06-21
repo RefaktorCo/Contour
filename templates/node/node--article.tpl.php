@@ -37,7 +37,7 @@
     ?>
 
   <?php if($teaser): ?>
-  <div class="medium primary btn">
+  <div class="medium color-button btn">
   	<a href="<?php print $node_url;?>"><?php echo t('Read More'); ?></a>
   </div>	
   <?php endif;?>
