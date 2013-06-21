@@ -21,12 +21,8 @@ jQuery(document).ready(function ($) {
 });
 
 
-
-
-
 jQuery(document).ready(function ($) {
 	if ($(window).width() > 768) {
-		$("#navbar").sticky({topSpacing:0});
 		$("#sticky-sidebar").sticky({topSpacing:75});
 		$("#sticky-sidebar").sticky({bottomSpacing:470});
 }

@@ -69,8 +69,6 @@
   <!-- END BEFORE CONTENT BLOCK REGION -->
 <?php endif; ?>  
 
-
-
 <div class="container container-color top-grey">
 
   <?php if (isset($page['before_content'])) : ?>
@@ -117,7 +115,6 @@
 	  </div>
 	  <?php endif; ?>
   
-    
   </div>
 </div>
 
@@ -136,6 +133,23 @@
 <?php endif; ?>  
 
 <footer>
+<?php global $user; if ( $user->uid ): ?>
+<script>
+jQuery(document).ready(function ($) {
+	if ($(window).width() > 768) {
+		$("#navbar").sticky({topSpacing:66});
+  }
+});
+</script>
+<?php else : ?>
+<script>
+jQuery(document).ready(function ($) {
+	if ($(window).width() > 768) {
+		$("#navbar").sticky({topSpacing:0});
+  }
+});
+</script>
+<?php endif; ?>
   <div class="black container top largetoppadding midbottompadding">
 		<div class="row bigbottompadding">
 	    <div class="four columns">

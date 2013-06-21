@@ -139,6 +139,23 @@
 <?php endif; ?>  
 
 <footer>
+<?php global $user; if ( $user->uid ): ?>
+<script>
+jQuery(document).ready(function ($) {
+	if ($(window).width() > 768) {
+		$("#navbar").sticky({topSpacing:66});
+  }
+});
+</script>
+<?php else : ?>
+<script>
+jQuery(document).ready(function ($) {
+	if ($(window).width() > 768) {
+		$("#navbar").sticky({topSpacing:0});
+  }
+});
+</script>
+<?php endif; ?>
   <div class="black container top largetoppadding midbottompadding">
 		<div class="row bigbottompadding">
 	    <div class="four columns">
