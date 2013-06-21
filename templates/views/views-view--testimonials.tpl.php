@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @file
- * Main view template.
+ * @file views-view--testimonials.tpl.php
+ * Contour's views template for the Testimonials view.
  *
  * Variables available:
  * - $classes_array: An array of classes determined in
@@ -29,7 +29,7 @@
 ?>
 <section class="row center">
 	<div class="six columns centered">
-	<h5 class="text-color bold midbottommargin">OUR TESTIMONIALS</h5>
+	  <h5 class="text-color bold midbottommargin"><?php echo t('OUR TESTIMONIALS'); ?></h5>
 		<div class="carousel" data-transition="flip">
 		  <?php print render($title_prefix); ?>
 		  <?php if ($title): ?>
@@ -55,9 +55,7 @@
 		  <?php endif; ?>
 		
 		  <?php if ($rows): ?>
-		   
-		      <?php print $rows; ?>
-		  
+		    <?php print $rows; ?>
 		  <?php elseif ($empty): ?>
 		    <div class="view-empty">
 		      <?php print $empty; ?>

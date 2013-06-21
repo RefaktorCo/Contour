@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @file
- * This template is used to print a single field in a view.
+ * @file views-view-fields--portfolio-filters.tpl.php
+ * Contour's field template file for the Portfolio Filters view.
  *
  * It is not actually used in default Views, as this is registered as a theme
  * function which has better performance. For single overrides, the template is
@@ -23,6 +23,6 @@
  */
 ?>
 
-  <?php foreach ($fields as $id => $field): ?>
-    <li><a href="#filter" data-filter=".<?php print $field->content; ?> "><?php print $field->content; ?></a></li>
-  <?php endforeach; ?>
+<?php foreach ($fields as $id => $field): ?>
+  <li><a href="#filter" data-filter=".<?php print $field->content; ?> "><?php print $field->content; ?></a></li>
+<?php endforeach; ?>

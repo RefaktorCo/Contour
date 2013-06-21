@@ -1,8 +1,8 @@
 <?php
 
 /**
- * @file
- * Main view template.
+ * @file views-view--recent-posts-block.tpl.php
+ * Contour's views template for the Recent Posts view.
  *
  * Variables available:
  * - $classes_array: An array of classes determined in
@@ -52,7 +52,7 @@
   <?php endif; ?>
   
   <div class="six columns">
-  <h5 class="text-color bold midbottommargin">LATEST FROM OUR BLOG</h5>
+  <h5 class="text-color bold midbottommargin"><?php echo t('LATEST FROM OUR BLOG'); ?></h5>
   <?php if ($rows): ?>
       <?php print $rows; ?>
   <?php elseif ($empty): ?>
@@ -91,6 +91,5 @@
 </section>
 <!-- divider -->
 <section class="row smalltoppadding">
-<div class="eight columns centered grey-dotted">
-</div>
+  <div class="eight columns centered grey-dotted"></div>
 </section>
