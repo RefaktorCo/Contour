@@ -22,7 +22,7 @@
  */
 ?>
 <div class="line-item-summary">
-  <a href="cart" class="greytext">
+  <a href="<?php global $base_url; echo $base_url; ?>/cart" class="greytext">
   <span class="cart-head">
   <?php if ($quantity_raw): ?>
   <?php print $quantity_raw; ?> <?php print $quantity_label; ?>:

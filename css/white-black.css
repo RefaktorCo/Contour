@@ -13,6 +13,8 @@
 #chart dd { border-right:1px solid #ddd; background:#eee;}
 #chart dd span { color:#fff; background:#4dbce9 ; }
 
+.active-header i { color: #4dbce9 !important; }
+
 .home li.nav-button { background:rgba(255, 255, 255, 1); border-right: 1px solid #ddd; color: #000; }
 .home .flex-active { background: #000 !important; }
 .home .flex-active h6 { color: #fff !important; }

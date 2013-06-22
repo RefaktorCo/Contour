@@ -20,10 +20,9 @@
 	    
 	    <div class="six columns">
 	    
-			  <h3 style="caps"><?php echo $title; ?></h3>  
-			  
-			  <?php print render($content['product:commerce_price']); ?> 
-			  
+			  <h3 class="caps text-color product-title"><?php echo $title; ?></h3>  
+			  <h6 class="smallfont bold greytext">SKU: <?php print $content['product:commerce_price']['#object']->sku; ?></h6>
+			  <h5 class="text-color ubuntu bold smalltoppadding"><?php print render($content['product:commerce_price']); ?> </h5>			  
 			  <!-- tabs -->
 				<div class="tabs bigtoppadding">
 					<ul>

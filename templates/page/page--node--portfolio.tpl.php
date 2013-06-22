@@ -80,7 +80,7 @@
 <!-- Content container - top-grey class gives bottom border for containers -->
 <div class="container container-color bigtoppadding midbottompadding top-grey">
 	<section class="row">
-	<h6 class="bluetext largefont bold"><?php echo t('OUR PORTFOLIO'); ?></h6>
+	<h6 class="text-color-alt largefont bold"><?php echo t('OUR PORTFOLIO'); ?></h6>
 	</section>
 	<section class="row">
 	<h1 class="text-color caps"><?php print $title; ?></h1>

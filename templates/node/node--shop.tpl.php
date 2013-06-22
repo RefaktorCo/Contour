@@ -21,7 +21,7 @@ $id = $product->product_id;
 		<!-- add to cart button -->
 		<a href="<?php print $base_url.'/product/add/'.$id; ?>" title="Add to cart">
 		<div class="add-product">
-			<h6 class="text-color meta extrabold">ADD TO CART</h6>
+			<h6 class="blacktext meta extrabold">ADD TO CART</h6>
 		</div>
 		</a>
 	</div>

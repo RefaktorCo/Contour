@@ -2,6 +2,8 @@ jQuery(document).ready(function ($) {
 
   $('.search-api-sorts li a').addClass('medium default btn');
   
+  $('.commerce-add-to-cart input[type="submit"]').addClass('medium color-button btn');
+  
   $('#navigationmain').mobileMenu();
   
 // twitter 
