@@ -5,6 +5,7 @@
 .text-color a:hover{ color:#4dbce9 !important; }
 .grey-dotted { border-bottom: 1px dotted rgb(221,221,221); }
 .text-color-inverse {color: #fff;}
+.text-color-alt, a.text-color-alt {color: #4dbce9 !important; }
 
 .greytext, .greytext a { color:#828283 !important; }
 
@@ -12,6 +13,10 @@
 
 #chart dd { border-right:1px solid #ddd; background:#eee;}
 #chart dd span { color:#fff; background:#4dbce9 ; }
+
+.color-button { background: #3085d6 !important; border: 1px solid #3085d6 !important ; font-size: 16px; color: #fff;}
+.color-button:hover { background: #5b9ede !important; }
+.color-button a { color: #fff !important; }
 
 .active-header i { color: #4dbce9 !important; }
 
