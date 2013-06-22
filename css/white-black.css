@@ -1,100 +1,98 @@
+/* 
+' CUSTOM SELECTORS
+*/
 .container-color { background: #fff; } 
 .container-color p { color: #828383; }
-#services-two i { color: #4dbce9; background: #f3f3f3; border: 5px solid rgb(248, 248, 248); }
 .text-color, .text-color a {color: #000 !important;}
 .text-color a:hover{ color:#4dbce9 !important; }
 .grey-dotted { border-bottom: 1px dotted rgb(221,221,221); }
 .text-color-inverse {color: #fff;}
 .text-color-alt, a.text-color-alt {color: #4dbce9 !important; }
-
-.greytext, .greytext a { color:#828283 !important; }
-
-.greytext a:hover { color:#4dbce9 !important; }
-
-#chart dd { border-right:1px solid #ddd; background:#eee;}
-#chart dd span { color:#fff; background:#4dbce9 ; }
-
 .color-button { background: #3085d6 !important; border: 1px solid #3085d6 !important ; font-size: 16px; color: #fff;}
 .color-button:hover { background: #5b9ede !important; }
 .color-button a { color: #fff !important; }
 
-.active-header i { color: #4dbce9 !important; }
-
-.home li.nav-button { background:rgba(255, 255, 255, 1); border-right: 1px solid #ddd; color: #000; }
-.home .flex-active { background: #000 !important; }
-.home .flex-active h6 { color: #fff !important; }
-
-.home-post-meta { background: #ddd; color: #828383; }
-
-.accordion-header { border: 1px solid #e2e2e2; color: #000; }
-.active-header { background: url('../img/active-header.gif') rgb(255,255,255) !important; }
-.inactive-header { background:url('../img/inactive-header.gif') rgb(248, 248, 248) !important; color: #828383; }
-.accordion-content { border-left:1px solid #e2e2e2; border-right:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2; }
-
-.quote .icon-quote-left, .quote .icon-quote-right { color: #ddd; }
-
-.credit img.person { border:5px solid rgb(230,230,230); }
-
-.carousel-nav i{ background:#ddd; color:#828383; }
-.carousel-nav i:hover{ color:#fff; background:#4dbce9; }
-
-footer { border-top: 10px solid #ececec !important; }
+/* 
+' MODIFIED EXISTING SELECTORS
+*/
+.greytext, .greytext a { color:#828283 !important; }
+.greytext a:hover { color:#4dbce9 !important; }
 .top-grey{ border-bottom:1px solid #ddd; }
-
 .top { border-bottom: 1px solid rgb(97,97,97); }
+.grey { background:rgb(236,236,236); }
+.grey p { color: #000; }
 
-.basictitle { background: #fff; }
-.basicicon i {background: #000;}
+/* 
+' CHART
+*/
+#chart dd { border-right:1px solid #ddd; background:#eee;}
+#chart dd span { color:#fff; background:#4dbce9 ; }
 
-
-li.box {border: 10px solid #fff;}
-
+/* 
+' PORTFOLIO FILTERS
+*/
 ul#filters li a { color:#000; background: #eee; }
 ul#filters li a:hover { color:#4dbce9; background:#fff; }
 ul#filters li a.selected { color:#4dbce9; background: #fff; border:1px solid #eee; }
 
-.folio h5.grey { background: #eee; }
+/* 
+' FRONT SLIDER
+*/
+.home .flex-active { background: #000 !important; }
+.home .flex-active h6 { color: #fff !important; }
+.home li.nav-button { background:rgba(255, 255, 255, 1); border-right: 1px solid #ddd; color: #000; }
 
-.folio .flex-control-paging li a { background: rgba(0,0,0,0.5); }
 
-.grey { background:rgb(236,236,236); }
-.grey p { color: #000; }
+/* 
+' ACCORDION
+*/
+.accordion-header { border: 1px solid #e2e2e2; color: #000; }
+.accordion-content { border-left:1px solid #e2e2e2; border-right:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2; }
+.active-header { background: url('../img/active-header.gif') rgb(255,255,255) !important; }
+.active-header i { color: #4dbce9 !important; }
+.inactive-header { background:url('../img/inactive-header.gif') rgb(248, 248, 248) !important; color: #828383; }
 
-.blog-meta i { color:#828383 !important; background:#ddd; }
-
-#blog  { border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
-
-.blog { border-left: 1px solid #ddd; }
-
-.blog-post { border-bottom: 1px solid #ddd; }
-
-.view-our-notes, .view-note-list { border-left: 1px solid #ddd; }
-
-#sidebar-left h2 { background: #eee; color: #111; }
-
-.white blockquote { border-left: 10px solid #4dbce9; background:#ececec; }
-
+/* 
+' PRICE TABLE
+*/
 .basic-table .header { background: rgb(158, 158, 158); }
-
 .basic-table, .pro-table { border: 1px solid #ddd; }
-
 .price-table { background: rgb(196, 196, 196); background:#eee; border:10px solid #fff; }
 .basic-table { border: 1px solid #ddd; }
 .price-table p { color:#4dbce9 ; }
 .pro-table .price-table p{ color: #000; }
-
 .pro-table .header{ background:#000; color:#fff; }
-
 .pro-table .price-table{ border:10px solid #333; background:#fff; }
 
+/* 
+' BLOG
+*/
+.blog-meta i { color:#828383 !important; background:#ddd; }
+#blog  { border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
+.blog { border-left: 1px solid #ddd; }
+.blog-post { border-bottom: 1px solid #ddd; }
+.view-our-notes, .view-note-list { border-left: 1px solid #ddd; }
+#sidebar-left h2 { background: #eee; color: #111; }
+#single-article-wrap { border-left: 1px solid #ddd; }
+div.comment { background: rgb(247, 247, 247); border: 1px solid rgb(222,222,222); }
+#comments { border-top: 1px solid rgb(221,221,221); }
+.indented { border-left: 1px solid rgb(222,222,222); }
+.white blockquote { border-left: 10px solid #4dbce9; background:#ececec; }
 input, .form-textarea-wrapper textarea, .field .text, .field .search, .field .textarea { background: #fff; border: 1px solid #ddd; }
 
+/* 
+' MISC
+*/
 #block-views-more-products-block h2 { color: #000; }
-
-#single-article-wrap { border-left: 1px solid #ddd; }
-
-div.comment { background: rgb(247, 247, 247); border: 1px solid rgb(222,222,222); }
-
-#comments { border-top: 1px solid rgb(221,221,221); }
-
-.indented { border-left: 1px solid rgb(222,222,222); }
+.home-post-meta { background: #ddd; color: #828383; }
+#services-two i { color: #4dbce9; background: #f3f3f3; border: 5px solid rgb(248, 248, 248); }
+.quote .icon-quote-left, .quote .icon-quote-right { color: #ddd; }
+.credit img.person { border:5px solid rgb(230,230,230); }
+.carousel-nav i{ background:#ddd; color:#828383; }
+.carousel-nav i:hover{ color:#fff; background:#4dbce9; }
+footer { border-top: 10px solid #ececec !important; }
+.basictitle { background: #fff; }
+.basicicon i {background: #000;}
+li.box {border: 10px solid #fff;}
+.folio h5.grey { background: #eee; }
+.folio .flex-control-paging li a { background: rgba(0,0,0,0.5); }
