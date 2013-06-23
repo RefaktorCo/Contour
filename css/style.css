@@ -1,296 +1,8 @@
-/* COMMENTS */
-
-#comments {
-	margin-top: 15px;
-}
-
-#comments h5 {
-	margin: 15px 0px;
-}
-
-.indented {
-	padding-left: 30px;
-}
-
-.comment-avatar {
-float: left;
-margin-right: 20px;
-}
-
-div.comment {
-padding: 1em;
-margin-bottom: 1em;
-}
-
-.comment p {
-margin: 10px 0px;
-}
-
-.comment em {
-font-size: 12px;
-}
-
-
-.mobile-menu {
-	display: none;
-}
-
-
-#single-article-wrap .blog-post {
-border-bottom: none;
-}
-
-.comment-meta i {
-padding: 0px;
-}
-
-.container-color p {
-	font-size: 1.3rem;
-}
-
-header .container {overflow: visible;}
-
-.container { overflow: hidden;}
-
-.ppt {display: none !important;}
-
-#tabs-wrap {
-	padding: 30px 30px 0px 30px;
-	margin-bottom: -30px;
-}
-
-#taxonomy-heading {
-	padding-left: 30px;
-	margin-bottom: -20px;
-}
-
-#taxonomy-wrapper .portfolio-item {
-	margin-left: -30px;
-	margin-bottom: 30px;
-}
-
-.portfolio-teaser-heading {
-	margin: -10px 0px 15px 0px;
-}
-
-/* 
-' DRUPAL
-*/
-
-/* 
-' STORE
-*/
-
-#block-views-featured-products-block h2 {
-	font-size: 1.8rem;
-	font-weight: 700;
-}
-
-#block-views-more-projects-block h2{
-	font-size: 2.8rem;
-}
-
-#block-views-more-products-block h2 {
-  font-weight: 700;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.yui3-u.range-slider-box {
-
-	margin-left: 8px;
-}
-
-.flag-wrapper {
-position: static;
-}
-
-#newsletter {
-	padding-top: 1px;
-}
-
-.flag-wrapper i {
-
-	-webkit-transition-duration: 0.3s;
--moz-transition-duration: 0.3s;
--ms-transition-duration: 0.3s;
--o-transition-duration: 0.3s;
-}
-
-
-.flagged i, .unflag-action i {
-	background: rgb(223, 56, 90) !important;
-}
-
-
-.search-api-ranges-widget .form-item-range-to .form-text {
-	text-align: right;
-}
-
-.range-slider {
-	width: 93%;
-	margin: 10px 0px 10px 5px;
-}
-
-.yui3-u.range-box.range-box-left {
-	float: left;
-}
-
-.yui3-u.range-box.range-box-right {
-	float: right;
-	text-align: right;
-}
-
-
-.search-api-ranges-widget .text-range {
-	display: none;
-}
-
-.search-api-ranges-widget form label {
-	display: none;
-}
-
-.search-api-ranges-widget input {
-	width: 30px;
-}
-
-.search-api-ranges-widget input[type="submit"] {
-	display: none !important;
-}
-
-.facetapi-facetapi-checkbox-links li {
-	list-style: none !important;
-	margin-left: 0px !important;
-}
-
-a {
-	color: #4dbce9;
-	-webkit-transition-duration: 0.3s;
--moz-transition-duration: 0.3s;
--ms-transition-duration: 0.3s;
--o-transition-duration: 0.3s;
-}
-
-header .cart-total-wrap {
-	display: none;
-}
-
-a:hover {
-	color: #ddd;
-}
-
-.hidden {
-	display: none;
-}
-
-[class^="icon-"] {
-	display: inline-block;
-  text-align: center;
-}
-
-.recent-posts-block-teaser {
-	margin-left: 63px;
-}
-
-.view-categories ul li {
-	margin-left: 0px;
-	border-bottom: 1px dotted #ddd;
-  padding-bottom: 5px;
-}
-
-.planner-webform input {
-	width: 94%;
-}
-
-.planner-webform input[type="submit"] {
-	width: 40%;
-}
-
-#block-views-portfolio-two-block div.four.columns.basic:nth-child(3n+1) {  
-  margin-left: 0;
-}
-
-#block-views-portfolio-three-block div.three.columns:nth-child(4n+1) {  
-  margin-left: 0;
-}
-
-#block-views-portfolio-three-block div.three.columns {
-	margin-bottom: 25px;
-}
-
-div.three.columns.product:nth-child(4n+1) {
-	margin-left: 0;
-}
-
-.caps {
-	text-transform: uppercase;
-}
-
-.region .content {
-	overflow: hidden;
-}
-
-#navigationmain .content {overflow: visible;}
-
-#drupal_tabs {
-	margin-bottom: 15px;
-}
-
-.view-categories ul {
-	margin-top: 20px;
-	margin-bottom: 50px;
-}
-
-#sidebar-left h2 {
-  padding: 2px 10px;
-  -moz-border-radius: 4px -webkit-border-radius:4px;
-  border-radius: 4px;
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-#sidebar-left .content p {
-	margin-bottom: 50px;
-}
-
-.view-note-list .grey-dotted, .view-note-list .article-node-content, .view-note-list  .node-image {
-	display: none;
-}
-
-.view-note-list .blog-post {
-	padding: 20px 30px 10px;
-}
-
-.article-node-content p {
-	font-size: 1.6rem !important;
-}
-
-.item-list .pager {
-	margin: 0;
-	padding: 15px 0px;
-}
-
-#sticky-sidebar .content {
-	width: 264px;
-}
-
-.store-sidebar h2 {
-	background: transparent !important;
-	font-size: 1.2rem !important;
-	padding: 0px !important;
-}
-
-@media screen and (max-width: 768px) {
-	#sticky-sidebar .content {
-	  width: auto;
-  }
-}
-
 /*=======================================================================
 ??? Gumby by Digital Surgeons. ???
 
-*** WEBSITE DESIGNED AND DEVELOPED BY HASAN ALI - http://www.codeblvck.com ***
+*** CONTOUR HTML TEMPLATE DESIGNED AND DEVELOPED BY HASAN ALI - http://www.codeblvck.com ***
+*** DRUPAL VERSION BY REFAKTOR - http://www.refaktorthemes.com ***
 ========================================================================*/
 /* ==
 
@@ -330,6 +42,19 @@ FONT AWESOME
 FLEXSLIDER
 TWITTER
 PRETTYPHOTO
+
+== */
+
+/* ==
+
+### DRUPAL SPECIFIC STYLES ###
+BODY
+HEADER
+VIEWS
+DRUPAL CLASSES
+BLOG/COMMENTS
+STORE
+CUSTOM MEDIA QUERIES
 
 == */
 
@@ -4084,3 +3809,306 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
 * html .pp_top .pp_middle,* html .pp_bottom .pp_middle{left:0;position:static}
 .pp_top .pp_right,.pp_bottom .pp_right{height:20px;left:auto;position:absolute;right:0;top:0;width:20px}
 .pp_fade,.pp_gallery li.default a img{display:none}
+
+/*=======================================================================
+BEGIN DRUPAL SPECIFIC STYLES
+========================================================================*/
+
+/* 
+' BODY
+*/
+.container { 
+overflow: hidden;
+}
+
+.ppt {
+display: none !important;
+}
+
+a {
+color: #4dbce9;
+-webkit-transition-duration: 0.3s;
+-moz-transition-duration: 0.3s;
+-ms-transition-duration: 0.3s;
+-o-transition-duration: 0.3s;
+}
+
+a:hover {
+color: #ddd;
+}
+
+.hidden {
+display: none;
+}
+
+.container-color p {
+font-size: 1.3rem;
+}
+
+.region .content {
+overflow: hidden;
+}
+
+[class^="icon-"] {
+display: inline-block;
+text-align: center;
+}
+
+.caps {
+text-transform: uppercase;
+}
+
+/* 
+' HEADER
+*/
+header .container {
+overflow: visible;
+}
+
+.mobile-menu {
+display: none;
+}
+
+header .cart-total-wrap {
+display: none;
+}
+
+#navigationmain .content {
+overflow: visible;
+}
+
+/* 
+' VIEWS
+*/
+.recent-posts-block-teaser {
+margin-left: 63px;
+}
+
+.view-categories ul li {
+margin-left: 0px;
+border-bottom: 1px dotted #ddd;
+padding-bottom: 5px;
+}
+
+.planner-webform input {
+width: 94%;
+}
+
+.planner-webform input[type="submit"] {
+width: 40%;
+}
+
+#block-views-portfolio-two-block div.four.columns.basic:nth-child(3n+1) {  
+margin-left: 0;
+}
+
+#block-views-portfolio-three-block div.three.columns:nth-child(4n+1) {  
+margin-left: 0;
+}
+
+#block-views-portfolio-three-block div.three.columns {
+margin-bottom: 25px;
+}
+
+div.three.columns.product:nth-child(4n+1) {
+margin-left: 0;
+}
+
+.view-categories ul {
+margin-top: 20px;
+margin-bottom: 50px;
+}
+
+.view-note-list .grey-dotted, .view-note-list .article-node-content, .view-note-list  .node-image {
+display: none;
+}
+
+.view-note-list .blog-post {
+padding: 20px 30px 10px;
+}
+
+.article-node-content p {
+font-size: 1.6rem !important;
+}
+
+.item-list .pager {
+margin: 0;
+padding: 15px 0px;
+}
+
+/* 
+' DRUPAL CLASSES
+*/
+#tabs-wrap {
+padding: 30px 30px 0px 30px;
+margin-bottom: -30px;
+}
+
+#drupal_tabs {
+margin-bottom: 15px;
+}
+
+#taxonomy-heading {
+padding-left: 30px;
+margin-bottom: -20px;
+}
+
+#taxonomy-wrapper .portfolio-item {
+margin-left: -30px;
+margin-bottom: 30px;
+}
+
+.portfolio-teaser-heading {
+margin: -10px 0px 15px 0px;
+}
+
+/* BLOG/COMMENTS */
+#comments {
+	margin-top: 15px;
+}
+
+#comments h5 {
+	margin: 15px 0px;
+}
+
+.indented {
+	padding-left: 30px;
+}
+
+.comment-avatar {
+float: left;
+margin-right: 20px;
+}
+
+div.comment {
+padding: 1em;
+margin-bottom: 1em;
+}
+
+.comment p {
+margin: 10px 0px;
+}
+
+.comment em {
+font-size: 12px;
+}
+
+.comment-meta i {
+padding: 0px;
+}
+
+#single-article-wrap .blog-post {
+border-bottom: none;
+}
+
+#sidebar-left h2 {
+padding: 2px 10px;
+-moz-border-radius: 4px -webkit-border-radius:4px;
+border-radius: 4px;
+font-size: 2.2rem;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+#sidebar-left .content p {
+margin-bottom: 50px;
+}
+
+#sticky-sidebar .content {
+width: 264px;
+}
+
+/* 
+' STORE
+*/
+#block-views-featured-products-block h2 {
+font-size: 1.8rem;
+font-weight: 700;
+}
+
+#block-views-more-projects-block h2{
+font-size: 2.8rem;
+}
+
+#block-views-more-products-block h2 {
+font-weight: 700;
+font-size: 1.8rem;
+margin-bottom: 20px;
+}
+
+.yui3-u.range-slider-box {
+margin-left: 8px;
+}
+
+.flag-wrapper {
+position: static;
+}
+
+#newsletter {
+padding-top: 1px;
+}
+
+.flag-wrapper i {
+-webkit-transition-duration: 0.3s;
+-moz-transition-duration: 0.3s;
+-ms-transition-duration: 0.3s;
+-o-transition-duration: 0.3s;
+}
+
+.flagged i, .unflag-action i {
+background: rgb(223, 56, 90) !important;
+}
+
+.search-api-ranges-widget .form-item-range-to .form-text {
+text-align: right;
+}
+
+.range-slider {
+width: 93%;
+margin: 10px 0px 10px 5px;
+}
+
+.yui3-u.range-box.range-box-left {
+float: left;
+}
+
+.yui3-u.range-box.range-box-right {
+float: right;
+text-align: right;
+}
+
+.search-api-ranges-widget .text-range {
+display: none;
+}
+
+.search-api-ranges-widget form label {
+display: none;
+}
+
+.search-api-ranges-widget input {
+width: 30px;
+}
+
+.search-api-ranges-widget input[type="submit"] {
+display: none !important;
+}
+
+.facetapi-facetapi-checkbox-links li {
+list-style: none !important;
+margin-left: 0px !important;
+}
+
+.store-sidebar h2 {
+background: transparent !important;
+font-size: 1.2rem !important;
+padding: 0px !important;
+}
+
+/* 
+' CUSTOM MEDIA QUERIES
+*/
+@media screen and (max-width: 768px) {
+	#sticky-sidebar .content {
+	  width: auto;
+  }
+}
