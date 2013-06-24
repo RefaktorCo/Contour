@@ -3,9 +3,7 @@
  * @file node--view--portfolio-mason-two--block.tpl.php
  * Contour's node template for the Portfolio Mason block (second style).
  */
-$cat = render($content['field_portfolio_category']);
-$cat = strip_tags($cat);
-$cat = str_replace(' ', ' - ', $cat);
+
 ?>
 
 <!-- for masonic two we use li class box-two -->
@@ -21,6 +19,6 @@ $cat = str_replace(' ', ' - ', $cat);
 <!-- project info -->
 <div class="info">
 	<h6 class="blacktext bold caps"><?php print $title; ?></h6>
-	<a href="<?php print $node_url;?>" class="greytext smallfont caps"><?php print $cat; ?></a>
+	<a href="<?php print $node_url;?>" class="greytext smallfont caps"><?php echo t('VIEW PROJECT'); ?></a>
 </div>
 </li>
