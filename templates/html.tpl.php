@@ -30,6 +30,8 @@
 
 <link href='http://fonts.googleapis.com/css?family=Dosis:200,400,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+<?php contour_user_css(); ?>
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

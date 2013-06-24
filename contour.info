@@ -2,7 +2,7 @@ name = Contour
 description = Multipurpose Creative Drupal Theme. 
 core = 7.x
 engine = phptemplate
-version = 1.x ALPHA
+version = 1.0
 
 ; Call style sheets.
 stylesheets[all][] = css/imports.css
@@ -23,7 +23,6 @@ regions[header_menu_left] = Header Menu Left
 regions[header_menu_right] = Header Menu Right
 
 ; Define content block regions.
-
 regions[before_content_no_wrapper] = Before Content No Wrapper
 regions[before_content] = Before Content
 regions[content] = Content
@@ -39,3 +38,6 @@ regions[footer_col_3] = Footer Column 3
 regions[footer_col_4] = Footer Column 4
 regions[footer_bottom_left] = Footer Bottom Left
 regions[footer_bottom_right] = Footer Bottom Right
+
+; Define theme setting defaults.
+settings[color_scheme] = 'white_black'

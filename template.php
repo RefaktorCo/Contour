@@ -236,7 +236,7 @@ function contour_field($variables) {
 }
 
 /**
- * User CSS function. Separate from blocks_preprocess_html so function can be called directly before </head> tag.
+ * User CSS function. Separate from contour_preprocess_html so function can be called directly before </head> tag.
  */
 function contour_user_css() {
   echo "<!-- User defined CSS -->";

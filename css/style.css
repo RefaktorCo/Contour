@@ -3911,6 +3911,24 @@ margin: 0;
 padding: 15px 0px;
 }
 
+.tweet_list {
+  margin: 0px;
+}
+
+.tweet_list img {
+  margin-right: 10px;	
+  float: left;
+  margin-bottom: 15px;
+}
+
+.tweet_list li {
+  list-style: none; 
+  margin-bottom: 10px;
+  line-height: 1.6 !important;
+  font-size: 12px;
+  clear: both;
+}
+
 /* 
 ' DRUPAL CLASSES
 */
