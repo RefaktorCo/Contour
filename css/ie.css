@@ -4,3 +4,4 @@
 
 .ie8 .active-header { background: rgb(255,255,255) !important; }
 .ie8 .inactive-header { background:rgb(248, 248, 248) !important; color: #828383; }
+.ie8 #sidebar-left h2, .ie8 #block-views-featured-products-block h2, .ie8 #block-views-more-products-block h2, .ie8 #block-views-more-projects-block h2 { font-size: 22px !important; }

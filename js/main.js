@@ -8,6 +8,10 @@ jQuery(document).ready(function ($) {
   
   $('#block-views-portfolio-two-block div.four.columns.basic:nth-child(3n+1)').addClass('alpha');
   
+  $('#block-views-portfolio-three-block div.three.columns:nth-child(4n+1)').addClass('alpha');
+  
+  $('div.three.columns.product:nth-child(4n+1)').addClass('alpha');
+  
 // twitter 
 jQuery(document).ready(function ($) {
   $(".tweet").tweet({
