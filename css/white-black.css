@@ -95,3 +95,4 @@ footer { border-top: 10px solid #ececec !important; }
 li.box {border: 10px solid #fff;}
 .folio h5.grey { background: #eee; }
 .folio .flex-control-paging li a { background: rgba(0,0,0,0.5); }
+.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); }
