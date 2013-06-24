@@ -3827,6 +3827,10 @@ a:hover {
 color: #ddd;
 }
 
+.alpha {
+margin-left: 0px;
+}
+
 .hidden {
 display: none;
 }
@@ -3889,7 +3893,7 @@ width: 40%;
 }
 
 #block-views-portfolio-two-block div.four.columns.basic:nth-child(3n+1) {  
-margin-left: 0;
+margin-left: 0 !important;
 }
 
 #block-views-portfolio-three-block div.three.columns:nth-child(4n+1) {  

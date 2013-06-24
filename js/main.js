@@ -6,6 +6,8 @@ jQuery(document).ready(function ($) {
   
   $('#navigationmain').mobileMenu();
   
+  $('#block-views-portfolio-two-block div.four.columns.basic:nth-child(3n+1)').addClass('alpha');
+  
 // twitter 
 jQuery(document).ready(function ($) {
   $(".tweet").tweet({
