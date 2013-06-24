@@ -12,7 +12,7 @@ global $parent_root;
   <div class="comment-avatar">
     <?php 
       if (!$picture) {
-        echo '<img src="'.$parent_root.'/images/anon.png">'; 
+        echo '<img src="'.$parent_root.'/images/anon.png" alt="anon">'; 
       }
       else { 
         print $picture;   

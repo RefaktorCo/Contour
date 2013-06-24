@@ -12,22 +12,6 @@ jQuery(document).ready(function ($) {
   
   $('div.three.columns.product:nth-child(4n+1)').addClass('alpha');
   
-// twitter 
-jQuery(document).ready(function ($) {
-  $(".tweet").tweet({
-      username: "envato",
-      join_text: "auto",
-      avatar_size: null,
-      count: 2,
-      auto_join_text_default: " we said,", 
-      auto_join_text_ed: " we",
-      auto_join_text_ing: " we were",
-      auto_join_text_reply: " we replied to",
-      auto_join_text_url: " we were checking out",
-      loading_text: "loading tweets..."
-  });
-});
-
 
 jQuery(document).ready(function ($) {
 	if ($(window).width() > 768) {

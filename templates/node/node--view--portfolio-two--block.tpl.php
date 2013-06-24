@@ -11,10 +11,8 @@
 	<img src="<?php echo file_create_url($node->field_image['und'][0]['uri']); ?>" alt="item">
 	<!-- project info -->
 	<div class="basictitle">
-		<a href="<?php print $node_url;?>" title="Click to view project">
-		<h6 class="text-color dosis bold caps"><?php print $title; ?></h6>
+		<h6 class="text-color dosis bold caps"><a href="<?php print $node_url;?>" title="Click to view project"><?php print $title; ?></a></h6>
 		<h6 class="greytext smallfont caps"><?php print render($content['field_portfolio_category']); ?></h6>
-		</a>
 	</div>
 	
 	<!-- prettyphoto link -->
