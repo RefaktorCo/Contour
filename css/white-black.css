@@ -33,7 +33,7 @@
 */
 ul#filters li a { color:#000; background: #eee; }
 ul#filters li a:hover { color:#4dbce9; background:#fff; }
-ul#filters li a.selected { color:#4dbce9; background: #fff; border:1px solid #eee; }
+ul#filters li a.selected { color:#4dbce9 !important; background: #fff !important; border:1px solid #eee !important; }
 
 /* 
 ' FRONT SLIDER
