@@ -17,7 +17,7 @@ $id = $product->product_id;
 		<img src="<?php print $image_url; ?>" alt="product">
 		<!-- save for later button -->
 
-		<h5 class="text-color ubuntu bold smalltoppadding"><?php print flag_create_link('shop', $node->nid); ?></h5>
+		<?php if( module_exists('flag')): ?><h5 class="text-color ubuntu bold smalltoppadding"><?php print flag_create_link('shop', $node->nid); ?></h5><?php endif; ?>
 		<!-- add to cart button -->
 		<a href="<?php print $base_url.'/product/add/'.$id; ?>" title="Add to cart">
 		<div class="add-product">

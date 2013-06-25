@@ -359,8 +359,6 @@ Option 2:
 &lt;/div&gt;
 </pre>
 
-<h4>Portfolio Filters:</h4>
-
 <p><strong>Note:</strong></p> back up /templates/node/node--portfolio.tpl.php and then duplicate /templates/node/node--portfolio-wide.tpl.php and rename it /templates/node/node--portfolio.tpl.php if you wish to use this as your Portfolio node style.
 <ul>
 <p><strong>Template files</strong></p>
@@ -369,6 +367,11 @@ Option 2:
 <li>/templates/page/page--node--portfolio.tpl.php</li>
 </ul>
 </ul>
+
+<h4>Portfolio Filters:</h4>
+<p>The Mason portfolio pages seen on the demo include support for an Isotope filter effect powered by Taxonomy terms. To utilize this effect visit /admin/structure/taxonomy and create a new vocabulary (example: Portfolio). After creating your vocabulary you can create the terms you wish to use to categorize your portfolio items. This taxonomy vocabulary can be linked to the Portfolio content type via a term reference field so you can select the category or categories you want to place your items into.</p>
+
+<p>The filters are powered by a View called Portfolio Filters that is placed in the View header as a global view area. If you don't already have this view you can use the code in /views_exports/portfolio-filters.txt to import as a View for placement in the View header of the Portfolio Mason views.</p>
 
 
 <h2>Notes (posts)</h2>
@@ -469,43 +472,90 @@ Option 2:
 </pre>
 
 <h4>Wishlist</h4>
-
+<p>To make use of the Wishlist functionality that can be seen on the Contour demo you will need to install the Flag module. Once you do visit /admin/structure/flags/import to import the following code: </p>
+<pre>
+$flags = array();
+// Exported flag: "Shop Wishlist".
+$flags['shop'] = array(
+  'content_type' => 'node',
+  'title' => 'Shop Wishlist',
+  'global' => '0',
+  'types' => array(
+    0 => 'product_display',
+  ),
+  'flag_short' => 'Add to Wishlist',
+  'flag_long' => '',
+  'flag_message' => '',
+  'unflag_short' => 'Remove from Wishlist',
+  'unflag_long' => '',
+  'unflag_message' => '',
+  'unflag_denied_text' => '',
+  'link_type' => 'toggle',
+  'roles' => array(
+    'flag' => array(
+      0 => '1',
+      1 => '2',
+    ),
+    'unflag' => array(
+      0 => '1',
+      1 => '2',
+    ),
+  ),
+  'weight' => 0,
+  'show_on_form' => 0,
+  'access_author' => '',
+  'show_on_page' => 0,
+  'show_on_teaser' => 0,
+  'show_contextual_link' => 0,
+  'i18n' => 0,
+  'api_version' => 2,
+);
+return $flags;
+</pre>
+<p>Then if you don't already have it you can use the code in /views_exports/wishlist-block.txt to create a View to display a block of the Wishlist items. </p>
 <h2>Styles and Shortcodes</h2>
-
-<h2>Header/Footer</h2>
  
 <h2>Block Regions</h2>
 <p>Contour features 17 block regions where you can add your own custom content. Visit yourdomain.com/admin/structure/block to add your own content to the defined block regions. Press "Add Block" to create a new custom blog, or select an existing block from the Disabled list below the defined block regions.</p>
+<h4>Header Block Regions</h4>
+<p>Contour features four header regions: Header Branding Left, Header Branding Right, Header Menu Left and Header Menu Right. You can use the "demonstrate block regions" link on /admin/structure/block to see exactly where these are located, but the names are fairly self explanatory. If you would like to mimic the social icon region seen in the top right hand corner of the demo you can use the following markup in a block:</p>
+<pre>&lt;ul id=&quot;header-links&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Google +&quot;&gt;&lt;i class=&quot;icon-google-plus&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Linked-in&quot;&gt;&lt;i class=&quot;icon-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Twitter&quot;&gt;&lt;i class=&quot;icon-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;Facebook&quot;&gt;&lt;i class=&quot;icon-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+<h4>Content Block Regions</h4>
+<p>Contour has a total of 7 content block regions: Before Content No Wrapper, Before Content, Content, Sidebar Left, Sidebar Right, After Content and After Content No Wrapper. Like the Header regions described above these regions are fairly self explanatory. One thing to note is that the "No Wrapper" regions are called outside of the main content wrap so you can use completely full width content (like the Image Slider) or use your own custom wrappers. Those regions are there to do whatever you like with and are not restricted by any additional markup.</p>
+
+<h4>Footer Block Regions</h4>
+<p>Finally there are 6 footer block regions available, four individual four column regions and two additional six column regions below. </p>
 
 <h2>Extras</h2>
 <h4>Code Examples</h4>
-<p>There are a variety of code examples in the /examples folder that correspond to various pages on the demo. You can use these as tools to replicate the visual appearance and functionality seen on the demo site.</p>
-<h4>Google Maps</h4>
-<p>The contact page on the demo site uses a Google Maps plugin (see /examples/contact.php). Below is the Javascript call that powers the map</p>
-<pre>
-    var map;
-    $(document).ready(function(){
-    prettyPrint();
-    map = new GMaps({
-    div: '#map',
-    lat: 48.8584,
-    lng: 2.2946,
-    });
-    map.addMarker({
-    lat: 48.8584,
-    lng: 2.2946,
-    title: 'Contour Html Template',
-    click: function(e){
-    if(console.log)
-    console.log(e);
-    alert('You clicked in this marker');
-    }
-    });
-    });
-    //]]>	
-</pre>
-<p> The map is then called with an empty div with the ID map. You can use a website like the <a href="http://itouchmap.com/latlong.html">following</a> to get the latitude and longitude needed to use the Google Maps plugin.</p>
+<p>We've included some code examples inside the /examples folder in the root of the theme with some markup used on several of the demo page templates. The full HTML version of the theme can also be found in the root of the download files (contour-html.zip). Inside you can find a ton of code examples for all the different page templates.</p>
 <h3>Twitter Widget</h3>
+<p>Before you can use the Twitter widget you need to configure the Twitter options in the theme settings (/admin/appearance/settings/contour). To get the necessary authentication keys you must visit <a href="https://dev.twitter.com/apps" target="_blank">https://dev.twitter.com/apps</a> and log in with your Twitter account. Once there you can create an app and generate the OAuth keys needed to enter into the theme settings. Once you have those entered you can use the following markup in a Block (make sure to set the text filter to PHP code):</p>
+<pre>
+&lt;h6 class=&quot;whitetext bold meta&quot;&gt;CONTOUR ON TWITTER&lt;/h6&gt;
+&lt;div class='tweet query midtoppadding'&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+                        
+    jQuery(document).ready(function ($) {
+      
+      $(&quot;.tweet&quot;).tweet({
+        modpath: '&lt;?php global $theme_root; echo $theme_root;?&gt;/includes/twitter/',
+        username: &quot;envato&quot;,
+        avatar_size: 34,
+        count: 3,
+        loading_text: &quot;loading tweets...&quot;
+      });
+    
+    });
+    
+  &lt;/script&gt;
+</pre>
 <h2>Thank You</h2>
 <p>Thank you very much for purchasing the Contour responsive Drupal 7 theme. Once again if you have any issues or feedback please connect via the <a href="http://themeforest.net/user/refaktor#from" target="_blank">ThemeForest author page</a>. Enjoy using Contour!</p>
 </p>&copy 2013 Refaktor.
