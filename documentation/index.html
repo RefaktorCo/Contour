@@ -359,6 +359,8 @@ Option 2:
 &lt;/div&gt;
 </pre>
 
+<h4>Portfolio Filters:</h4>
+
 <p><strong>Note:</strong></p> back up /templates/node/node--portfolio.tpl.php and then duplicate /templates/node/node--portfolio-wide.tpl.php and rename it /templates/node/node--portfolio.tpl.php if you wish to use this as your Portfolio node style.
 <ul>
 <p><strong>Template files</strong></p>
@@ -392,8 +394,56 @@ Option 2:
 </ul>
 
 <h2>Commerce (Shop)</h2>
+<p>Contour supports the <a href="http://drupal.org/project/commerce" target="_blank">Drupal Commerce</a> module, a powerful eCommerce framework for building online stores. Drupal Commerce has a complete set of <a href="http://www.drupalcommerce.org/documentation" target="_blank">documentation</a> which we highly recommend reading if you have never used DC before. We will go over some of the basics and highlight the aspects of the theme that enhance DC and how you can use them on your site. If you do plan on using Drupal Commerce with your install of Contour we also highly recommend you install the full demo content as it will provide you a completely functional configuration of Drupal Commerce to begin working with. </p>
+
+<h4>Product Types</h4>
+
+<p>When the Commerce module is activated you can visit /admin/commerce to begin configuring Drupal Commerce. We will not be going over every options page, but we will outline the creation of Product Types and explain how that relates to the "Product Display" content type. Visit /admin/commerce/products/types to begin creating your own Product Types. Below is an example of what the fields look like on a Contour demo product type:</p>
+<img src="images/product-type.png"><br/><br/>
+<p>Product Types have some default fields like SKU which are required for Commerce products to function correctly, but you can create as many additional fields as you need for your products.</p>
+
+<p><strong>Important:</strong> Any product fields that are intended to function as attribute selection fields on Add to Cart forms need to be configured to do so. When editing that field, scroll down to the ATTRIBUTE FIELD SETTINGS option and enable the option. For example, if you have several variations of a "Hat" product (red, blue, green) and you want the customer to be able to select the color they want when adding the item to the cart, the Color field would need to be configured in this way.</p> 
+<img src="images/field-attribute.png"><br/>
+
+<h4>Creating products using "Product Display"</h4>
+<p>As described earlier in the Content Types section of the documentation, Contour uses a content type called Product Display which acts as a bridge between Drupal and Commerce products. The "Product Reference" field allows you to create your product(s) at the same time of the node creation. Below is a step by step guide for using this content type to create a Drupal Commerce product node in Contour: </p>
+<ul>
+<li>1. Visit /node/add/product-display to begin creating your product (if you do not have this content type refer to the Content Types portion of the docs for instructions on how to set this up). Enter a title like you would for any other Drupal node.</li>
+<li>2. Under the "Product Reference" field select the type of product you are creating and press "Add New Product". </li>
+<li>3. Configure your product and press the "Save Product" button. If you are doing multiple variations of the same product, add another product variation of the same product type and configure as necessary. For example if you are creating a Hat product and it comes in three colors, create a variation for each of the three colors.</li>
+<li>4. Configure the rest of the Product Display fields (image slider, etc) and save the node. </li>
+</ul>
+
+<h4>Product Search</h4>
+<p>If you visit the demo <a href="http://refaktorthemes.com/contour/shop" target="_blank">Shop page</a> you will see various options in the left sidebar for narrowing down the products that are shown. This is called faceted search and is a very powerful way to handle stores with a lot of different products. To fully utilize faceted search with Drupal Commerce, the following modules are required:</p>
+<ul>
+<li><a href="http://drupal.org/project/commerce_search_api">Commerce Search API</a></li>
+<li><a href="http://drupal.org/project/search_api">Search API</a></li>
+<li><a href="http://drupal.org/project/Facetapi">Facet API</a></li>
+<li><a href="http://drupal.org/project/search_api_db">Search API Database Search</a></li>
+<li><a href="http://drupal.org/project/search_api_ranges">Search API Ranges</a></li>
+</ul>
+<p>Visit /admin/config/search/search_api to begin the process of configuring Commerce to utilize the Search API. Two elements are needed: the search server and the search index. The search server can be enabled and configured with the default options already provided. The real configuration happens with the search index.</p>
+<p> <strong>Note:</strong> before proceeding with the setup of your search index, visit /admin/config/system/cron and manually run cron to ensure your products will be available for searching.</p>
+
+<p>Visit /admin/config/search/search_api/add_index to add your index. Give your search index a name you can identify later on as this search index will actually be used in a View to create the actual store page itself. For the "item type" option select Node from the dropdown menu as you will be searching from the Product Display nodes. Under "server" select the search sever you just created before (likely called "default" if you used the default server). After you are done press "Create Index"</p>
+
+<p> When you click on the name of your search index while on the /admin/config/search/search_api page you will be able to configure all the various options available. If you click on the Fields tab you will be able to select the fields that will be made available to search. If you are working off your own custom Product Types the fields you will want to enable will likely be different from the ones we enabled for the demo content, but here is the list of nodes that have been selected for the Demo store as a reference:</p>
+
+<ul>
+<p>Node ID, Content type, Title, Status, Date created, Date changed, Tags, Portfolio Category, Product Variatons, Item language, Product Variatons » Price » Amount (decimal) (Min), Product Variatons » Price » Amount (decimal) (Max), Title (Fulltext) (1.0 x), Tags name (Fulltext) (1.0 x), Portfolio Category name (Fulltext) (1.0 x), Tags » Name, Portfolio Category » Name, Product Variatons » Color, Product Variatons » Size, Product Variatons » Product Type, Product Variatons » Price » Amount (decimal)</p>
+</ul>
+
+<p>The facets tab is the other important section to configure. There you can select the different facet search blocks that you will make available on your store page. Each facet has a set of options that you can configure to your liking. Once you have set up your search index you are ready for the final step which is the creation of your store view page. </p>
+
+<h4>Creating a "Shop" page.</h4>
+<p>The key to making everything tie together is the View page which uses the search index to display the products. This is done by creating a View like you would any other View, but by selecting your search index from the "Show" select menu during the initial view creation.</p>
+
+<h4>Wishlist</h4>
 
 <h2>Styles and Shortcodes</h2>
+
+<h2>Header/Footer</h2>
  
 <h2>Block Regions</h2>
 <p>Contour features 17 block regions where you can add your own custom content. Visit yourdomain.com/admin/structure/block to add your own content to the defined block regions. Press "Add Block" to create a new custom blog, or select an existing block from the Disabled list below the defined block regions.</p>
