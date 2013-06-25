@@ -434,10 +434,39 @@ Option 2:
 <p>Node ID, Content type, Title, Status, Date created, Date changed, Tags, Portfolio Category, Product Variatons, Item language, Product Variatons » Price » Amount (decimal) (Min), Product Variatons » Price » Amount (decimal) (Max), Title (Fulltext) (1.0 x), Tags name (Fulltext) (1.0 x), Portfolio Category name (Fulltext) (1.0 x), Tags » Name, Portfolio Category » Name, Product Variatons » Color, Product Variatons » Size, Product Variatons » Product Type, Product Variatons » Price » Amount (decimal)</p>
 </ul>
 
-<p>The facets tab is the other important section to configure. There you can select the different facet search blocks that you will make available on your store page. Each facet has a set of options that you can configure to your liking. Once you have set up your search index you are ready for the final step which is the creation of your store view page. </p>
+<p>The facets tab is the other important section to configure. There you can select the different facet search blocks that you will make available on your store page. Each facet has a set of options that you can configure to your liking. These facets show up as block regions so you can add them to the sidebar region or wherever you choose to display them. Keep in mind these facet search blocks will only display on a View page displaying the search index content. Once you have set up your search index you are ready for the final step which is the creation of your store View page. </p>
 
 <h4>Creating a "Shop" page.</h4>
-<p>The key to making everything tie together is the View page which uses the search index to display the products. This is done by creating a View like you would any other View, but by selecting your search index from the "Show" select menu during the initial view creation.</p>
+<p>The key to making everything tie together is the View page which uses the search index to display the products. This is done by creating a View like you would any other View, but by selecting your search index from the "Show" select menu during the initial view creation. This View is an unformatted list of the rendered entity, and no other special configurations are needed. The following template files are associated with Contour's demo shop page:</p>
+<ul>
+<li>/templates/node/node--shop.tpl.php</li>
+<li>/templates/page/page--shop.tpl.php</li>
+<li>/templates/views/views-view--shop.tpl.php</li>
+</ul>
+
+<p><strong>Note:</strong> if you use a different URL alias for your store page you will need to carry out the following steps: </p>
+<ul>
+<li>1. Duplicate /templates/node/node--shop.tpl.php and /templates/page/page--shop.tpl.php and rename them according to your store page URL alias. </li>
+<li>2. Open template.php and modify our contour_preprocess_node function (line 29) to reflect the correct alias of your store.</li>
+</ul>
+
+<h4>Shop Header Block</h4>
+<p>The demo store page uses a custom header block to handle the display of the necessary store links. The following markup is used in a block inside the Header Branding Right region and set to only display on the store related pages:</p>
+<pre>
+&lt;?php global $user, $base_url; ?&gt;
+&lt;ul id=&quot;header-links&quot;&gt;
+	&lt;li&gt;&lt;?php $block = module_invoke('views', 'block_view', 'header_cart_block-block_1'); print render($block['content']); ?&gt; &lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&lt;?php echo $base_url; ?&gt;/cart&quot;&gt;&lt;i class=&quot;icon-shopping-cart right&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;?php if (!$user-&gt;uid): ?&gt;
+	&lt;li class=&quot;text&quot;&gt;&lt;a href=&quot;&lt;?php echo $base_url; ?&gt;/user/register&quot; title=&quot;Sign-up&quot;&gt;Sign-up&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;text&quot;&gt;&lt;a href=&quot;&lt;?php echo $base_url; ?&gt;/user&quot; title=&quot;Login&quot;&gt;Login&lt;/a&gt;&lt;/li&gt;
+	&lt;?php endif; ?&gt;
+	&lt;?php if ($user-&gt;uid): ?&gt;
+	&lt;li class=&quot;text&quot;&gt;&lt;a href=&quot;&lt;?php echo $base_url; ?&gt;/user&quot; title=&quot;Login&quot;&gt;My Account&lt;/a&gt;&lt;/li&gt;
+	&lt;?php endif; ?&gt;
+  &lt;li class=&quot;text&quot;&gt;&lt;a href=&quot;&lt;?php echo $base_url; ?&gt;/wishlist&quot; title=&quot;Wishlist&quot;&gt;Wishlist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
 
 <h4>Wishlist</h4>
 
