@@ -518,8 +518,185 @@ return $flags;
 <p>The <a href="http://refaktorthemes.com/contour/project-planner" target="_blank">Project Planner</a> uses a <a href="http://drupal.org/project/webform">Webform</a> module block called inside of the node content of a basic page. Once the module has been installed you can visit /node/add and add a new Webform. Once you have added all the fields you want in your form, click the "Webform" tab and then "Form Settings". Scroll down to the Advanced Setting panel and check off the "Available as Block" option.</p>
 <p>Use the example markup in /examples/planner.php in a basic page content node. You will notice that the block region is called manually with PHP. To get the correct value for the Webform block you just created visit /admin/structure/block/ and click the Configure link on your Webform block. In the URL in your browser part of the URL will be client-block-X (x being a number). Replace the client-block-58 in the example code with whatever client-block-x is for your particular block.</p>
 
-<h2>Styles and Shortcodes</h2>
- 
+<h2>Shortcodes</h2>
+<h4>Padding Shortcodes:</h4>
+ <ul class="blacktext">
+  <li>
+    class=smallpadding &gt;
+    10px top bottom
+  </li>
+  
+  <li>
+    class=smallsidepadding &gt;
+    10px left right
+  </li>
+  
+  <li>
+    class=smalltoppadding &gt;
+    10px top
+  </li>
+  
+  <li>
+    class=smallbottompadding &gt;
+    10px bottom
+  </li>
+  
+  <li>
+    class=midpadding &gt;
+    20px top bottom
+  </li>
+  
+  <li>
+    class=midtoppadding &gt;
+    20px top
+  </li>
+  
+  <li>
+    class=midbottompadding &gt;
+    20px bottom
+  </li>
+  
+  <li>
+    class=bigpadding &gt;
+    50px top bottom
+  </li>
+  
+  <li>
+    class=bigsidepadding &gt;
+    50px left right
+  </li>
+  
+  <li>
+    class=bigtoppadding &gt;
+    50px top
+  </li>
+  
+  <li>
+    class=bigbottompadding &gt;
+    50px bottom
+  </li>
+  
+  <li>
+    class=largepadding &gt;
+    100px top bottom
+  </li>
+  
+  <li>
+    class=largetoppadding &gt;
+    100px top
+  </li>
+  
+  <li>
+    class=largebottompadding &gt;
+    100px bottom
+  </li>
+
+<li>class=leftpadding &gt; 20px left</li>
+
+<li>class=rightpadding &gt; 20px right</li>
+</ul>
+<p>Example:</p>
+<pre>&lt;div class=&quot;midpadding&quot;&gt;&lt;/div&gt;</pre>
+<h4>Margin Shortcodes:</h4>
+<ul class="blacktext">
+  <li>
+    class=smallmargin &gt;
+    10px top bottom
+  </li>
+  
+  <li>
+    class=smalltopmargin &gt;
+    10px top
+  </li>
+  
+  <li>
+    class=smallbottommargin &gt;
+    10px bottom
+  </li>
+  
+  <li>
+    class=midmargin &gt;
+    20px top bottom
+  </li>
+  
+  <li>
+    class=midtopmargin &gt;
+    20px top
+  </li>
+  
+  <li>
+    class=midbottommargin &gt;
+    20px bottom
+  </li>
+  
+  <li>
+    class=bigmargin &gt;
+    50px top bottom
+  </li>
+  
+  <li>
+    class=bigtopmargin &gt;
+    50px top
+  </li>
+  
+  <li>
+    class=bigbottommargin &gt;
+    50px bottom
+  </li>
+  
+  <li>
+    class=largemargin &gt;
+    100px top bottom
+  </li>
+  
+  <li>
+    class=largetopmargin &gt;
+    100px top
+  </li>
+  
+  <li>
+    class=largebottommargin &gt;
+    100px bottom
+  </li>
+</ul>
+<p>Example:</p>
+<pre>&lt;div class=&quot;midmargin&quot;&gt;&lt;/div&gt;</pre>
+
+<h4>Text Styles:</h4>
+<ul class="blacktext">
+<li>class=smallfont &gt; 11px font</li>
+<li>class=meta &gt; 12px font</li>
+<li>class=largefont &gt; 16px font</li>
+<li>class=light &gt; fontweight 200</li>
+<li>class=bold &gt; fontweight 700</li>
+<li>class=extrabold &gt; fontweight 800</li>
+<li>class=italic &gt; italic</li>
+
+<li>class=blacktext &gt; black color text</li>
+<li>class=whitetext &gt; white color text</li>
+<li>class=greytext &gt; grey color text</li>
+<li>class=bluetext &gt; blue color text</li>
+<li>class=yellowtext &gt; yellow color text</li>
+
+<li>class=left &gt; align text left <span class="bold meta">If used on div will also align div to left</span> </li>
+<li>class=right &gt; align text right <span class="bold meta">If used on div will also align div to right</span></li>
+<li>class=center &gt; center text</li>
+</ul>
+<p>Example:</p>
+<pre>&lt;div class=&quot;blacktext&quot;&gt;&lt;/div&gt;</pre>
+
+<h4>Color Scheme Shortcodes:</h4>
+<p>In addition to the shortcodes above we created a set of selectors that provide color based on the color scheme selected in the theme settings.</p>
+<ul>
+<li>class=container-color &gt; gives element the primary background color of the scheme in use</li>
+<li>class=text-color &gt; gives element the primary text color of the scheme in use</li>
+<li>class=text-inverse &gt; gives element the inverse text color of the scheme in use</li>
+<li>class=text-alt &gt; gives element the alt text color of the scheme in use (example blue text/white background)</li>
+<li>class=color-button &gt; gives button the primary background color of the scheme in use</li>
+</ul>
+<p>Example:</p>
+<pre>&lt;div class=&quot;text-color&quot;&gt;&lt;/div&gt;</pre>
+
 <h2>Block Regions</h2>
 <p>Contour features 17 block regions where you can add your own custom content. Visit yourdomain.com/admin/structure/block to add your own content to the defined block regions. Press "Add Block" to create a new custom blog, or select an existing block from the Disabled list below the defined block regions.</p>
 <h4>Header Block Regions</h4>
