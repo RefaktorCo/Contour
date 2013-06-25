@@ -149,11 +149,49 @@ Option 2:
 <li>/templates/views/views-view-list--portfolio-filters.tpl.phpp</li>
 </ul>
 
+<h4>Product Display</h4>
+<p>This content type is used display Drupal Commerce products as node content. </p>
+<img src="images/product-display.png"><br/><br/>
+<p><strong>Fields:</strong></p>
+<ul>
+<li><strong>Product Variations:</strong> This uses the Commerce-specific "product reference" field type with an "inline entity form - multiple values" widget. This is how you can add and display different variations to your products like size and color.</li>
+<li><strong>Product Slider:</strong> Used to upload images for the single product image slider.</li>
+<li><strong>Featured:</strong> This is a simple boolean field using the on/off widget for tagging a product as "featured" for use in Views filters.</li>
+<li><strong>Item Info:</strong> A text field to enter the basic item info.</li>
+<li><strong>Product Care:</strong> A text field to enter information about product care.</li>
+</ul>
+<p><strong>Template files:</strong></p>
+<ul>
+<li>/templates/node/node--product-display.tpl.php</li>
+<li>/templates/node/node--shop.tpl.php</li>
+<li>/templates/node/node--view--featured-products--block.tpl.php</li>
+<li>/templates/page/page--node--product-display.tpl.php</li>
+<li>/templates/page/page--shop.tpl.php</li>
+<li>/templates/views/views-view--more-products.tpl.php</li>
+<li>/templates/views/views-view--shop.tpl.php</li>
+</ul>
+
+<h4>Testimonials</h4>
+<p>This content type is used to create the testimonial items used in the Testimonials view block (like the one used on the front page of the demo). </p>
+<img src="images/testimonials.png"><br/><br/>
+<p><strong>Fields:</strong></p>
+<ul>
+<li><strong>Testimonial content:</strong> A simple text field to enter the actual content of the testimonial.</li>
+<li><strong>Image:</strong> Used to upload a testimonial iamge.</li>
+<li><strong>Testimonial name:</strong> Used to show the name of the person giving the testimonial.</li>
+</ul>
+<p><strong>Template files:</strong></p>
+<ul>
+<li>/templates/node/node--testimonials.tpl.php</li>
+<li>/templates/views/views-view--testimonials.tpl.php</li>
+</ul>
 
 <h2>Theme Settings</h2>
 <p>Visit /admin/appearance/settings/contour to configure your theme's settings. You can select your color scheme, add your own custom CSS, add your own custom logo, etc.</p>
 
 <h2>Commerce (Shop)</h2>
+
+<h2>Portfolio</h2>
 
 <h2>Notes (posts)</h2>
 <p>If you would like to use Article (recommended) or Blog posts on your site Contour comes equipped with several templates that modify the look and feel of the posts list and single items. The default post page on the demo can be seen <a href="http://refaktorthemes.com/contour/notes" target="_blank">here</a>, a single post can be seen <a href="http://refaktorthemes.com/contour/notes/25-fresh-business-concepts" target="_blank">here</a> and an alternate list format can be seen <a href="http://refaktorthemes.com/contour/note-list" target="_blank">here.</a> There are no extra content types or custom fields that you need to set up and we will cover each template below:</p>
