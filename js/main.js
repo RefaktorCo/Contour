@@ -12,7 +12,7 @@ jQuery(document).ready(function ($) {
   
   $('div.three.columns.product:nth-child(4n+1)').addClass('alpha');
   
-  $().UItoTop({ easingType: 'easeOutQuart' });
+  /* $().UItoTop({ easingType: 'easeOutQuart' }); */
   
 
 jQuery(document).ready(function ($) {
