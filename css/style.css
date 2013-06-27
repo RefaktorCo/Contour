@@ -1,3 +1,8 @@
+.flex-loading {
+  height: 1000px;
+  background: url('../images/load.gif') no-repeat center center;	
+}
+
 /*=======================================================================
 *** CONTOUR TEMPLATE DESIGNED AND DEVELOPED BY HASAN ALI - http://www.codeblvck.com ***
 *** DRUPAL VERSION BY REFAKTOR - http://www.refaktorthemes.com ***

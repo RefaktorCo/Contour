@@ -151,7 +151,13 @@ jQuery(document).ready(function ($) {
     nextText: "Next",
     prevText: "Previous",
     manualControls: ".flex-control-nav li.nav-button",
-    smoothHeight: true
+
+    
+    controlsContainer: ".slider",
+	
+	    start: function(slider) {
+	      slider.removeClass('flex-loading');
+	    }  
   });
 });
 </script>
