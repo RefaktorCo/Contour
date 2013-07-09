@@ -21,17 +21,12 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
   
-<?php //contour_user_css(); ?>  
-
-<!-- Style switcher  
-<link rel="stylesheet" type="text/css" href="<?php global $root; echo $root;?>/css/switch.css">
-<link rel="stylesheet" class="switch" type="text/css" href="<?php global $root; echo $root;?>/css/colors/default.css">
--->
 
 <link href='http://fonts.googleapis.com/css?family=Dosis:200,400,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
 
 <?php contour_user_css(); ?>
+
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
