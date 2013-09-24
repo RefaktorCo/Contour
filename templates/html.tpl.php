@@ -25,6 +25,24 @@
 <link href='http://fonts.googleapis.com/css?family=Dosis:200,400,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
 
+<?php global $user; if (in_array('administrator', array_values($user->roles))): ?>
+<script>
+jQuery(document).ready(function ($) {
+	if ($(window).width() > 768) {
+		$("#navbar").sticky({topSpacing:66});
+  }
+});
+</script>
+<?php else : ?>
+<script>
+jQuery(document).ready(function ($) {
+	if ($(window).width() > 768) {
+		$("#navbar").sticky({topSpacing:0});
+  }
+});
+</script>
+<?php endif; ?>
+
 <?php contour_user_css(); ?>
 
 </head>
