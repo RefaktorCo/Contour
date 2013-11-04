@@ -143,7 +143,7 @@ jQuery(document).ready(function ($) {
   $('.flexslider').flexslider({
     direction: "horizontal",
     animation: "slide",
-    directionNav: false,
+    directionNav: true,
     controlNav: true,
     animationLoop: true,
     pauseOnAction: true,
