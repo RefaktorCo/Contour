@@ -34,6 +34,23 @@ function contour_preprocess_node(&$vars) {
 }
 
 /**
+ * Modify theme_button()
+ */
+function contour_button($variables) {
+
+  $element = $variables['element'];
+  $element['#attributes']['type'] = 'submit';
+  element_set_attributes($element, array('id', 'name', 'value'));
+
+  $element['#attributes']['class'][] = 'medium color-button btn form-' . $element['#button_type'];
+  if (!empty($element['#attributes']['disabled'])) {
+    $element['#attributes']['class'][] = 'form-button-disabled';
+  }
+
+  return '<input' . drupal_attributes($element['#attributes']) . ' />';
+}
+
+/**
  * Define some variables for use in theme templates.
  */
 function contour_process_page(&$variables) {	
