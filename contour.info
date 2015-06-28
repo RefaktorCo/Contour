@@ -2,7 +2,7 @@ name = Contour
 description = Multipurpose Creative Drupal Theme. 
 core = 7.x
 engine = phptemplate
-version = 1.0
+version = 1.0.2
 
 ; Call style sheets.
 stylesheets[all][] = css/imports.css
